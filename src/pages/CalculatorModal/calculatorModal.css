@@ -1,0 +1,49 @@
+.calculator-modal {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 2rem;
+  border: 1px solid rgba(153, 153, 153, 0.314);
+}
+
+.calculator-modal .calculator-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(153, 153, 153, 0.24);
+  padding: 1rem 0.2rem;
+  margin-bottom: 0.8rem;
+}
+.calculator-modal .calculator-header i {
+  color: rgb(191, 191, 191);
+}
+.calculator-modal p {
+  color: rgb(191, 191, 191);
+  margin-bottom: 0.8rem;
+}
+.calculator-modal .flag {
+  display: flex;
+}
+
+.calculator-modal .flags img {
+  height: 70px;
+  margin: 0 0.4rem;
+}
+.calculator-modal .flags img:hover {
+  transform: scale(1.1);
+  border: 1px solid var(--greenColor);
+  padding: .5rem;
+  
+}
+.calculator-modal .shipping-method {
+  display: flex;
+}
+.calculator-modal .shipping-method p {
+  color: rgb(191, 191, 191);
+}
+
+.calculator-modal .shipping-method input {
+}
+
+.calculator-modal .shipping-method i {
+  color: var(--greenColor);
+}
