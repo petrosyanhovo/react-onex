@@ -1,0 +1,241 @@
+footer .first-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f8;
+    padding: 50px 94.5px;
+
+}
+
+
+
+/* footer .first-footer .left {
+    position: relative;
+} */
+
+/* left  */
+
+/* /////////////// */
+
+
+footer .first-footer .left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+footer .first-footer .left h4 {
+    font-size: 16px;
+    margin-bottom: 20px;
+    /* margin-left: -300px; */
+    font-family: 'montserratarm-extralight';
+
+}
+
+
+footer .first-footer .left .down-icons a img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+/* right  */
+
+footer .first-footer .right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+footer .first-footer .right .soc-icons a img {
+    height: 30px;
+    margin-right: 14px;
+}
+
+footer .first-footer .right h4 {
+    font-size: 16px;
+    margin-bottom: 20px;
+    font-family: 'montserratarm-extralight';
+
+}
+
+/* second footer  */
+
+.second-footer {
+    display: flex;
+    padding: 50px 94.5px;
+    color: #333;
+    justify-content: space-between;
+}
+
+/* //////////// */
+
+/* left  */
+
+
+
+.second-footer .left .pay-methods h4 {
+    font-size: 12px;
+    margin: 0 0 10px;
+    font-family: 'montserratarm-light';
+}
+
+.second-footer .left {
+    padding: 0 15px;
+
+}
+
+.second-footer .left .pay-methods {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.second-footer .left .pay-methods .icons {
+    display: flex;
+}
+
+.second-footer .left .pay-methods .icons img {
+    height: 38px;
+    /* width: 12px; */
+    margin: 0 2px;
+    border: 1px solid #f0f0f0b8;
+    border-radius: 5px;
+    vertical-align: baseline;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.second-footer .left .pay-methods .icons :last-child {
+    padding: 7px;
+}
+
+.second-footer .left .choose-lang {
+    font-size: 12px;
+    text-align: left;
+}
+
+.second-footer .left select {
+    cursor: pointer;
+}
+
+.second-footer .left .choose-lang h4 {
+    margin-bottom: 15px;
+    font-family: 'montserratarm-light';
+}
+
+/* center  */
+
+
+
+.second-footer .center {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #333;
+
+}
+
+.second-footer .center a {
+    font-size: 12px;
+    color: #454545;
+    padding: 8px 0;
+    font-family: 'montserratarm-light';
+}
+
+.second-footer .center a:hover {
+    text-decoration: underline;
+}
+
+.second-footer .center .right .top {
+    display: flex;
+}
+
+.second-footer .right {
+    text-align: left;
+
+}
+
+.second-footer .right .top {
+    text-align: left;
+    margin: 0 0 25px;
+}
+
+.second-footer .right .top h2 {
+    font-size: 12px;
+    margin: 0 0 10px;
+    font-family: 'montserratarm-semibold';
+    letter-spacing: .1px;
+}
+
+.second-footer .right .top h4 {
+    font-size: 12px;
+    margin: 0 0 10px;
+    font-family: 'montserratarm-thin';
+}
+
+.second-footer .right .top h4 span {
+    font-family: 'montserratarm-light';
+}
+
+.second-footer .right .center {
+    margin: 0 0 25px;
+}
+
+.second-footer .right .center h2{
+    font-size: 12px;
+    margin: 0 0 10px;
+    font-family: 'montserratarm-semibold';
+    letter-spacing: .1px;
+}
+
+.second-footer .right .center h4{
+    font-size: 12px;
+    margin: 0 0 10px;
+    font-family: 'montserratarm-thin';
+}
+
+.second-footer .right .center h4 span {
+    font-family: 'montserratarm-light';
+}
+
+.second-footer .right .bottom a {
+    font-size: 12px;
+    display: block;
+    color: #5dba2f;
+    margin: 0 0 10px;
+}
+
+.second-footer .right .bottom a i {
+    margin-right: 6px;
+}
+
+/* third */
+
+.third-footer {
+    background-color: black;
+    text-align: center;
+    padding: 20px;
+}
+
+.third-footer h4 {
+    font-size: 12px;
+    color: white;
+    font-family: 'montserratarm-light'
+}
+
+.third-footer .links {
+    color: gray;
+}
+
+.third-footer .links a {
+    color: gray;
+    font-size: 12px;
+    font-family: 'montserratarm-extralight';
+    letter-spacing: .1px;
+}
+
+.third-footer .links a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,41 @@
+@font-face {
+  font-family: 'montserratarm';
+  src: url('./fonts/montserratarm/Montserratarm-Regular.otf');
+}
+
+@font-face {
+  font-family: 'montserratarm-bold';
+  src: url('./fonts/montserratarm/Montserratarm-Bold.otf');
+}
+
+@font-face {
+  font-family: 'montserratarm-thin';
+  src: url('./fonts/montserratarm/Montserratarm-Thin.otf');
+}
+
+@font-face {
+  font-family: 'montserratarm-light';
+  src: url('./fonts/montserratarm/Montserratarm-Light.otf');
+}
+
+@font-face {
+  font-family: 'montserratarm-extralight';
+  src: url('./fonts/montserratarm/Montserratarm-ExtraLight.otf');
+}
+
+@font-face {
+  font-family: 'montserratarm-semibold';
+  src: url('./fonts/montserratarm/Montserratarm-SemiBold.otf');
+}
+
+
+
+:root {
+  --greenColor: #5dba2f;
+  --redColor: #a94442;
+}
+
+* {
+  margin: 0;
+  font-family: sans-serif;
+}

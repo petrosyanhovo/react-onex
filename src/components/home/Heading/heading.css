@@ -1,0 +1,30 @@
+.heading {
+  width: 85%;
+  margin: 0% auto;
+  text-align: center;
+}
+.heading .stars i {
+  color: rgb(82, 187, 82);
+  margin: 3px;
+}
+
+.heading .stars .middle {
+  font-size: 14px;
+}
+
+.heading .stars .small {
+  font-size: 11px;
+}
+
+.heading h2 {
+  font-size: 40px;
+  margin: 20px;
+}
+
+.heading p {
+  margin-bottom: 60px;
+}
+
+.heading span {
+  color: rgb(82, 187, 82);
+}

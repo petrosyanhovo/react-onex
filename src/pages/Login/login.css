@@ -1,0 +1,67 @@
+.login {
+    display: flex;
+    justify-content: center;
+    margin: 70px 0;
+}
+
+.login .login-image {
+    width: 30%;
+    object-fit: cover;
+    margin-right: 50px;
+}
+
+.login .login-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.login .login-content .login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.login .login-content .login-title {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+}
+
+.login .login-content .login-text {
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+.login .login-content .login-form input {
+    width: 500px;
+    border: 1px solid var(--greenColor);
+    padding: 1.1rem 1rem;
+    border-radius: 0.6rem;
+    margin-top: 1.4rem;
+    background-color: white;
+    color: var(--greenColor);
+}
+
+.login .login-content .login-form input:focus {
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.login .login-content .login-form input::placeholder {
+    font-size: 1rem;
+    color: rgba(153, 153, 153, 0.575);
+}
+
+.login .login-content .login-form span {
+    color:  #a94442;
+    font-size: .8rem;
+    margin: .5rem;
+}
+
+.login .login-content .login-form button {
+    width: 500px;
+    background-color: var(--greenColor);
+    color: white;
+}
+

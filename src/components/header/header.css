@@ -1,0 +1,135 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  text-decoration: none;
+  transition: all 0.2s linear;
+}
+
+.btn-1 {
+  margin-top: 0;
+  margin-right: 5px;
+  color: white !important;
+  border-radius: 6px !important;
+  background-color: #5dba2f !important;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 400;
+  padding: 6px 13px;
+  position: relative;
+  background: #72c02c;
+  white-space: nowrap;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.btn-2 {
+  margin-top: 0;
+  margin-right: 5px;
+  color: white !important;
+  border-radius: 6px !important;
+  background-color: #f1c40f !important;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 400;
+  padding: 6px 13px;
+  position: relative;
+  background: #72c02c;
+  white-space: nowrap;
+  display: inline-block;
+  text-decoration: none;
+}
+header .first-part {
+  background: black;
+  width: 100%;
+  height: 3rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .first-part p {
+  font-size: 1.1rem;
+  color: white;
+}
+
+header .first-part span {
+  color: green;
+}
+header .second-part {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+  background: #f4f4f4;
+  font-size: 13px;
+}
+header .second-part .link {
+  margin-top: 0.6rem;
+}
+header .second-part .link a {
+  border-right: 1px solid black;
+  padding: 0 0.6rem;
+  margin-left: 1rem;
+  color: black;
+}
+header .second-part .link a:hover {
+  color: #5dba2f;
+
+  text-decoration: underline;
+}
+header .second-part .login-btn a {
+  margin: 0.5rem 0.6rem;
+}
+
+header .second-part .login-btn a i {
+  padding: 0 0.5rem;
+  position: relative;
+}
+header .second-part img {
+  position: absolute;
+  margin-left: -1rem;
+  width: 17px;
+}
+
+header .third-part {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 4rem;
+}
+
+header .third-part img {
+  height: 40px;
+}
+
+header .third-part {
+  width: 100%;
+  height: 4rem;
+  border-bottom: solid rgb(136, 136, 136) 1px;
+  display: flex;
+  align-items: center;
+}
+header .third-part .logo {
+  cursor: pointer;
+}
+header .third-part .nav a i {
+  font-size: 1.5rem;
+}
+header .third-part .nav a i:hover {
+  color: black;
+}
+header .third-part a {
+  padding: 0.2rem;
+  margin-left: 0.2rem;
+  font-size: 14px;
+  color: black;
+}
+
+header .third-part a:hover {
+  color: #5dba2f;
+  border-bottom: solid #5dba2f 2px;
+  border-top: solid #5dba2f 2px;
+  padding: 1rem 0;
+}
