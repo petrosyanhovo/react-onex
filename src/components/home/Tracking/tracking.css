@@ -1,9 +1,9 @@
 .tracking {
   width: 85%;
   height: 350px;
-  background-color: rgb(241, 237, 237);
-  border: 1px solid rgb(218, 212, 212);
-  border-radius: 10px;
+  background-color: #f9f9f8;
+  border: 1px solid #f2f4fb;
+  border-radius: 20px;
   margin: 50px auto;
   padding: 50px;
 }
@@ -20,7 +20,6 @@
 .tracking .trackInput input::placeholder {
   color: rgba(153, 153, 153, 0.392);
   font-size: 1.1rem;
- 
 }
 .tracking .trackInput a{
   color: white;
@@ -28,11 +27,17 @@
   display: block;
   height: 50px;
   width: 6rem;
-  background-color: rgb(82, 187, 82);
+  background-color: var(--greenColor);
   border-radius: 0px 10px 10px 0px;
-  font-size: 1rem;
+  font-size: 14px;
   padding: 1rem 0;
+  font-family: 'montserratarm-bold' !important;
 }
+
+.tracking .trackInput a i {
+  margin-right: 5px;
+}
+
 
 form {
   display: flex;

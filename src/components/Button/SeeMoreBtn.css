@@ -1,0 +1,20 @@
+.SeeMoreBtn {
+    padding: 20px 50px;
+    font-family: inherit;
+    color: #5dba2f;
+    border-radius: 10px;
+    background: none;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border: 1px solid #5dba2f;
+    text-align: center;
+    cursor: pointer;
+}
+
+.SeeMoreBtn:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid #000000;
+}

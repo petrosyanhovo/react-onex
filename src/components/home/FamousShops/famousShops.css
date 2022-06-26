@@ -13,7 +13,7 @@
 .famous-shops .shops .shop-logo {
   width: 15%;
   height: 80px;
-  border: 1px solid rgba(153, 153, 153, 0.135);
+  border: 1px solid rgba(191, 191, 191, 0.135);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -24,6 +24,7 @@
   padding: 0.5rem 3rem;
   object-fit: contain;
 }
+
 
 /* .famous-shops .shops .shop-logo {
     width: 50px;

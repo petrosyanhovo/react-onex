@@ -1,14 +1,18 @@
 .smart-wall {
     width: 85%;
     height: 450px;
-    background-color: white;
-    border: 1px solid rgb(218, 212, 212);
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
+    border-radius: 20px;
     margin: 50px auto;
     padding: 50px;
     display: flex;
     align-items: center;
+    box-shadow: 0 1px 4px 0 rgb(46 61 73 / 10%);
+    background-color: white;
+    border: 1px solid #f2f4fb;
+}
+
+  .smart-wall .stars {
+    display: none;
   }
 
   .smart-wall-video {
@@ -19,5 +23,29 @@
 
   .smart-wall-content {
     width: 49%;
-    
+  }
+
+  .smart-wall-content p {
+    text-align: left;
+    margin-left: 20px;
+    line-height: 20px;
+    font-family: 'montserratarm-light';
+    color: #222;
+  }
+
+  .smart-wall-content .main-button {
+    text-align: left !important;
+    display: block;
+    margin-left: 20px;
+    margin-top: -20px;
+  }
+
+  .smart-wall h2 {
+    font-size: 42px;
+    color: var(--greenColor);
+    text-align: left;
+  }
+
+  .smart-wall h2 span {
+    color: black;
   }

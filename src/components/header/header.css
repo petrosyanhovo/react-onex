@@ -4,9 +4,10 @@
   border: none;
   outline: none;
   box-sizing: border-box;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   text-decoration: none;
   transition: all 0.2s linear;
+  font-family: 'montserratarm';
 }
 
 .btn-1 {
@@ -15,27 +16,27 @@
   color: white !important;
   border-radius: 6px !important;
   background-color: #5dba2f !important;
-  font-size: 14px;
+  font-size: 12px;
   cursor: pointer;
   font-weight: 400;
-  padding: 6px 13px;
+  padding: 8px 13px;
   position: relative;
   background: #72c02c;
   white-space: nowrap;
   display: inline-block;
   text-decoration: none;
+  
 }
 
 .btn-2 {
   margin-top: 0;
-  margin-right: 5px;
   color: white !important;
   border-radius: 6px !important;
   background-color: #f1c40f !important;
-  font-size: 14px;
+  font-size: 12px;
   cursor: pointer;
   font-weight: 400;
-  padding: 6px 13px;
+  padding: 8px 13px;
   position: relative;
   background: #72c02c;
   white-space: nowrap;
@@ -52,7 +53,7 @@ header .first-part {
   align-items: center;
 }
 header .first-part p {
-  font-size: 1.1rem;
+  font-size: 13px;
   color: white;
 }
 
@@ -62,6 +63,7 @@ header .first-part span {
 header .second-part {
   display: flex;
   justify-content: space-between;
+  /* align-items: center; */
   padding: 0 2rem;
   background: #f4f4f4;
   font-size: 13px;
@@ -70,18 +72,26 @@ header .second-part .link {
   margin-top: 0.6rem;
 }
 header .second-part .link a {
-  border-right: 1px solid black;
-  padding: 0 0.6rem;
-  margin-left: 1rem;
-  color: black;
+  /* border-right: 1px solid black; */
+  padding: 0 0 5px;
+  margin: 0 5px;
+  color: #222;
+  letter-spacing: 0.1px;
+  font-size: 11px;
+  font-family: 'montserratarm';
 }
+
+header .second-part .link a:last-child {
+  margin-left: 1.5rem;
+}
+
 header .second-part .link a:hover {
   color: #5dba2f;
 
   text-decoration: underline;
 }
 header .second-part .login-btn a {
-  margin: 0.5rem 0.6rem;
+  margin: 0.5rem 0.3rem;
 }
 
 header .second-part .login-btn a i {

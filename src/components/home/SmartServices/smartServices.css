@@ -2,8 +2,8 @@
   width: 85%;
   height: 740px;
   background-color: white;
-  border: 1px solid rgb(218, 212, 212);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  border: 1px solid #f2f4fb;;
+  box-shadow: 0 1px 4px 0 rgb(46 61 73 / 10%);
   border-radius: 10px;
   margin: 50px auto;
   padding: 50px;
@@ -35,10 +35,18 @@
   margin-left: 5rem;
 }
 
+.smart-services-section .smart-services-content p {
+  display: flex;
+  align-items: center;
+  color: #333;
+}
+
 .smart-services-section .smart-services-content p span {
   margin-left: 0.5rem;
+  font-size: 13px;
 }
 .smart-services-section .smart-services-content p img {
-  width: 2rem;
+  /* vertical-align: middle; */
+  width: 28px;
   margin-top: 8px;
 }

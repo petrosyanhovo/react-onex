@@ -12,13 +12,15 @@ import SmartWall from "./components/home/SmartWall/SmartWall";
 import SmartLocker from "./components/home/SmartLocker/SmartLocker";
 import FamousShops from "./components/home/FamousShops/FamousShops";
 import { CalculatorModal } from "./pages/CalculatorModal/CalculatorModal";
-import Login from "./pages/Login/Login";
+import Login from "./pages/Login/Login"
 
 function App() {
   return (
     <div className="App">
+      <CalculatorModal />
+
       <Header />
-      {/* <Login /> */}
+      <Login />
       <Slider />
       <Tracking />
       <HowToStart />
@@ -29,7 +31,6 @@ function App() {
       <SmartLocker />
       <FamousShops />
       <Footer />
-      {/* <CalculatorModal/> */}
     </div>
   );
 }

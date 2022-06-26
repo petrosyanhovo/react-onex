@@ -1,10 +1,5 @@
-.heading {
-  width: 85%;
-  margin: 0% auto;
-  text-align: center;
-}
 .heading .stars i {
-  color: rgb(82, 187, 82);
+  color: var(--greenColor);
   margin: 3px;
 }
 
@@ -17,14 +12,23 @@
 }
 
 .heading h2 {
-  font-size: 40px;
+  font-size: 36px;
   margin: 20px;
+  font-family: 'montserratarm-bold';
+  letter-spacing: .1px;
+}
+
+.heading h2 span {
+  font-family: 'montserratarm-bold';
+  
 }
 
 .heading p {
   margin-bottom: 60px;
+  font-size: 14px;
+  font-family: 'montserratarm-light';
 }
 
 .heading span {
-  color: rgb(82, 187, 82);
+  color: var(--greenColor);
 }

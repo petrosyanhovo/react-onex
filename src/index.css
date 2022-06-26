@@ -28,11 +28,46 @@
   src: url('./fonts/montserratarm/Montserratarm-SemiBold.otf');
 }
 
+.elem-style {
+  background: #f9f9f8 !important;
+}
 
+.block-shadow {
+  border: 1px solid #f2f4fb;
+  box-shadow: 0 1px 4px 0 rgb(46 61 73 / 10%);
+  border-radius: 20px !important;
+  -webkit-border-radius: 20px !important;
+  -moz-border-radius: 20px !important;
+  -ms-border-radius: 20px !important;
+  -o-border-radius: 20px !important;
+}
+
+.font-regular {
+  font-family: 'montserratarm';
+}
+
+.font-bold {
+  font-family: 'montserratarm-bold';
+}
+
+.font-semibold {
+  font-family: 'montserratarm-semibold';
+}
+
+.font-thin {
+  font-family: 'montserratarm-thin';
+}
+
+.font-light {
+  font-family: 'montserratarm-light';
+}
+
+.font-extralight {
+  font-family: 'montserratarm-extralight';
+}
 
 :root {
   --greenColor: #5dba2f;
-  --redColor: #a94442;
 }
 
 * {
