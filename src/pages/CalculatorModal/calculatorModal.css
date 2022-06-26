@@ -1,5 +1,5 @@
 .calculator-background {
-  display: none;
+  /* display: none; */
 }
 .calculator-background.active {
   width: 100%;

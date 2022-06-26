@@ -13,14 +13,15 @@ import SmartLocker from "./components/home/SmartLocker/SmartLocker";
 import FamousShops from "./components/home/FamousShops/FamousShops";
 import { CalculatorModal } from "./pages/CalculatorModal/CalculatorModal";
 import Login from "./pages/Login/Login"
+import Register from "./pages/Register/Register"
 
 function App() {
   return (
     <div className="App">
-      <CalculatorModal />
-
       <Header />
-      <Login />
+      {/* <Login /> */}
+      {/* <Register /> */}
+      {/* <CalculatorModal /> */}
       <Slider />
       <Tracking />
       <HowToStart />

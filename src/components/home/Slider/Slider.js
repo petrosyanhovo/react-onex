@@ -36,11 +36,11 @@ export default function Slider() {
 //   console.log(77, slideIndex, images[slideIndex]);
 
   return (
-    <div className="container-slider">
+    <div className="container-slider" >
       {dataSlider.map((obj, index) => {
         // console.log(23232,obj.id)
         return (
-          <div
+          <div 
             key={obj.id}
             className={slideIndex === index ? "slide active-anim" : "slide"}
           >
@@ -51,7 +51,7 @@ export default function Slider() {
       <BtnSlider moveSlide={nextSlide} direction={"next"} />
       <BtnSlider moveSlide={prevSlide} direction={"prev"} />
 
-      <div className="container-dots">
+      <div className="container-dots" >
         {Array.from({ length: dataSlider.length }).map((item, index) => (
           <div
             key={index}
@@ -60,6 +60,6 @@ export default function Slider() {
           ></div>
         ))}
       </div>
-    </div>
+    </div>  
   );
 }
