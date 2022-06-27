@@ -4,6 +4,7 @@ import Heading from "../Heading/Heading";
 import step1 from "../HowToStart/howToStart_img/step1.png";
 import step2 from "../HowToStart/howToStart_img/step2.png";
 import step3 from "../HowToStart/howToStart_img/step3.png";
+import { NavLink as Link } from "react-router-dom";
 
 const HowToStart = () => {
     return (
@@ -17,7 +18,9 @@ const HowToStart = () => {
                 <div className="step">
                     <img src={step1} alt="" height={60} width={60} />
                     <p>
-                        <a href="#">Գրանցվե՛ք</a> մեր կայքում <br/> և անվճար ստացե՛ք
+                        
+                        <Link to = '/register'><a>Գրանցվե՛ք  </a></Link>
+                         մեր կայքում <br/> և անվճար ստացե՛ք
                         առաքման հասցեներ
                     </p>
                 </div>

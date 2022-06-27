@@ -14,23 +14,24 @@ import FamousShops from "./components/home/FamousShops/FamousShops";
 import { CalculatorModal } from "./pages/CalculatorModal/CalculatorModal";
 import Login from "./pages/Login/Login"
 import Register from "./pages/Register/Register"
+import {Navigate, Routes, Route} from "react-router-dom"
+import HomePage from "./pages/HomePage/HomePage";
 
 function App() {
   return (
     <div className="App">
       <Header />
+      <Routes>
+        <Route path = '/' element = {<HomePage/>} />
+        <Route path = '/login' element = {< Login />} />
+        <Route path = '/register' element = {< Register />} />
+      </Routes>
       {/* <Login /> */}
       {/* <Register /> */}
       {/* <CalculatorModal /> */}
-      <Slider />
-      <Tracking />
-      <HowToStart />
-      <ShippingPriceList />
-      <SmartServices />
-      <Export />
-      <SmartWall />
-      <SmartLocker />
-      <FamousShops />
+      
+      
+      
       <Footer />
     </div>
   );
