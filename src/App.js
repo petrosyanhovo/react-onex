@@ -12,28 +12,28 @@ import SmartWall from "./components/home/SmartWall/SmartWall";
 import SmartLocker from "./components/home/SmartLocker/SmartLocker";
 import FamousShops from "./components/home/FamousShops/FamousShops";
 import { CalculatorModal } from "./pages/CalculatorModal/CalculatorModal";
-import Login from "./pages/Login/Login"
-import Register from "./pages/Register/Register"
+import Login from "./pages/Login/Login";
+import Register from "./pages/Register/Register";
 
 function App() {
-  return (
-    <div className="App">
-      <Header />
-      {/* <Login /> */}
-      {/* <Register /> */}
-      {/* <CalculatorModal /> */}
-      <Slider />
-      <Tracking />
-      <HowToStart />
-      <ShippingPriceList />
-      <SmartServices />
-      <Export />
-      <SmartWall />
-      <SmartLocker />
-      <FamousShops />
-      <Footer />
-    </div>
-  );
+    return (
+        <div className="App">
+            <CalculatorModal />
+            <Header />
+            {/* <Login /> */}
+            {/* <Register /> */}
+            <Slider />
+            <Tracking />
+            <HowToStart />
+            <ShippingPriceList />
+            <SmartServices />
+            <Export />
+            <SmartWall />
+            <SmartLocker />
+            <FamousShops />
+            <Footer />
+        </div>
+    );
 }
 
 export default App;
