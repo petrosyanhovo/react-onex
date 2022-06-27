@@ -1,7 +1,7 @@
 import React from "react";
 import "./smartServices.css";
 import Heading from "../Heading/Heading";
-import SmartServiceImg from "../SmartServices/img/smart-service.png";
+import SmartServiceImg from "../SmartServices/smartServices_img/smart-service.png";
 import Button from "../../Button/Button";
 function importAll(r) {
   let images = {};
@@ -12,7 +12,7 @@ function importAll(r) {
 }
 
 const images = importAll(
-  require.context("../SmartServices/img", false, /\.(png|jpe?g|svg)$/)
+  require.context("../SmartServices/smartServices_img", false, /\.(png|jpe?g|svg)$/)
 );
 
 const SmartServices = () => {
