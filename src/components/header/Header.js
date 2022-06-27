@@ -2,6 +2,7 @@ import React from "react";
 import "../header/header.css";
 import armenia from "../header/header_img/armenia.png";
 import onex from "../header/header_img/onex.png";
+import {NavLink as Link} from 'react-router-dom'
 import { CalculatorModal } from "../../pages/CalculatorModal/CalculatorModal";
 
 export const Header = () => {
@@ -26,19 +27,21 @@ export const Header = () => {
                     </a>
                 </div>
                 <div className="login-btn">
-                    <a href="" className="btn-1">
+                    <Link to='/login' className="btn-1">
                         <i className="fa fa-sign-in"></i>
                         ՄՈՒՏՔ
-                    </a>
-                    <a href="" className="btn-2">
+                    </Link>
+                    <Link to='/register' className="btn-2">
                         <i className="fa fa-user-plus"></i>
                         ԳՐԱՆՑՎԵԼ
-                    </a>
+                    </Link>
                 </div>
             </div>
             <div className="third-part">
                 <div className="logo">
-                    <img src={onex} alt="onex" />
+                    <Link to = '/'>
+                        <img src={onex} alt="onex" />
+                    </Link>
                 </div>
                 <div className="nav">
                     <a href="#">Ներմուծում</a>
