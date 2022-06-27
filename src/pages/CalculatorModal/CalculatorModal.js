@@ -1,10 +1,10 @@
 import React from "react";
 import "./calculatorModal.css";
-import usa from "./img/usa.png";
-import russia from "./img/russia.png";
-import china from "./img/china.png";
-import uk from "./img/uk.png";
-import dubai from "./img/dubai.png";
+import usa from "./calculatorModal_img/usa.png";
+import russia from "./calculatorModal_img/russia.png";
+import china from "./calculatorModal_img/china.png";
+import uk from "./calculatorModal_img/uk.png";
+import dubai from "./calculatorModal_img/dubai.png";
 
 export const CalculatorModal = () => {
   

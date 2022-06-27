@@ -15,7 +15,7 @@ const SmartLocker = () => {
             <Button buttonName = 'Ավելին' />
         </div>
         <div className="smart-locker-video">
-            {/* <video src={SmartWallVideo}></video> */}
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Okbsr1S_ZhQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </div>
   )

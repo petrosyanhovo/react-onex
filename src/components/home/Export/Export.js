@@ -1,9 +1,9 @@
 import React from "react";
 import "./export.css";
 import Heading from "../Heading/Heading";
-import area1 from "../Export/img/export_usa.jpg";
-import area2 from "../Export/img/export_rus.jpg";
-import area3 from "../Export/img/docs.png";
+import area1 from "../Export/export_img/export_usa.jpg";
+import area2 from "../Export/export_img/export_rus.jpg";
+import area3 from "../Export/export_img/docs.png";
 
 const Export = () => {
     return (

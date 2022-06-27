@@ -1,7 +1,7 @@
 import React from "react";
 import "../header/header.css";
-import armenia from "../header/img/armenia.png";
-import onex from "../header/img/onex.png";
+import armenia from "../header/header_img/armenia.png";
+import onex from "../header/header_img/onex.png";
 import { CalculatorModal } from "../../pages/CalculatorModal/CalculatorModal";
 
 export const Header = () => {

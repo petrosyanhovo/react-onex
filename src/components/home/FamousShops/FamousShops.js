@@ -12,7 +12,7 @@ function importAll(r) {
 }
 
 const images = importAll(
-    require.context("../FamousShops/img", false, /\.(png|jpe?g|svg)$/)
+    require.context("../FamousShops/famousShops_img", false, /\.(png|jpe?g|svg)$/)
 );
 
 const FamousShops = () => {

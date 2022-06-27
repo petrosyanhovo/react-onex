@@ -1,11 +1,11 @@
 import React from "react";
 import "./shippingPriceList.css";
 import Heading from "../Heading/Heading";
-import usa from "./img/usa.png";
-import dubai from "./img/dubai.png";
-import russia from "./img/russia.png";
-import uk from "./img/uk.png";
-import china from "./img/china.png";
+import usa from "./shippingPriceList_img/usa.png";
+import dubai from "./shippingPriceList_img/dubai.png";
+import russia from "./shippingPriceList_img/russia.png";
+import uk from "./shippingPriceList_img/uk.png";
+import china from "./shippingPriceList_img/china.png";
 const ShippingPriceList = () => {
   const data = [
     {

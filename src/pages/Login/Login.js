@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Button from '../../components/Button/Button'
 import './login.css'
-import LoginImg from '../Login/img/rocket.png'
+import LoginImg from '../Login/login_img/rocket.png'
 import { useForm } from "react-hook-form";
 
 

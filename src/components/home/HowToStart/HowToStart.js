@@ -1,9 +1,9 @@
 import React from "react";
 import "./howToStart.css";
 import Heading from "../Heading/Heading";
-import step1 from "../HowToStart/img/step1.png";
-import step2 from "../HowToStart/img/step2.png";
-import step3 from "../HowToStart/img/step3.png";
+import step1 from "../HowToStart/howToStart_img/step1.png";
+import step2 from "../HowToStart/howToStart_img/step2.png";
+import step3 from "../HowToStart/howToStart_img/step3.png";
 
 const HowToStart = () => {
     return (
