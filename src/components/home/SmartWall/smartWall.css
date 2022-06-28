@@ -1,52 +1,67 @@
 .smart-wall {
-    width: 85%;
-    height: 450px;
-    border-radius: 20px;
-    margin: 50px auto;
-    padding: 50px;
-    display: flex;
-    align-items: center;
-    box-shadow: 0 1px 4px 0 rgb(46 61 73 / 10%);
-    background-color: white;
-    border: 1px solid #f2f4fb;
+  width: 85%;
+  border-radius: 20px;
+  margin: 50px auto;
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  box-shadow: 0 1px 4px 0 rgb(46 61 73 / 10%);
+  background-color: white;
+  border: 1px solid #f2f4fb;
 }
 
-  .smart-wall .stars {
-    display: none;
-  }
+.smart-wall .stars {
+  display: none;
+}
 
-  .smart-wall-video {
-    border: 1px solid black;
-    width: 45%;
-    height: 300px;
-    /* display: none; */
-  }
+.smart-wall .smart-wall-video {
+  width: 45%;
+  margin-right: 6rem;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.smart-wall .smart-wall-video iframe {
+  border-radius: 1.4rem;
+  /* display: none; */
+}
+.smart-wall-content {
+  width: 45%;
+}
 
-  .smart-wall-content {
-    width: 49%;
-  }
+.image2 {
+  width: 560px;
+  height: 315px;
+  border-radius: 1.4rem;
+  object-fit: cover;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border: 1px green solid;
+  background-image: url("./SmartWall_img/smartwall.jpg");
+}
+.smart-wall-content p {
+  text-align: left;
+  margin-left: 20px;
+  line-height: 20px;
+  font-family: "montserratarm-light";
+  color: #222;
+}
 
-  .smart-wall-content p {
-    text-align: left;
-    margin-left: 20px;
-    line-height: 20px;
-    font-family: 'montserratarm-light';
-    color: #222;
-  }
+.smart-wall-content .main-button {
+  text-align: left !important;
+  display: block;
+  margin-left: 20px;
+  margin-top: -20px;
+}
 
-  .smart-wall-content .main-button {
-    text-align: left !important;
-    display: block;
-    margin-left: 20px;
-    margin-top: -20px;
-  }
+.smart-wall h2 {
+  font-size: 42px;
+  color: var(--greenColor);
+  text-align: left;
+}
 
-  .smart-wall h2 {
-    font-size: 42px;
-    color: var(--greenColor);
-    text-align: left;
-  }
-
-  .smart-wall h2 span {
-    color: black;
-  }
+.smart-wall h2 span {
+  color: black;
+}

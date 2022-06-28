@@ -2,13 +2,25 @@ import React from "react";
 import "./smartWall.css";
 import Heading from "../Heading/Heading";
 import Button from "../../Button/Button.js";
+import smartWallImg from "../SmartWall/SmartWall_img/smartwall.jpg";
+import smartWallPlayIcon from "../SmartWall/SmartWall_img/play-circle-outline-icon.png";
 
 const SmartWall = () => {
-
   return (
     <div className="smart-wall">
       <div className="smart-wall-video">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/tHlUncRVzjg" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/tHlUncRVzjg"
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+       <img src={smartWallPlayIcon} alt="" className="image2"/>
+
+  
       </div>
       <div className="smart-wall-content">
         <Heading
