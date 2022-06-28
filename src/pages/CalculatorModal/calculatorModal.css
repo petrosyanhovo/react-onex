@@ -119,7 +119,9 @@
   padding: 0.3rem;
   border-radius: 0.3rem;
 }
-
+.calculator-modal .extra-weight{
+  padding: 1rem;
+}
 .calculator-modal .extra-weight label {
   display: flex;
   justify-content: flex-start;
