@@ -19,7 +19,7 @@
   border: 1px solid rgba(153, 153, 153, 0.314);
   background-color: white;
   position: relative;
-  top: 10%;
+  top: 0;
   border-radius: 10px;
   box-shadow: 0 0 2px 0 rgba(0,0,0,.1),0 2px 6px 0 rgba(0,0,0,.1);
   box-sizing: border-box;

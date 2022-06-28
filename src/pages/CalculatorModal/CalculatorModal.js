@@ -5,14 +5,17 @@ import russia from "./calculatorModal_img/russia.png";
 import china from "./calculatorModal_img/china.png";
 import uk from "./calculatorModal_img/uk.png";
 import dubai from "./calculatorModal_img/dubai.png";
+import { Header } from "../../components/header/Header";
 
-export const CalculatorModal = () => {
+export const CalculatorModal = ({ calculatorModalShow }) => {
     return (
         <div className="calculator-background">
             <div className="calculator-modal">
                 <div className="calculator-header">
                     <h2>Առաքման հաշվիչ</h2>
-                    <i className="fa fa-times"></i>
+                    <div className="close" onClick={calculatorModalShow}>
+                        <i className="fa fa-times" ></i>
+                    </div>
                 </div>
                 <p>
                     Ֆիզիկական անձանց համար բեռնափոխադրման արժեքը հաշվարկվում է
@@ -47,9 +50,6 @@ export const CalculatorModal = () => {
                           </label>
                         </li>
                     </ul>
-                    
-                    
-                    
                     
                     
                 </div>

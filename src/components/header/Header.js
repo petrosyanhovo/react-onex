@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../header/header.css";
 import armenia from "../header/header_img/armenia.png";
 import onex from "../header/header_img/onex.png";
@@ -6,6 +6,13 @@ import {NavLink as Link} from 'react-router-dom'
 import { CalculatorModal } from "../../pages/CalculatorModal/CalculatorModal";
 
 export const Header = () => {
+
+    const [isCalculatorModalShow, setCalculatorModalShow] = useState(false);
+
+    const calculatorModalShow = () =>{
+        setCalculatorModalShow(!isCalculatorModalShow)
+    }
+
     function openModal() {}
 
     return (
@@ -49,7 +56,7 @@ export const Header = () => {
                     <a href="#">Կորպորատիվ</a>
                     <a href="#">Մեծածախի հարցում</a>
                     <a href="#">SMART Լուծումներ</a>
-                    <a href="" onClick={openModal}>
+                    <a onClick={calculatorModalShow}>
                         <i className="fa-solid fa-calculator"></i>
                     </a>
                     <a href="">
@@ -57,6 +64,10 @@ export const Header = () => {
                     </a>
                 </div>
             </div>
+            {
+                isCalculatorModalShow && <CalculatorModal calculatorModalShow = {calculatorModalShow}/>
+            }
+
         </header>
     );
 };
