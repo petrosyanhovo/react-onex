@@ -1,56 +1,71 @@
 .smart-locker {
-    width: 85%;
-    height: 450px;
-    border-radius: 20px;
-    margin: 50px auto;
-    padding: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    box-shadow: 0 1px 4px 0 rgb(46 61 73 / 10%);
-    background-color: white;
-    border: 1px solid #f2f4fb;
+  width: 85%;
+  height: 450px;
+  border-radius: 20px;
+  margin: 50px auto;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 1px 4px 0 rgb(46 61 73 / 10%);
+  background-color: white;
+  border: 1px solid #f2f4fb;
 }
 
-  .smart-locker .stars {
-    display: none;
-  }
+.smart-locker .stars {
+  display: none;
+}
 
-  .smart-locker-video {
-    border: 1px solid black;
-    width: 45%;
-    height: 300px;
-    /* display: none; */
-  }
+.smart-locker-video {
+  width: 45%;
+  height: 300px;
+  margin-right: 6rem;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.smart-locker-video iframe {
+  border-radius: 1.4rem;
+}
 
-  .smart-locker-content {
-    width: 52%;
-  }
+.smart-locker-video .image {
+  border: 0.3px solid;
+  width: 560px;
+  height: 315px;
+  border-radius: 1.4rem;
+  object-fit: cover;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-image: url("./SmartLocker_img/locker.jpg");
+}
 
-  .smart-locker-content p {
-    text-align: left;
-    margin-left: 20px;
-    line-height: 20px;
-    font-family: 'montserratarm-light';
-    color: #222;
-  }
+.smart-locker-content {
+  width: 52%;
+}
 
+.smart-locker-content p {
+  text-align: left;
+  margin-left: 20px;
+  line-height: 20px;
+  font-family: "montserratarm-light";
+  color: #222;
+}
 
-  .smart-locker .main-button {
-    text-align: left !important;
-    display: block;
-    margin-left: 20px;
-    margin-top: -20px;
-  }
+.smart-locker .main-button {
+  text-align: left !important;
+  display: block;
+  margin-left: 20px;
+  margin-top: -20px;
+}
 
-  .smart-locker h2 {
-    font-size: 42px;
-    color: var(--greenColor);
-    text-align: left;
-    /* display: inline-block; */
-  }
+.smart-locker h2 {
+  font-size: 42px;
+  color: var(--greenColor);
+  text-align: left;
+  /* display: inline-block; */
+}
 
-  .smart-locker h2 span {
-    color: black;
-  }
-
+.smart-locker h2 span {
+  color: black;
+}
