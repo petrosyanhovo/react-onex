@@ -6,7 +6,7 @@
   box-sizing: border-box;
   /* text-transform: capitalize; */
   text-decoration: none;
-  transition: all 0.2s linear;
+  /* transition: all 0.2s linear; */
   font-family: 'montserratarm';
 }
 
@@ -106,6 +106,7 @@ header .second-part img {
 header .third-part {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 0 4rem;
 }
 
@@ -120,25 +121,29 @@ header .third-part {
   display: flex;
   align-items: center;
 }
+
 header .third-part .logo {
   cursor: pointer;
 }
+
+
 header .third-part .nav a i {
   font-size: 1.5rem;
 }
 header .third-part .nav a i:hover {
   color: black;
 }
-header .third-part a {
+header .third-part .nav a {
   padding: 0.2rem;
   margin-left: 0.2rem;
   font-size: 14px;
   color: black;
+  cursor: pointer;
 }
 
-header .third-part a:hover {
+header .third-part .nav a:hover {
   color: #5dba2f;
   border-bottom: solid #5dba2f 2px;
   border-top: solid #5dba2f 2px;
-  padding: 1rem 0;
+  padding: 1rem .2rem;
 }
