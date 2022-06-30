@@ -1,7 +1,7 @@
 import React from "react";
 import "./heading.css";
 
-const Heading = ({ greenHeading, heading, text, text2 }) => {
+const Heading = ({ greenHeading, heading, text }) => {
     return (
         <div className="heading">
             <div className="stars">
@@ -17,8 +17,7 @@ const Heading = ({ greenHeading, heading, text, text2 }) => {
             </h2>
             <p>
                 {text}
-                <br/>
-                {text2}
+
             </p>
         </div>
     );

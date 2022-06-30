@@ -3,6 +3,8 @@ import "./smartServices.css";
 import Heading from "../Heading/Heading";
 import SmartServiceImg from "../SmartServices/smartServices_img/smart-service.png";
 import Button from "../../Button/Button";
+import {NavLink as Link} from 'react-router-dom'
+
 function importAll(r) {
   let images = {};
   r.keys().map((item, index) => {
@@ -61,7 +63,12 @@ const SmartServices = () => {
             <span>Բաժանել մասերի</span>{" "}
           </p>
         
-          <Button  buttonName="Ավելին"/>
+          
+
+<Link to='/smartservices' >
+<Button  buttonName="Ավելին"/>
+                        
+                    </Link>
 
         </div>
       </div>
