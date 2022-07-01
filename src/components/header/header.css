@@ -126,6 +126,10 @@ header .third-part .logo {
   cursor: pointer;
 }
 
+header .third-part .logo .second {
+  display: none;
+}
+
 
 header .third-part .nav a i {
   font-size: 1.5rem;
@@ -181,11 +185,23 @@ header .third-part .right {
     padding: 0.1rem;
     margin-left: 0.1rem;
   }
+
+  header .third-part .logo .second {
+    display: inline;
+  }
+
+  header .third-part .logo .first {
+    display: none;
+  }
 }
 
 @media (max-width: 920px) {
   header .third-part .right .nav{
     display : none;
+  }
+
+  header .third-part  {
+    padding: 0 25px;
   }
 
   /* Add className='active' to <nav>, for navbar */
@@ -202,12 +218,63 @@ header .third-part .right {
   }
   
   header .third-part .right nav.active a {
-    padding: 15px 10px;
-    border-bottom: 1px solid rgba(153, 153, 153, 0.301);
+    padding: 20px 25px;
+    font-size: 16px;
+    /* font-family: 'montserratarm'; */
+    border-bottom: 1px solid rgba(153, 153, 153, 0.2);
     text-align: left;
   }
 
   header .third-part .hamburger {
     display : inline;
   }
+}
+
+@media (max-width: 772px) {
+  header .second-part  {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  header .third-part .right nav.active {
+    top: 185px;
+  }
+}
+
+@media (max-width: 530px) {
+  header .first-part  {
+    padding: 35px 20px;
+  }
+
+  header .third-part .nav a i {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 412px) {
+  header .third-part .right nav.active {
+    top: 185px;
+  }
+}
+
+@media (max-width: 354px) {
+  header .second-part .link {
+    display: none;
+  }
+
+  header .second-part .login-btn {
+    padding: 10px;
+  }
+
+  .btn-1, .btn-2 {
+    padding: 15px 10px;
+  }
+}
+
+@media (max-width: 320px) {
+  .login-btn {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
 }

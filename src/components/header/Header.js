@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../header/header.css";
 import armenia from "../header/header_img/armenia.png";
 import onex from "../header/header_img/onex.png";
+import onex2 from "../header/header_img/favicon.png";
 import { NavLink as Link } from "react-router-dom";
 import { CalculatorModal } from "../../pages/CalculatorModal/CalculatorModal";
 
@@ -46,8 +47,11 @@ export const Header = () => {
             <div className="third-part">
                 <div className="hamburger fa-solid fa-bars "></div>
                 <div className="logo">
-                    <Link to="/">
+                    <Link className="first" to="/">
                         <img src={onex} alt="onex" />
+                    </Link>
+                    <Link className="second" to="/">
+                        <img src={onex2} alt="onex" />
                     </Link>
                 </div>
                 <div className="right">
