@@ -2,16 +2,15 @@ import React, { useState } from "react";
 import "../header/header.css";
 import armenia from "../header/header_img/armenia.png";
 import onex from "../header/header_img/onex.png";
-import {NavLink as Link} from 'react-router-dom'
+import { NavLink as Link } from "react-router-dom";
 import { CalculatorModal } from "../../pages/CalculatorModal/CalculatorModal";
 
 export const Header = () => {
-
     const [isCalculatorModalShow, setCalculatorModalShow] = useState(false);
 
-    const calculatorModalShow = () =>{
-        setCalculatorModalShow(!isCalculatorModalShow)
-    }
+    const calculatorModalShow = () => {
+        setCalculatorModalShow(!isCalculatorModalShow);
+    };
 
     function openModal() {}
 
@@ -34,40 +33,44 @@ export const Header = () => {
                     </a>
                 </div>
                 <div className="login-btn">
-                    <Link to='/login' className="btn-1">
+                    <Link to="/login" className="btn-1">
                         <i className="fa fa-sign-in"></i>
                         ՄՈՒՏՔ
                     </Link>
-                    <Link to='/register' className="btn-2">
+                    <Link to="/register" className="btn-2">
                         <i className="fa fa-user-plus"></i>
                         ԳՐԱՆՑՎԵԼ
                     </Link>
                 </div>
             </div>
             <div className="third-part">
+                <div className="hamburger fa-solid fa-bars "></div>
                 <div className="logo">
-                    <Link to = '/'>
+                    <Link to="/">
                         <img src={onex} alt="onex" />
                     </Link>
                 </div>
-                <div className="nav">
-                    <a href="#">Ներմուծում</a>
-                    <a href="#">Արտահանում</a>
-                    <a href="#">Կորպորատիվ</a>
-                    <a href="#">Մեծածախի հարցում</a>
-                    <a href="#">SMART Լուծումներ</a>
-                    <a onClick={calculatorModalShow}>
-                        <i className="fa-solid fa-calculator"></i>
-                    </a>
-                    <a href="">
-                        <i className="fa-solid fa-search"></i>
-                    </a>
+                <div className="right">
+                    <nav className="nav">
+                        <a href="#">Ներմուծում</a>
+                        <a href="#">Արտահանում</a>
+                        <a href="#">Կորպորատիվ</a>
+                        <a href="#">Մեծածախի հարցում</a>
+                        <a href="#">SMART Լուծումներ</a>
+                    </nav>
+                    <div className="calc-and-search">
+                        <a onClick={calculatorModalShow}>
+                            <i className="fa-solid fa-calculator"></i>
+                        </a>
+                        <a href="">
+                            <i className="fa-solid fa-search"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
-            {
-                isCalculatorModalShow && <CalculatorModal calculatorModalShow = {calculatorModalShow}/>
-            }
-
+            {isCalculatorModalShow && (
+                <CalculatorModal calculatorModalShow={calculatorModalShow} />
+            )}
         </header>
     );
 };

@@ -136,14 +136,78 @@ header .third-part .nav a i:hover {
 header .third-part .nav a {
   padding: 0.2rem;
   margin-left: 0.2rem;
-  font-size: 14px;
+  font-size: 13px;
   color: black;
   cursor: pointer;
+  font-family: 'montserratarm-light';
 }
 
 header .third-part .nav a:hover {
   color: #5dba2f;
-  border-bottom: solid #5dba2f 2px;
   border-top: solid #5dba2f 2px;
-  padding: 1rem .2rem;
+  padding: 1.5rem .2rem;
+}
+
+header .third-part .hamburger {
+  cursor: pointer;
+  font-size: 1.8rem;
+  display : none
+}
+
+header .third-part .calc-and-search a {
+  padding: 1.5rem .5rem;
+  margin-left: 0.2rem;
+  color: black;
+  cursor: pointer;
+  font-family: 'montserratarm-light';
+}
+
+header .third-part .calc-and-search a:hover {
+  color: #5dba2f;
+  border-top: solid #5dba2f 2px;
+}
+
+header .third-part .calc-and-search a i {
+  font-size: 20px;
+}
+
+header .third-part .right {
+  display: flex;
+}
+/* MEDIA  */
+
+@media (max-width: 960px) {
+  header .third-part .nav a {
+    padding: 0.1rem;
+    margin-left: 0.1rem;
+  }
+}
+
+@media (max-width: 920px) {
+  header .third-part .right .nav{
+    display : none;
+  }
+
+  /* Add className='active' to <nav>, for navbar */
+  header .third-part .right nav.active {
+    display : flex;
+    flex-direction: column;
+    position: absolute;
+    /* margin-right: 1000px; */
+    left: 0;
+    top: 160px;
+    width: 100%;
+    /* right: 1000px; */
+    background-color: white;
+  }
+  
+  header .third-part .right nav.active a {
+    padding: 15px 10px;
+    border-bottom: 1px solid rgba(153, 153, 153, 0.301);
+    text-align: left;
+  }
+
+  header .third-part .hamburger {
+    display : inline;
+  }
 }
