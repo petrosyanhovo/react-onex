@@ -4,13 +4,11 @@ import Heading from "../Heading/Heading";
 
 const Tracking = () => {
     return (
-        <div className="tracking block-shadow elem-style">
+        <div className="tracking elem-style">
             <Heading
                 greenHeading="ՀԵՏԵՎԵԼ"
                 heading="ԱՌԱՔԱՆՈՒՆ"
-                text="Մուտքագրեք բեռնակրման համարը՝ առաքման ընթացքին հետևելու համար։
-
-"
+                text="Մուտքագրեք բեռնակրման համարը՝ առաքման ընթացքին հետևելու համար։"
             />
 
             <div className="trackInput">
@@ -21,7 +19,7 @@ const Tracking = () => {
                     <div>
                         <a className="tracking-btn">
                             <i className="fas fa-search"></i>
-                            Փնտրել
+                            <span>Փնտրել</span>
                         </a>
                     </div>
                 </form>
