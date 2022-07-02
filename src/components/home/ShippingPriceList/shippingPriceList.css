@@ -69,3 +69,42 @@ td img {
   margin-right: 0.4rem;
   vertical-align: middle;
 }
+
+/* MEDIA  */
+
+@media (max-width: 1200px) {
+
+  .shippingpricelist table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+    height: 80vh;
+  } 
+}
+
+@media (max-width: 980px) {
+  .shippingpricelist h2 {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .shippingpricelist table {
+    margin-top: -30px;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .shippingpricelist h2 {
+    font-size: 26px;
+    padding-bottom: -20px;
+  }
+}
+
+@media (max-width: 400px) {
+
+  .shippingpricelist h2 {
+    font-size: 16px;
+    padding-bottom: -20px;
+  }
+}
