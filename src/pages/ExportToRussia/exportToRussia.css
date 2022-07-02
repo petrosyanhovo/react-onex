@@ -1,0 +1,46 @@
+.export-to-russia .export-to-russia-header {
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    align-items: center;
+}
+
+.export-to-russia .export-to-russia-conditions {
+    width: 85%;
+    height: 250px;
+    background-color: white;
+    border: 1px solid #fcfcfc;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin: 50px auto 20px auto;
+}
+
+.export-to-russia .export-to-russia-conditions .export-to-russia-conditions-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px;
+}
+
+.export-to-russia .export-to-russia-calculation {
+    width: 70%;
+    margin: auto;
+}
+
+.export-to-russia .export-to-russia-calculation .export-to-russia-calculation-example {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 50px;
+}
+
+.export-to-russia .export-to-russia-calculation .export-to-russia-calculation-example .export-to-russia-calculation-example-price {
+    /* width: 85%; */
+    height: 80px;
+    background-color: white;
+    border: 1px solid #fcfcfc;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+}
