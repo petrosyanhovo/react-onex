@@ -1,3 +1,8 @@
+.smart-services-more {
+    width: 85%;
+    margin: 0 auto;
+  }
+  
 .smart-services-more .smart-services-more-head {
     
     margin: 50px auto;
@@ -11,11 +16,6 @@
 
 .smart-services-more .stars {
     display: none;
-  }
-
-  .smart-services-more {
-    width: 85%;
-    margin: 0 auto;
   }
 
 .smart-services-more .smart-services-more-head .smart-services-more-head-title {

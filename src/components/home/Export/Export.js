@@ -4,6 +4,7 @@ import Heading from "../Heading/Heading";
 import area1 from "../Export/export_img/export_usa.jpg";
 import area2 from "../Export/export_img/export_rus.jpg";
 import area3 from "../Export/export_img/docs.png";
+import { NavLink as Link } from "react-router-dom";
 
 const Export = () => {
     return (
@@ -16,7 +17,9 @@ const Export = () => {
             <div className="export-areas">
                 <div className="export-one-area">
                     <img src={area1} alt="" />
-                    <a href="">Արտահանում ՀՀ-ից դեպի ԱՄՆ</a>
+                    <Link to = '/exporttoUSA' >
+                        <a href="">Արտահանում ՀՀ-ից դեպի ԱՄՆ</a>
+                    </Link>
                 </div>
                 <div className="export-one-area">
                     <img src={area2} alt="" />

@@ -11,15 +11,14 @@ import { Search } from "./pages/Search/Search";
 function App() {
   return (
     <div className="App">
-      {/* <Search /> */}
       <Header />
-      {/* <ExportToUSA /> */}
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
-        <Route path="/smartservices" element={<SmartServicesMore />} />
         <Route path="/search" element={<Search />} />
+        <Route path="/smartservices" element={<SmartServicesMore />} />
+        <Route path="/exporttoUSA" element={<ExportToUSA />} />
       </Routes>
       {/* <CalculatorModal /> */}
       <Footer />
