@@ -6,12 +6,13 @@ import Register from "./pages/Register/Register"
 import {Navigate, Routes, Route} from "react-router-dom"
 import HomePage from "./pages/HomePage/HomePage";
 import SmartServicesMore from "./pages/SmartServicesMore/SmartServicesMore";
+import ExportToUSA from "./pages/ExportToUSA/ExportToUSA";
 
 function App() {
   return (
     <div className="App">
       <Header />
-      {/* <SmartServicesMore /> */}
+      <ExportToUSA />
       <Routes>
         <Route path = '/' element = {<HomePage />} />
         <Route path = '/login' element = {< Login />} />
