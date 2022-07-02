@@ -7,11 +7,11 @@
   overflow: hidden;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
-@media screen and (max-width: 700px) {
+/* @media screen and (max-width: 700px) {
   .container-slider {
     margin: 100px 10px 0;
-  }
-}
+  } */
+/* } */
 .slide {
   width: 100%;
   height: 100%;
@@ -79,4 +79,10 @@
 
 .dot:hover {
   background: var(--greenColor);
+}
+
+@media (max-width: 960px) {
+  .container-slider {
+    display: none;
+  }
 }

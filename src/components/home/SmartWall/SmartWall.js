@@ -2,7 +2,6 @@ import React from "react";
 import "./smartWall.css";
 import Heading from "../Heading/Heading";
 import Button from "../../Button/Button.js";
-import smartWallImg from "../SmartWall/SmartWall_img/smartwall.jpg";
 import smartWallPlayIcon from "../SmartWall/SmartWall_img/play-circle-outline-icon.png";
 
 const SmartWall = () => {
