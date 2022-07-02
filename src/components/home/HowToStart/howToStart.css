@@ -1,6 +1,6 @@
 .howtostart {
   width: 85%;
-  height: 600px;
+  /* height: 600px; */
   background-color: white;
   border: 1px solid #fcfcfc;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
@@ -34,4 +34,44 @@
 
 .howtostart .steps .step p a {
   color: var(--greenColor);
+}
+
+@media (max-width: 970px) {
+
+  .howtostart .steps {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+  }
+
+  .howtostart .steps .step {
+    width: 100%;
+  }
+
+  .howtostart .steps .step img {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 680px) {
+
+  .heading h2 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 500px) {
+
+  .heading h2 {
+    font-size: 24px;
+  }
+
+}
+
+@media (max-width: 320px) {
+
+  .heading h2 {
+    font-size: 18px;
+  }
+
 }

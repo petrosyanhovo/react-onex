@@ -18,10 +18,10 @@ const HowToStart = () => {
                 <div className="step">
                     <img src={step1} alt="" height={60} width={60} />
                     <p>
-                        
-                        {/* <Link to = '/register'><a>Գրանցվե՛ք  </a></Link> */}
-                        Գրանցվե՛ք մեր կայքում <br/> և անվճար ստացե՛ք
-                        առաքման հասցեներ
+                        <Link to="/register">
+                            <a>Գրանցվե՛ք </a>
+                        </Link>
+                        մեր կայքում <br /> և անվճար ստացե՛ք առաքման հասցեներ
                     </p>
                 </div>
                 <div className="step">
