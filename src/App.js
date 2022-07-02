@@ -6,22 +6,24 @@ import Register from "./pages/Register/Register";
 import { Navigate, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage/HomePage";
 import SmartServicesMore from "./pages/SmartServicesMore/SmartServicesMore";
+import ExportToUSA from "./pages/ExportToUSA/ExportToUSA";
 
 function App() {
-    return (
-        <div className="App">
-            <Header />
-            {/* <SmartServicesMore /> */}
-            <Routes>
-                <Route path = '/' element = {<HomePage />} />
-                <Route path="/login" element={<Login />} />
-                <Route path="/register" element={<Register />} />
-                <Route path="/smartservices" element={<SmartServicesMore />} />
-            </Routes>
-            {/* <CalculatorModal /> */}
-            <Footer />
-        </div>
-    );
+  return (
+    <div className="App">
+      <Header />
+      <ExportToUSA />
+      <Routes>
+        <Route path = '/' element = {<HomePage />} />
+        <Route path = '/login' element = {< Login />} />
+        <Route path = '/register' element = {< Register />} />
+        <Route path = '/smartservices' element = {< SmartServicesMore />} />
+      </Routes>
+      {/* <CalculatorModal /> */}
+      <Footer />
+    </div>
+  );
+
 }
 
 export default App;
