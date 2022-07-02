@@ -1,0 +1,61 @@
+.container {
+  width: 95%;
+  margin: 0 auto;
+  padding: 0 15%;
+}
+.container .content {
+  display: flex;
+  align-items: center;
+}
+
+.container .content .first-part {
+  width: 47%;
+}
+
+.container .content .first-part h2 {
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+.container .content .first-part h2 span {
+  color: var(--greenColor);
+}
+.container .content .first-part p {
+  font-size: 25px;
+  text-align: left;
+}
+.container .content .second-part {
+  width: 47%;
+}
+.container .content .second-part img {
+  width: 100%;
+}
+.container form {
+  display: flex;
+  margin: 2.5rem 0;
+}
+.container form input {
+  width: 70%;
+  border: 1px solid rgba(153, 153, 153, 0.3);
+  padding: 1rem 0.5rem;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.container form input::placeholder {
+  color: rgba(153, 153, 153, 0.6);
+}
+.container form button {
+  height: 100%;
+  width: 4rem;
+  background: linear-gradient(95deg, #2632d3 20%, #5543f1 80%) !important;
+  padding: 0.6rem 0;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.container form button i {
+  font-size: 2rem;
+  color: white;
+}

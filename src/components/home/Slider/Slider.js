@@ -22,6 +22,8 @@ export default function Slider() {
     }
   };
 
+
+  
   const prevSlide = () => {
     if (slideIndex > 0) {
       setSlideIndex(slideIndex - 1);
