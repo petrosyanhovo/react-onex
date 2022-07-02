@@ -17,7 +17,7 @@ const Tracking = () => {
                         <input type="text" placeholder="1z81rf250331989368" />
                     </div>
                     <div>
-                        <a className="tracking-btn">
+                        <a href="" className="tracking-btn">
                             <i className="fas fa-search"></i>
                             <span>Փնտրել</span>
                         </a>

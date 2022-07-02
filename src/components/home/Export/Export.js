@@ -18,18 +18,20 @@ const Export = () => {
                 <div className="export-one-area">
                     <img src={area1} alt="" />
                     <Link to = '/exporttoUSA' >
-                        <a href="">Արտահանում ՀՀ-ից դեպի ԱՄՆ</a>
+                        <p>Արտահանում ՀՀ-ից դեպի ԱՄՆ</p>
                     </Link>
                 </div>
                 <div className="export-one-area">
                     <img src={area2} alt="" />
-                    <a href="">Արտահանում ՀՀ-ից դեպի Ռուսաստան</a>
+                    <Link to = '/exporttorussia' >
+                        <p>Արտահանում ՀՀ-ից դեպի Ռուսաստան</p>
+                    </Link>
                 </div>
                 <div className="export-one-area">
                     <img src={area3} alt="" />
-                    <a href="">
-                        Փաստաթղթերի առաքում ՀՀ-ից դեպի աշխարհի ցանկացած կետ
-                    </a>
+                    <Link to = '/exportdocuments' >
+                        <p> Փաստաթղթերի առաքում ՀՀ-ից դեպի աշխարհի ցանկացած կետ </p>
+                    </Link>
                 </div>
             </div>
         </div>

@@ -1,0 +1,19 @@
+.export-documents {
+    width: 85%;
+}
+
+.export-documents .export-documents-header {
+    margin: 50px ;
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    align-items: center;
+}
+
+.export-documents .export-documents-header .export-documents-header-image {
+    width: 50%;
+}
+
+.export-documents .export-documents-header .export-documents-header-image img {
+    width: 100%;
+}

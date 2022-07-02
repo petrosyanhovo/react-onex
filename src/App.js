@@ -9,12 +9,12 @@ import SmartServicesMore from "./pages/SmartServicesMore/SmartServicesMore";
 import ExportToUSA from "./pages/ExportToUSA/ExportToUSA";
 import { Search } from "./pages/Search/Search";
 import ExportToRussia from "./pages/ExportToRussia/ExportToRussia";
+import ExportDocuments from "./pages/ExportDocuments/ExportDocuments";
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <ExportToRussia />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/login" element={<Login />} />
@@ -22,6 +22,8 @@ function App() {
         <Route path="/search" element={<Search />} />
         <Route path="/smartservices" element={<SmartServicesMore />} />
         <Route path="/exporttoUSA" element={<ExportToUSA />} />
+        <Route path="/exporttorussia" element={<ExportToRussia />} />
+        <Route path="/exportdocuments" element={<ExportDocuments />} />
       </Routes>
       {/* <CalculatorModal /> */}
       <Footer />
