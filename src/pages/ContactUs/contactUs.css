@@ -1,0 +1,85 @@
+.container {
+  margin: 0 auto;
+  
+}
+.container h2 {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+  margin: 25px 0;
+  color: black;
+  text-align: left;
+}
+.container .schedule-block {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.43);
+  border-radius: 1rem;
+  height: 10rem;
+  width: 100%;
+  padding: 1rem 1.5rem;
+  text-align: left;
+}
+.container .schedule-block .schedule-title {
+  margin-top: 15px;
+}
+.container .schedule-block .schedule-title h3 {
+  font-size: 20px;
+  color: black;
+  font-weight: bolder;
+  margin: 10px 0;
+}
+.container .schedule-block .schedule-title p {
+  font-size: 14px;
+  font-weight: lighter;
+  line-height: 2;
+}
+.container .schedule-block .schedule-title p span {
+  color: var(--greenColor);
+  font-weight: bolder;
+}
+
+.container .schedule-block .schedule-title a {
+  color: var(--greenColor);
+  line-height: 2;
+}
+
+.container .address-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  height: 23.5rem;
+}
+.container .address-container .map {
+  box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.43);
+  padding: 2rem;
+  border-radius: 1rem;
+  width: 50%;
+}
+
+.container .address-container .map iframe {
+  width: 100%;
+}
+.container .address-container .address {
+  box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.43);
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: left;
+  background-color: white;
+  height: 50rem;
+  width: 45%;
+}
+.container .address-container .address p span {
+  font-size: 12px;
+  color: rgba(153, 153, 153, 0.707);
+}
+
+.container .address-container .address p i {
+  color: var(--greenColor);
+  margin-right: 10px;
+  font-weight: bolder;
+}
+.container .address-container .address i.blue {
+  color: rgb(0, 166, 255);
+}

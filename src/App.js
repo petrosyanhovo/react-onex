@@ -10,10 +10,11 @@ import ExportToUSA from "./pages/ExportToUSA/ExportToUSA";
 import { Search } from "./pages/Search/Search";
 import ExportToRussia from "./pages/ExportToRussia/ExportToRussia";
 import ExportDocuments from "./pages/ExportDocuments/ExportDocuments";
-
+import { ContactUs } from "./pages/ContactUs/ContactUs";
 function App() {
   return (
     <div className="App">
+      <ContactUs/>
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />

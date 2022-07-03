@@ -1,7 +1,7 @@
 import React from "react";
 import "./search.css";
 import track from "./search-img/track-package.png";
-
+import { Test } from "./Test";
 export const Search = () => {
   return (
     <div className="container">
@@ -21,10 +21,11 @@ export const Search = () => {
       </div>
       <form action="">
         <input type="text" placeholder="Մուտքագրեք բեռնային համարը.. . " />
-        <button type="submit"  >
+        <button type="submit">
           <i className="fas fa-search"></i>{" "}
         </button>
       </form>
+      {/* <Test /> */}
     </div>
   );
 };
