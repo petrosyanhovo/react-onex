@@ -14,7 +14,6 @@ import { ContactUs } from "./pages/ContactUs/ContactUs";
 function App() {
   return (
     <div className="App">
-      <ContactUs/>
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
@@ -25,6 +24,7 @@ function App() {
         <Route path="/exporttoUSA" element={<ExportToUSA />} />
         <Route path="/exporttorussia" element={<ExportToRussia />} />
         <Route path="/exportdocuments" element={<ExportDocuments />} />
+        <Route path="/contact" element={<ContactUs />} />
       </Routes>
       {/* <CalculatorModal /> */}
       <Footer />

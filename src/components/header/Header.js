@@ -25,7 +25,7 @@ export const Header = () => {
       </div>
       <div className="second-part">
         <div className="link">
-          <a href="https://onex.am/user/contact">Հետադարձ կապ</a>|
+          <Link to="/contact">Հետադարձ կապ</Link>|
           <a href="https://onex.am/pages/terms">Պայմաններ </a>|
           <a href="">(060)750-350</a>|{/* modal  */}
           <a href="https://onex.am/shops">Խանութներ</a>|
