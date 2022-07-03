@@ -1,6 +1,8 @@
 .container {
   margin: 0 auto;
-  
+  height: auto;
+  padding: 0;
+  width: 80%;
 }
 .container h2 {
   font-size: 2.4rem;
@@ -10,6 +12,7 @@
   color: black;
   text-align: left;
 }
+
 .container .schedule-block {
   display: flex;
   justify-content: space-between;
@@ -49,13 +52,15 @@
   display: flex;
   justify-content: space-between;
   margin-top: 3rem;
-  height: 23.5rem;
+  /* height: 23.5rem; */
+  height: auto;
 }
 .container .address-container .map {
   box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.43);
   padding: 2rem;
   border-radius: 1rem;
   width: 50%;
+  height: 50%;
 }
 
 .container .address-container .map iframe {
@@ -69,6 +74,10 @@
   background-color: white;
   height: 50rem;
   width: 45%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 .container .address-container .address p span {
   font-size: 12px;
