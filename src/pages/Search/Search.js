@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import "./search.css";
 import track from "./search-img/track-package.png";
-import { Test } from "./Test";
 export const Search = () => {
+  const [flag, setFlag] = useState(false);
+
   return (
     <div className="container">
       <div className="content">
@@ -21,11 +22,14 @@ export const Search = () => {
       </div>
       <form action="">
         <input type="text" placeholder="Մուտքագրեք բեռնային համարը.. . " />
-        <button type="submit">
-          <i className="fas fa-search"></i>{" "}
+        <button
+          type="submit"
+          onMouseOver={() => setFlag(true)}
+          onMouseLeave={() => setFlag(false)}
+        >
+          <i className={flag ? "fas fa-arrow-right" : "fas fa-search"}></i>
         </button>
       </form>
-      {/* <Test /> */}
     </div>
   );
 };

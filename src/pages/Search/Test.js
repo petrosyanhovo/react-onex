@@ -16,6 +16,7 @@ export const Test = () => {
     <div>
       <div>
         <div
+        className={isHovering ? 'fas fa-search': 'fas fa-home'}
           style={{
             backgroundColor: isHovering ? "salmon" : "",
             color: isHovering ? "white" : "",
@@ -23,7 +24,6 @@ export const Test = () => {
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >
-          Hover me
         </div>
       </div>
     </div>
