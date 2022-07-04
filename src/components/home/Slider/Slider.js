@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
+
 import "./Slider.css";
 import BtnSlider from "./BtnSlider";
 import dataSlider from "./dataSlider";
@@ -7,11 +8,18 @@ import img2 from "../Slider/img/img2.jpg";
 import img3 from "../Slider/img/img3.jpg";
 import img4 from "../Slider/img/img4.jpg";
 
-const images = [img1,img2,img3,img4]
+const images = [img1, img2, img3, img4];
+
+
+
 
 export default function Slider() {
   const [slideIndex, setSlideIndex] = useState(0);
-  const lengthOfDataSlide = dataSlider.length
+  const lengthOfDataSlide = dataSlider.length;
+
+  useEffect(() => {
+    setInterval(nextSlide, 1000);
+  }, []);
 
   const nextSlide = () => {
     // console.log('nextSlide', slideIndex, dataSlider.length);
@@ -22,8 +30,6 @@ export default function Slider() {
     }
   };
 
-
-  
   const prevSlide = () => {
     if (slideIndex > 0) {
       setSlideIndex(slideIndex - 1);
@@ -35,14 +41,14 @@ export default function Slider() {
   const moveDot = (index) => {
     setSlideIndex(index);
   };
-//   console.log(77, slideIndex, images[slideIndex]);
+  //   console.log(77, slideIndex, images[slideIndex]);
 
   return (
-    <div className="container-slider" >
+    <div className="container-slider">
       {dataSlider.map((obj, index) => {
         // console.log(23232,obj.id)
         return (
-          <div 
+          <div
             key={obj.id}
             className={slideIndex === index ? "slide active-anim" : "slide"}
           >
@@ -53,7 +59,7 @@ export default function Slider() {
       <BtnSlider moveSlide={nextSlide} direction={"next"} />
       <BtnSlider moveSlide={prevSlide} direction={"prev"} />
 
-      <div className="container-dots" >
+      <div className="container-dots">
         {Array.from({ length: dataSlider.length }).map((item, index) => (
           <div
             key={index}
@@ -62,6 +68,6 @@ export default function Slider() {
           ></div>
         ))}
       </div>
-    </div>  
+    </div>
   );
 }
