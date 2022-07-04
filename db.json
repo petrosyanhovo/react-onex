@@ -78,6 +78,41 @@
       "password": "sdss",
       "confirmPassword": "ddddd",
       "id": 3
+    },
+    {
+      "email": "hov_narek@mail.ru",
+      "phone": "+37477938658",
+      "password": "a",
+      "confirmPassword": "a",
+      "id": 4
+    },
+    {
+      "email": "hov_narek@mail.ru",
+      "phone": "",
+      "password": "ds",
+      "confirmPassword": "ds",
+      "id": 5
+    },
+    {
+      "email": "hovnarek@gmail.com",
+      "phone": "",
+      "password": "q",
+      "confirmPassword": "q",
+      "id": 6
+    },
+    {
+      "email": "hov_narek@mail.ru",
+      "phone": "",
+      "password": "w",
+      "confirmPassword": "w",
+      "id": 7
+    },
+    {
+      "email": "hovnarek@gmail.com",
+      "phone": "+37477938658",
+      "password": "s",
+      "confirmPassword": "s",
+      "id": 8
     }
   ]
 }
