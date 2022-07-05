@@ -19,7 +19,7 @@ const HowToStart = () => {
                     <img src={step1} alt="" height={60} width={60} />
                     <p>
                         <Link to="/register">
-                            <a>Գրանցվե՛ք </a>
+                            Գրանցվե՛ք  
                         </Link>
                         մեր կայքում <br /> և անվճար ստացե՛ք առաքման հասցեներ
                     </p>
