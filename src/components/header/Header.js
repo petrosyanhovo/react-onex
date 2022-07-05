@@ -29,7 +29,10 @@ export const Header = () => {
           <a href="https://onex.am/pages/terms">Պայմաններ </a>|
           <a href="">(060)750-350</a>|{/* modal  */}
           <a href="https://onex.am/shops">Խանութներ</a>|
+          <a href="https://onex.am/shops">Խանութներ2</a>|
+
           <a href="#">
+
             <img src={armenia} /> Հայերեն
           </a>
         </div>
