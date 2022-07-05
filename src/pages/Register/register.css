@@ -63,11 +63,11 @@
     color: rgba(153, 153, 153, 0.575);
 }
 
-.register .register-content .register-form span {
+/* .register .register-content .register-form span {
     color:  #a94442;
     font-size: .8rem;
-    margin: .5rem;
-}
+    margin: .5rem; 
+} */
 
 .register .register-content .register-form button {
     width: 500px;
@@ -76,5 +76,11 @@
     border: none;
     font-family: 'montserratarm-bold';
     font-size: 18px;
+    cursor: pointer;
+    padding: 20px 50px;
+    border-radius: 0.6rem;
+    margin-top: 20px;
+    display: inline-block;
 }
+
 

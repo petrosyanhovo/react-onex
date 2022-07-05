@@ -3,6 +3,7 @@ import './smartServicesMore.css'
 import Heading from '../../components/home/Heading/Heading'
 import SmartServicesImg from '../../components/home/SmartServices/smartServices_img/smart-service.png'
 import SmartServicesUsageImg from '../SmartServicesMore/smartServicesMore_img/smart-services-usage-img.png'
+
 function importAll(r) {
   let images = {};
   r.keys().map((item, index) => {
@@ -23,7 +24,6 @@ const SmartServicesMore = () => {
     fetch('http://localhost:3000/posts')
     .then(response => response.json())
     .then(json => setSmartServicesDesc(json));
-    console.log(smartServicesDesc)
   }, [])
 
   return (
@@ -47,7 +47,7 @@ const SmartServicesMore = () => {
         <div className="smart-services-more-row">
           <div className="smart-services-more-row-title">
             <div className="left">
-              { <img src={images[post.imgURL]} /> }
+              { <img src={images[post.imgURL]} alt = "" /> }
             </div>
             <div className="right">
               <h2>{post.title}</h2>

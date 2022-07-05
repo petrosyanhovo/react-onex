@@ -7,14 +7,13 @@ import { useForm } from "react-hook-form";
 
 const Login = () => {
 
-const [input, setInput] = useState('');
 const { register, handleSubmit, formState: { errors } } = useForm();
 const onSubmit = data => console.log(data);
 
   return (
     <div className='login'>
         <div className='login-image'>
-            <img src={LoginImg}></img>
+            <img src={LoginImg} alt = ""></img>
         </div>
         <div className='login-content'>
             <h1 className='login-title'>ՄՈՒՏՔ</h1>
@@ -26,13 +25,6 @@ const onSubmit = data => console.log(data);
                 {errors.name && errors.name.type === "required" && <span>Այս դաշտն անհրաժեշտ է լրացնել:</span>}
                 <Button buttonName = 'ՄՈՒՏՔ' />
             </form>
-            {/* <form onSubmit={handleSubmit(onSubmit)}>
-      <label htmlFor="name">Name</label>
-      <input id="name" {...register('name', { required: true, maxLength: 30 })} />
-      {errors.name && errors.name.type === "required" && <span>This is required</span>}
-      {errors.name && errors.name.type === "maxLength" && <span>Max length exceeded</span> }
-      <input type="submit" />
-    </form> */}
         </div>
 
     </div>
