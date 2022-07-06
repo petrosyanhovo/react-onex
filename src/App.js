@@ -12,6 +12,7 @@ import ExportToRussia from "./pages/ExportToRussia/ExportToRussia";
 import ExportDocuments from "./pages/ExportDocuments/ExportDocuments";
 import { ContactUs } from "./pages/ContactUs/ContactUs";
 import Orders from "./pages/Orders/Orders"
+import Shops from "./pages/Shops/Shops";
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
     <div className="App">
       
       <Header />
+      {/* <Shops /> */}
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/login" element={<Login />} />
