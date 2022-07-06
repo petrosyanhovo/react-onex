@@ -60,14 +60,8 @@ const Register = () => {
     },
   ];
 
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  // };
-
   const onChange = (e) => {
-    // console.log(users);
     setUsers({ ...users, [e.target.name]: e.target.value });
-    
   };
 
 
@@ -75,13 +69,6 @@ const Register = () => {
     e.preventDefault();
     console.log(users);
     await axios.post("http://localhost:3000/users", users)
-    setUsers({
-      email: '',
-      phone: '',
-      password: '',
-      confirmPassword: ''
-    })
-    
   };
 
   return (
@@ -94,7 +81,7 @@ const Register = () => {
         <h1 className="register-title">ԳՐԱՆՑՎԵԼ</h1>
         <h2 className="register-text"> Միացեք օնլայն գնումներ կատարող <br /> հազարավոր օգտատերերին </h2>
         
-        <form className="register-form" onSubmit={(e) => onSubmit(e)}>
+        <form className="register-form" onSubmit={onSubmit}>
           {inputs.map((input) => (
             <FormInput
               key = {input.id}
@@ -105,7 +92,7 @@ const Register = () => {
           ))}
           
           <Button buttonName="ՄՈՒՏՔ" onClick = {() => navigate('/login')} />
-          {/* <button type="submit" onClick = {() => navigate('/login')}>ՄՈՒՏՔ</button> */}
+          {/* <button onClick = {() => navigate('/login')}>ՄՈՒՏՔ</button> */}
         </form>
 
       </div>
