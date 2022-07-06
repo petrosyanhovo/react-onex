@@ -58,6 +58,33 @@
     }
   ],
   "users": [
-
+    {
+      "email": "hlilitik@mail.ru",
+      "phone": "555555555555",
+      "password": "Lilit111#",
+      "confirmPassword": "Lilit111#",
+      "id": 1
+    },
+    {
+      "email": "lilit@gmail.com",
+      "phone": "111111",
+      "password": "Lilit1111#",
+      "confirmPassword": "Lilit1111#",
+      "id": 2
+    },
+    {
+      "email": "narek@gmail.com",
+      "phone": "222222",
+      "password": "Narek111#",
+      "confirmPassword": "Narek111#",
+      "id": 3
+    },
+    {
+      "email": "hovo@gmail.com",
+      "phone": "333333",
+      "password": "Hovo111#",
+      "confirmPassword": "Hovo111#",
+      "id": 4
+    }
   ]
 }

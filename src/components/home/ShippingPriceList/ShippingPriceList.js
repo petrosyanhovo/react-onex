@@ -92,7 +92,7 @@ const ShippingPriceList = () => {
             <tbody key={index}>
               <tr >
                 <td>
-                  <img src={val.img} /> {val.country}
+                  <img src={val.img} alt = "" /> {val.country}
                 </td>
                 <td>
                   <i

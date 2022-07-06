@@ -31,44 +31,41 @@ const SmartServices = () => {
         </div>
         <div className="smart-services-content">
           <p>
-            <img src={images["photo-camera.png"]} />
+            <img src={images["photo-camera.png"]} alt = "" />
             <span> Լուսանկարել դրսից</span>
           </p>
           <p>
-            <img src={images["photos-inside.png"]} />
+            <img src={images["photos-inside.png"]} alt = "" />
             <span>Լուսանկարել ներսից</span>
           </p>
           <p>
-            <img src={images["stop.png"]} />
+            <img src={images["stop.png"]} alt = "" />
             <span>Կանգնեցնել</span>
           </p>
           <p>
-            <img src={images["check-order.png"]} />
+            <img src={images["check-order.png"]} alt = "" />
             <span>Ստուգել պատվերը</span>
           </p>
           <p>
-            <img src={images["single-package.png"]} />
+            <img src={images["single-package.png"]} alt = "" />
             <span>Չվերափաթեթավորել</span>{" "}
           </p>
           <p>
-            <img src={images["repackaging.png"]} />
+            <img src={images["repackaging.png"]} alt = "" />
             <span>Հավելյալ վերափաթեթավորում</span>{" "}
           </p>
           <p>
-            <img src={images["change-receiver.png"]} />
+            <img src={images["change-receiver.png"]} alt = "" />
             <span>Փոխել ստացողին</span>{" "}
           </p>
           <p>
-            <img src={images["unboxing.png"]} />
+            <img src={images["unboxing.png"]} alt = ""/>
             <span>Բաժանել մասերի</span>{" "}
           </p>
         
-          
-
-<Link to='/smartservices' >
-<Button  buttonName="Ավելին"/>
-                        
-                    </Link>
+        <Link to='/smartservices' >
+          <Button  buttonName="Ավելին"/>     
+        </Link>
 
         </div>
       </div>
