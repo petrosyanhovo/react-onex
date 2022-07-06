@@ -11,6 +11,9 @@ import { Search } from "./pages/Search/Search";
 import ExportToRussia from "./pages/ExportToRussia/ExportToRussia";
 import ExportDocuments from "./pages/ExportDocuments/ExportDocuments";
 import { ContactUs } from "./pages/ContactUs/ContactUs";
+import Orders from "./pages/Orders/Orders"
+
+
 function App() {
   return (
     <div className="App">
@@ -19,6 +22,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/login/orders" element={< Orders />} />
         <Route path="/register" element={<Register />} />
         <Route path="/search" element={<Search />} />
         <Route path="/smartservices" element={<SmartServicesMore />} />

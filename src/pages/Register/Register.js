@@ -69,6 +69,7 @@ const Register = () => {
     e.preventDefault();
     console.log(users);
     await axios.post("http://localhost:3000/users", users)
+    navigate('/login')
   };
 
   return (
@@ -86,17 +87,15 @@ const Register = () => {
             <FormInput
               key = {input.id}
               {...input}
-              defaultValue = {users[input.name]}
+              // defaultValue = {users[input.name]}
               onChange = {onChange}
             />
           ))}
           
           <Button buttonName="ՄՈՒՏՔ" onClick = {() => navigate('/login')} />
-          {/* <button onClick = {() => navigate('/login')}>ՄՈՒՏՔ</button> */}
         </form>
 
       </div>
-
     </div>
   );
 };

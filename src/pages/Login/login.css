@@ -84,3 +84,14 @@
     font-size: 18px;
 }
 
+.login .login-form span[focused="false"]{
+    font-size: 12px;
+    padding: 3px;
+    color: red;
+    display: none;
+}
+
+.login .login-form span[focused="true"]{
+    display: block;
+}
+
