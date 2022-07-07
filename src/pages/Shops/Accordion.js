@@ -8,7 +8,7 @@ const Accordion = () => {
   return (
     <div className="accordion">
       <div className="accordion-header">
-        <h4 onClick={() => setExpanded(!expanded)} className="question-title">
+        <h4 onClick={() => setExpanded(!expanded)} className = "question-title">
           բաժիններ
         </h4>
 
