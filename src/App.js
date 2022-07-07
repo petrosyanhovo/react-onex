@@ -11,20 +11,18 @@ import { Search } from "./pages/Search/Search";
 import ExportToRussia from "./pages/ExportToRussia/ExportToRussia";
 import ExportDocuments from "./pages/ExportDocuments/ExportDocuments";
 import { ContactUs } from "./pages/ContactUs/ContactUs";
-import Orders from "./pages/Orders/Orders"
+import Orders from "./pages/Orders/Orders";
 import Shops from "./pages/Shops/Shops";
-
 
 function App() {
   return (
     <div className="App">
-      
       <Header />
-      {/* <Shops /> */}
+      <Shops />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/login/orders" element={< Orders />} />
+        <Route path="/login/orders" element={<Orders />} />
         <Route path="/register" element={<Register />} />
         <Route path="/search" element={<Search />} />
         <Route path="/smartservices" element={<SmartServicesMore />} />

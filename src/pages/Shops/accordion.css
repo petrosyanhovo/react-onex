@@ -1,0 +1,19 @@
+.accordion {
+  width: 30%;
+  padding: 0 2rem;
+}
+.accordion .accordion-header {
+  display: flex;
+  justify-content: space-around;
+  padding: 0.5rem 0;
+}
+
+.accordion .left-filter {
+  margin-top: 1rem;
+}
+.accordion .left-filter .left-filter-option {
+  display: flex;
+  justify-content: start;
+  margin-top: 0.5rem;
+  padding-left: 0.4rem;
+}

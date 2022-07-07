@@ -1,64 +1,94 @@
+.shops {
+  width: 85%;
+  margin: 0 auto;
+}
+.shops .heading {
+  text-align: left;
+}
+.shops .heading i {
+  display: none;
+}
+.shops .heading h2 {
+  font-size: 3rem;
+  margin: 0.9rem 0;
+}
+.shops .heading p {
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
 .shops .shops-header {
-    margin: 50px auto;
-    /* padding: 50px 0; */
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
+  margin: 40px auto;
+  /* padding: 50px 0; */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
-.shops .shops-header .shops-title {
-    width: 60%;
+.shops .shops-header .shops-header-title {
+  width: 55%;
 }
 
 .shops .shops-header .shops-header-image {
-    width: 35%;
-    object-fit: cover;
+  width: 30%;
+  object-fit: cover;
 }
 
 .shops .shops-header .shops-header-image img {
-    width: 100%;
+  width: 100%;
 }
 
 .shops .shops-top-filter {
-    display: flex;
+  display: flex;
 }
 
 .shops .shops-top-filter .shops-top-filter-search-input {
-    width: 22%;
+  width: 22%;
 }
 
 .shops .shops-top-filter .shops-top-filter-search-input input {
-    width: 80%;
-    height: 40px;
-    border: 1px solid rgba(184, 180, 180, 0.7);
-    border-radius: 10px;
-    padding-left: 10px;
+  width: 80%;
+  height: 40px;
+  border: 1px solid rgba(184, 180, 180, 0.7);
+  border-radius: 10px;
+  padding-left: 10px;
 }
 
 .shops .shops-top-filter .shops-top-filter-search-input input::placeholder {
-    font-size: 14px;
-    color: rgba(184, 180, 180, 0.7);
+  font-size: 14px;
+  color: rgba(184, 180, 180, 0.7);
 }
 
 .shops .shops-top-filter .shops-top-filter-by-country {
-    width: 70%;
+  width: 70%;
 }
 
 .shops .shops-top-filter .shops-top-filter-by-country .countries {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .shops .shops-top-filter .shops-top-filter-by-country .countries .country {
-    width: 100px;
-    height: 50px;
+  width: 100px;
+  height: 50px;
+  list-style-type: none;
 }
 
-.shops .shops-top-filter .shops-top-filter-by-country .countries .country .filter-country-content {
-    display: flex;
+.shops
+  .shops-top-filter
+  .shops-top-filter-by-country
+  .countries
+  .country
+  .filter-country-content {
+  display: flex;
 }
 
-.shops .shops-top-filter .shops-top-filter-by-country .countries .country .filter-country-content img {
-    width: 20px;
+.shops
+  .shops-top-filter
+  .shops-top-filter-by-country
+  .countries
+  .country
+  .filter-country-content
+  img {
+  width: 20px;
 }
