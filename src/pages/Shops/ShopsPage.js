@@ -1,5 +1,5 @@
 import React from "react";
-import "./shops.css";
+import "./shopsPage.css";
 import Heading from "../../components/home/Heading/Heading";
 import ShopsImg from "./shops_img/shops.png";
 import USAImg from "./shops_img/usa.png";
@@ -9,11 +9,11 @@ import ChinaImg from "./shops_img/china.png";
 import UAEImg from "./shops_img/uae.png";
 import Accordion from "./Accordion"
 
-const Shops = () => {
+const ShopsPage = () => {
   return (
-    <div className="shops">
+    <div className="shops-page">
 
-      <div className="shops-header">
+      <div className="shops-page-header">
         <div className="shops-header-title">
           <Heading
             heading="ԼԱՎԱԳՈՒՅՆ"
@@ -33,15 +33,15 @@ const Shops = () => {
         <div className="shops-top-filter-by-country">
           <ul className="countries">
             <li className="country">
-              <a href="">
+              <a href="#">
                 <div className="filter-country-content">
-                  <i class="fa-solid fa-earth-americas"></i>
+                  <i className="fa-solid fa-earth-americas"></i>
                   <span>Բոլորը</span>
                 </div>
               </a>
             </li>
             <li className="country">
-              <a href="">
+              <a href="#">
                 <div className="filter-country-content">
                   <img src={USAImg} alt="" />
                   <span>ԱՄՆ</span>
@@ -49,7 +49,7 @@ const Shops = () => {
               </a>
             </li>
             <li className="country">
-              <a href="">
+              <a href="#">
                 <div className="filter-country-content">
                   <img src={RusImg} alt="" />
                   <span>Ռուսաստան</span>
@@ -57,7 +57,7 @@ const Shops = () => {
               </a>
             </li>
             <li className="country">
-              <a href="">
+              <a href="#">
                 <div className="filter-country-content">
                   <img src={UKImg} alt="" />
                   <span>Մեծ Բրիտանիա</span>
@@ -65,7 +65,7 @@ const Shops = () => {
               </a>
             </li>
             <li className="country">
-              <a href="">
+              <a href="#">
                 <div className="filter-country-content">
                   <img src={ChinaImg} alt="" />
                   <span>Չինաստան</span>
@@ -73,7 +73,7 @@ const Shops = () => {
               </a>
             </li>
             <li className="country">
-              <a href="">
+              <a href="#">
                 <div className="filter-country-content">
                   <img src={UAEImg} alt="" />
                   <span>ԱՄԷ</span>
@@ -89,4 +89,4 @@ const Shops = () => {
   );
 };
 
-export default Shops;
+export default ShopsPage;
