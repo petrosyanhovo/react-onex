@@ -92,23 +92,149 @@
     {
       "id": 1,
       "name": "Amazon",
-      "image": "",
+      "image": "amazon.png",
       "country": "USA",
       "type": ["Hypermarket", "Clothes", "Electronics", "Home", "Sport", "Kids", "Cars"]
     },
     {
       "id": 2,
       "name": "AliExpress",
-      "image": "",
+      "image": "aliexpress.png",
       "country": "China",
       "type": ["Hypermarket", "Clothes", "Beauty", "Electronics", "Home", "Sport", "Kids", "Cars"]
     },
     {
       "id": 3,
       "name": "Ebay",
-      "image": "",
+      "image": "ebay.png",
       "country": "USA",
-      "type": "['Hypermarket', 'Clothes', 'Beauty', 'Electronics', 'Home', 'Sport', 'Kids', 'Cars']"
+      "type": ["Hypermarket", "Clothes", "Beauty", "Electronics", "Home", "Sport", "Kids", "Cars"]
+    },
+    {
+      "id": 4,
+      "name": "Carters",
+      "image": "carters.png",
+      "country": "USA",
+      "type": ["Kids"]
+    },
+    {
+      "id": 5,
+      "name": "Victorias Secret",
+      "image": "vs.png",
+      "country": "USA",
+      "type": ["Clothes", "Beauty", "Brand"]
+    },
+    {
+      "id": 6,
+      "name": "Gap",
+      "image": "gap.png",
+      "country": "USA",
+      "type": ["Clothes", "Brand"]
+    },
+    {
+      "id": 7,
+      "name": "Michael Kors",
+      "image": "mk.png",
+      "country": "USA",
+      "type": ["Clothes", "Brand"]
+    },
+    {
+      "id": 8,
+      "name": "Forever 21",
+      "image": "forever21.png",
+      "country": "USA",
+      "type": ["Clothes"]
+    },
+    {
+      "id": 9,
+      "name": "H&M",
+      "image": "hm.png",
+      "country": "UK",
+      "type": ["Clothes", "Brand"]
+    },
+    {
+      "id": 10,
+      "name": "Ralph Lauren",
+      "image": "rl.png",
+      "country": "USA",
+      "type": ["Clothes", "Brand"]
+    },
+    {
+      "id": 11,
+      "name": "Ozon",
+      "image": "ozon.png",
+      "country": "Rus",
+      "type": ["Hypermarket", "Clothes", "Beauty", "Electronics", "Home", "Sport", "Kids", "Cars"]
+    },
+    {
+      "id": 12,
+      "name": "Taobao",
+      "image": "taobao.png",
+      "country": "China",
+      "type": ["Hypermarket", "Clothes", "Beauty", "Electronics", "Home", "Sport", "Kids", "Cars"]
+    },
+    {
+      "id": 13,
+      "name": "Carrefour",
+      "image": "Carrefour.png",
+      "country": "UAE",
+      "type": ["Hypermarket", "Clothes", "Beauty", "Electronics", "Home", "Sport", "Kids", "Cars"]
+    },
+    {
+      "id": 14,
+      "name": "Asos",
+      "image": "Asos.png",
+      "country": "UK",
+      "type": ["Clothes"]
+    },
+    {
+      "id": 15,
+      "name": "Zara",
+      "image": "Zara.png",
+      "country": "USA",
+      "type": ["Clothes", "Beauty", "Kids", "Brand"]
+    },
+    {
+      "id": 16,
+      "name": "Fila",
+      "image": "Fila.png",
+      "country": "USA",
+      "type": ["Clothes", "Sport", "Brand"]
+    },
+    {
+      "id": 17,
+      "name": "Best Buy",
+      "image": "Bestbuy.png",
+      "country": "USA",
+      "type": ["Hypermarket", "Beauty", "Electronics", "Home", "Kids"]
+    },
+    {
+      "id": 18,
+      "name": "Be Compact",
+      "image": "Becompact.png",
+      "country": "Rus",
+      "type": ["Hypermarket", "Clothes", "Beauty", "Electronics", "Home", "Sport", "Kids", "Cars"]
+    },
+    {
+      "id": 19,
+      "name": "Apple",
+      "image": "Apple.png",
+      "country": "USA",
+      "type": ["Electronics", "Brand"]
+    },
+    {
+      "id": 20,
+      "name": "Disney",
+      "image": "Disney.png",
+      "country": "USA",
+      "type": ["Clothes", "Kids", "Brand"]
+    },
+    {
+      "id": 21,
+      "name": "Jumbo",
+      "image": "Jumbo.png",
+      "country": "UAE",
+      "type": ["Hypermarket", "Beauty", "Electronics", "Home", "Sport", "Kids"]
     }
   ]
 }
