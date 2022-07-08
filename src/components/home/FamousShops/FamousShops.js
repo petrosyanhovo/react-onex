@@ -1,5 +1,6 @@
 import React from "react";
 import "./famousShops.css";
+import { NavLink as Link } from "react-router-dom";
 import Heading from "../Heading/Heading";
 import Button from "../../Button/Button";
 
@@ -87,7 +88,9 @@ const FamousShops = () => {
                 </div>
             </div>
 
-            <Button buttonName="Բոլոր խանութները" />
+            <Link to='/shops' >
+                <Button buttonName="Բոլոր խանութները" />    
+            </Link>
         </div>
     );
 };

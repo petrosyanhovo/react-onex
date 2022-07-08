@@ -20,8 +20,6 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <ShopsPage />
-      {/* <Shops /> */}
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/login" element={<Login />} />
@@ -33,6 +31,7 @@ function App() {
         <Route path="/exporttorussia" element={<ExportToRussia />} />
         <Route path="/exportdocuments" element={<ExportDocuments />} />
         <Route path="/contact" element={<ContactUs />} />
+        <Route path="/shops" element={<ShopsPage />} />
       </Routes>
       {/* <CalculatorModal /> */}
       <Footer />
