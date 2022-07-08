@@ -13,7 +13,6 @@ import ExportDocuments from "./pages/ExportDocuments/ExportDocuments";
 import { ContactUs } from "./pages/ContactUs/ContactUs";
 import Orders from "./pages/Orders/Orders";
 import ShopsPage from "./pages/Shops/ShopsPage";
-import Shops from "./pages/Shops/Shops";
 
 
 function App() {
