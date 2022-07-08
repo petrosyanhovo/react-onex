@@ -18,11 +18,11 @@ const Accordion = () => {
       </div>
       {expanded && (
         <div className=" left-filter">
+
           <div className="left-filter-option">
             <input type="checkbox" name="" id="" />
             <span>Հիպերմարկետ</span>
           </div>
-
           <div className="left-filter-option">
             <input type="checkbox" name="" id="" />
             <span>Հագուստ, կոշիկ, աքսեսուարներ</span>
@@ -35,6 +35,27 @@ const Accordion = () => {
             <input type="checkbox" name="" id="" />
             <span>Էլեկտրոնիկա և աքսեսուարներ</span>
           </div>
+          <div className="left-filter-option">
+            <input type="checkbox" name="" id="" />
+            <span>Տուն և այգի</span>
+          </div>
+          <div className="left-filter-option">
+            <input type="checkbox" name="" id="" />
+            <span>Սպորտ և ժամանց</span>
+          </div>
+          <div className="left-filter-option">
+            <input type="checkbox" name="" id="" />
+            <span>Մանկական</span>
+          </div>
+          <div className="left-filter-option">
+            <input type="checkbox" name="" id="" />
+            <span>Մեքենաների համար</span>
+          </div>
+          <div className="left-filter-option">
+            <input type="checkbox" name="" id="" />
+            <span>Բրենդային խանութ</span>
+          </div>
+
         </div>
       )}
     </div>

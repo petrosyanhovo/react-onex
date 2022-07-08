@@ -1,0 +1,36 @@
+.shops {
+    width: 85%;
+}
+
+.shops .shops-content {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+
+.shops .shops-content a {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #f2f4fb;
+    border-radius: 20px !important;
+    box-shadow: 0 2px 2px 0 #e7e7e73b;
+    padding: 0 60px;
+    margin: 14px 8px;
+}
+
+.shops .shops-content a .shop-card p{
+    font-size: 14px;
+    margin-top: 70px;
+}
+
+.shops .shops-content a .shop-card .shop-card-image{
+    width: 150px;
+}
+
+.shops .shops-content a .shop-card .shop-card-image img{
+    width: 100%;
+}

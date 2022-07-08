@@ -94,147 +94,168 @@
       "name": "Amazon",
       "image": "amazon.png",
       "country": "USA",
-      "type": ["Hypermarket", "Clothes", "Electronics", "Home", "Sport", "Kids", "Cars"]
+      "type": ["Hypermarket", "Clothes", "Electronics", "Home", "Sport", "Kids", "Cars"],
+      "shopURL": "https://www.amazon.com/"
     },
     {
       "id": 2,
       "name": "AliExpress",
       "image": "aliexpress.png",
       "country": "China",
-      "type": ["Hypermarket", "Clothes", "Beauty", "Electronics", "Home", "Sport", "Kids", "Cars"]
+      "type": ["Hypermarket", "Clothes", "Beauty", "Electronics", "Home", "Sport", "Kids", "Cars"],
+      "shopURL": "http://www.aliexpress.com"
     },
     {
       "id": 3,
       "name": "Ebay",
       "image": "ebay.png",
       "country": "USA",
-      "type": ["Hypermarket", "Clothes", "Beauty", "Electronics", "Home", "Sport", "Kids", "Cars"]
+      "type": ["Hypermarket", "Clothes", "Beauty", "Electronics", "Home", "Sport", "Kids", "Cars"],
+      "shopURL": "http://www.ebay.com"
     },
     {
       "id": 4,
       "name": "Carters",
       "image": "carters.png",
       "country": "USA",
-      "type": ["Kids"]
+      "type": ["Kids"],
+      "shopURL": "http://www.carters.com"
     },
     {
       "id": 5,
       "name": "Victorias Secret",
       "image": "vs.png",
       "country": "USA",
-      "type": ["Clothes", "Beauty", "Brand"]
+      "type": ["Clothes", "Beauty", "Brand"],
+      "shopURL": "http://www.victoriassecret.com"
     },
     {
       "id": 6,
       "name": "Gap",
       "image": "gap.png",
       "country": "USA",
-      "type": ["Clothes", "Brand"]
+      "type": ["Clothes", "Brand"],
+      "shopURL": "http://www.gap.com"
     },
     {
       "id": 7,
       "name": "Michael Kors",
       "image": "mk.png",
       "country": "USA",
-      "type": ["Clothes", "Brand"]
+      "type": ["Clothes", "Brand"],
+      "shopURL": "http://www.michaelkors.com"
     },
     {
       "id": 8,
       "name": "Forever 21",
       "image": "forever21.png",
       "country": "USA",
-      "type": ["Clothes"]
+      "type": ["Clothes"],
+      "shopURL": "http://www.forever21.com"
     },
     {
       "id": 9,
       "name": "H&M",
       "image": "hm.png",
       "country": "UK",
-      "type": ["Clothes", "Brand"]
+      "type": ["Clothes", "Brand"],
+      "shopURL": "https://www2.hm.com/en_gb/index.html"
     },
     {
       "id": 10,
       "name": "Ralph Lauren",
       "image": "rl.png",
       "country": "USA",
-      "type": ["Clothes", "Brand"]
+      "type": ["Clothes", "Brand"],
+      "shopURL": "https://www.ralphlauren.com/"
     },
     {
       "id": 11,
       "name": "Ozon",
       "image": "ozon.png",
       "country": "Rus",
-      "type": ["Hypermarket", "Clothes", "Beauty", "Electronics", "Home", "Sport", "Kids", "Cars"]
+      "type": ["Hypermarket", "Clothes", "Beauty", "Electronics", "Home", "Sport", "Kids", "Cars"],
+      "shopURL": "https://www.ozon.ru/"
     },
     {
       "id": 12,
       "name": "Taobao",
       "image": "taobao.png",
       "country": "China",
-      "type": ["Hypermarket", "Clothes", "Beauty", "Electronics", "Home", "Sport", "Kids", "Cars"]
+      "type": ["Hypermarket", "Clothes", "Beauty", "Electronics", "Home", "Sport", "Kids", "Cars"],
+      "shopURL": "https://www.taobao.com/" 
     },
     {
       "id": 13,
       "name": "Carrefour",
       "image": "Carrefour.png",
       "country": "UAE",
-      "type": ["Hypermarket", "Clothes", "Beauty", "Electronics", "Home", "Sport", "Kids", "Cars"]
+      "type": ["Hypermarket", "Clothes", "Beauty", "Electronics", "Home", "Sport", "Kids", "Cars"],
+      "shopURL": "https://www.carrefouruae.com"
     },
     {
       "id": 14,
       "name": "Asos",
       "image": "Asos.png",
       "country": "UK",
-      "type": ["Clothes"]
+      "type": ["Clothes"],
+      "shopURL": "https://www.asos.com"
     },
     {
       "id": 15,
       "name": "Zara",
       "image": "Zara.png",
       "country": "USA",
-      "type": ["Clothes", "Beauty", "Kids", "Brand"]
+      "type": ["Clothes", "Beauty", "Kids", "Brand"],
+      "shopURL": "https://www.zara.com/us/"
     },
     {
       "id": 16,
       "name": "Fila",
       "image": "Fila.png",
       "country": "USA",
-      "type": ["Clothes", "Sport", "Brand"]
+      "type": ["Clothes", "Sport", "Brand"],
+      "shopURL": "https://www.fila.com/"
     },
     {
       "id": 17,
       "name": "Best Buy",
       "image": "Bestbuy.png",
       "country": "USA",
-      "type": ["Hypermarket", "Beauty", "Electronics", "Home", "Kids"]
+      "type": ["Hypermarket", "Beauty", "Electronics", "Home", "Kids"],
+      "shopURL": "https://www.bestbuy.com"
     },
     {
       "id": 18,
       "name": "Be Compact",
       "image": "Becompact.png",
       "country": "Rus",
-      "type": ["Hypermarket", "Clothes", "Beauty", "Electronics", "Home", "Sport", "Kids", "Cars"]
+      "type": ["Hypermarket", "Clothes", "Beauty", "Electronics", "Home", "Sport", "Kids", "Cars"],
+      "shopURL": "https://www.becompact.ru"
     },
     {
       "id": 19,
       "name": "Apple",
       "image": "Apple.png",
       "country": "USA",
-      "type": ["Electronics", "Brand"]
+      "type": ["Electronics", "Brand"],
+      "shopURL": "https://www.apple.com"
     },
     {
       "id": 20,
       "name": "Disney",
       "image": "Disney.png",
       "country": "USA",
-      "type": ["Clothes", "Kids", "Brand"]
+      "type": ["Clothes", "Kids", "Brand"],
+      "shopURL": "https://www.shopdisney.com"
     },
     {
       "id": 21,
       "name": "Jumbo",
       "image": "Jumbo.png",
       "country": "UAE",
-      "type": ["Hypermarket", "Beauty", "Electronics", "Home", "Sport", "Kids"]
+      "type": ["Hypermarket", "Beauty", "Electronics", "Home", "Sport", "Kids"],
+      "shopURL": "https://www.jumbo.ae"
     }
   ]
 }

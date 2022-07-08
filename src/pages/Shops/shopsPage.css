@@ -94,3 +94,7 @@
   img {
   width: 20px;
 }
+
+.shops-page .content {
+  display: flex;
+}

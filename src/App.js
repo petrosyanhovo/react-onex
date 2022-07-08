@@ -13,12 +13,15 @@ import ExportDocuments from "./pages/ExportDocuments/ExportDocuments";
 import { ContactUs } from "./pages/ContactUs/ContactUs";
 import Orders from "./pages/Orders/Orders";
 import ShopsPage from "./pages/Shops/ShopsPage";
+import Shops from "./pages/Shops/Shops";
+
 
 function App() {
   return (
     <div className="App">
       <Header />
-      {/* <ShopsPage /> */}
+      <ShopsPage />
+      {/* <Shops /> */}
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/login" element={<Login />} />
