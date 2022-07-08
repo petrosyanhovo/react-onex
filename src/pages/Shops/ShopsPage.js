@@ -11,7 +11,7 @@ import Accordion from "./Accordion";
 
 const ShopsPage = () => {
   return (
-    <div className="shops">
+    <div className="shops-page">
       <div className="shops-header">
         <div className="shops-header-title">
           <Heading

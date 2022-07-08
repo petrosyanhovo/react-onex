@@ -2,9 +2,11 @@
   width: 85%;
   margin: 0 auto;
 }
+
 .shops-page .heading {
   text-align: left;
 }
+
 .shops-page .heading i {
   display: none;
 }

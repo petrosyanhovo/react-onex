@@ -87,20 +87,21 @@
       "id": 4
     }
   ],
+
   "shops": [
     {
       "id": 1,
       "name": "Amazon",
       "image": "",
       "country": "USA",
-      "type": "['Hypermarket', 'Clothes', 'Electronics', 'Home', 'Sport', 'Kids', 'Cars']"
+      "type": ["Hypermarket", "Clothes", "Electronics", "Home", "Sport", "Kids", "Cars"]
     },
     {
       "id": 2,
       "name": "AliExpress",
       "image": "",
       "country": "China",
-      "type": "['Hypermarket', 'Clothes', 'Beauty', 'Electronics', 'Home', 'Sport', 'Kids', 'Cars']"
+      "type": ["Hypermarket", "Clothes", "Beauty", "Electronics", "Home", "Sport", "Kids", "Cars"]
     },
     {
       "id": 3,
