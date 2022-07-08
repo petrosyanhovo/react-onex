@@ -66,10 +66,7 @@ const FamousShops = () => {
                     </a>
                 </div>
                 <div className="shop-logo">
-                    <a
-                        href="https://www2.hm.com/en_gb/index.html"
-                        target="blank"
-                    >
+                    <a href="https://www2.hm.com/en_gb/index.html" target="blank">
                         <img src={images["hm.png"]} alt="" />
                     </a>
                 </div>
