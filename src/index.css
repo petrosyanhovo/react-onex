@@ -74,3 +74,9 @@
   margin: 0;
   font-family: sans-serif;
 }
+
+* a {
+  color: var(--greenColor);
+  text-decoration: none;
+}
+
