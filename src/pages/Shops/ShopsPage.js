@@ -9,7 +9,7 @@ import ChinaImg from "./shops_img/china.png";
 import UAEImg from "./shops_img/uae.png";
 import Accordion from "./Accordion";
 
-function Shops() {
+const ShopsPage = () => {
   return (
     <div className="shops">
       <div className="shops-header">
