@@ -13,15 +13,12 @@ import ExportDocuments from "./pages/ExportDocuments/ExportDocuments";
 import { ContactUs } from "./pages/ContactUs/ContactUs";
 import Orders from "./pages/Orders/Orders";
 import ShopsPage from "./pages/Shops/ShopsPage";
-import Shops from "./pages/Shops/Shops";
 
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <ShopsPage />
-      {/* <Shops /> */}
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/login" element={<Login />} />
@@ -33,6 +30,7 @@ function App() {
         <Route path="/exporttorussia" element={<ExportToRussia />} />
         <Route path="/exportdocuments" element={<ExportDocuments />} />
         <Route path="/contact" element={<ContactUs />} />
+        <Route path="/shops" element={<ShopsPage />} />
       </Routes>
       {/* <CalculatorModal /> */}
       <Footer />
