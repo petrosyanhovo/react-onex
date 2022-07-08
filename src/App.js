@@ -12,13 +12,13 @@ import ExportToRussia from "./pages/ExportToRussia/ExportToRussia";
 import ExportDocuments from "./pages/ExportDocuments/ExportDocuments";
 import { ContactUs } from "./pages/ContactUs/ContactUs";
 import Orders from "./pages/Orders/Orders";
-import Shops from "./pages/Shops/Shops";
+import ShopsPage from "./pages/Shops/ShopsPage";
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <Shops />
+      <ShopsPage />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/login" element={<Login />} />

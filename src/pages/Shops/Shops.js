@@ -82,7 +82,7 @@ const Shops = () => {
                     </ul>
                 </div>
             </div>
-            {/* <Accordion /> */}
+            <Accordion />
         </div>
     );
 };
