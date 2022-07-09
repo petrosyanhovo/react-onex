@@ -13,22 +13,22 @@ function importAll(r) {
     require.context("../../components/home/FamousShops/famousShops_img", false, /\.(png|jpe?g|svg)$/)
   );
 
-const Shops = () => {
+const Shops = ({shops}) => {
 
-const [shops, setShops] = useState([]);
+// const [shops, setShops] = useState([]);
 
-    useEffect(() => {
-      fetch('http://localhost:3000/shops')
-      .then(response => response.json())
-      .then(json => setShops(json));
-    }, [])
+//     useEffect(() => {
+//       fetch('http://localhost:3000/shops')
+//       .then(response => response.json())
+//       .then(json => setShops(json));
+//     }, [])
 
   return (
     <div className='shops'>
         {
-            shops.map(shop  => {
+            shops.map((shop)  => {
                 return (
-                    <div key = "shop.id" className="shops-content">
+                    <div key = {shop.id} className="shops-content">
                         <a href = {shop.shopURL} target = "blank">
                             <div className="shop-card">
                                 <div className="shop-card-image">
