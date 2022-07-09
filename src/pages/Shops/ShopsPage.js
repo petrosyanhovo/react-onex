@@ -1,4 +1,4 @@
-import React from "react";
+import { useState, useEffect } from "react";
 import "./shopsPage.css";
 import Heading from "../../components/home/Heading/Heading";
 import ShopsImg from "./shops_img/shops.png";
@@ -11,6 +11,59 @@ import Accordion from "./Accordion";
 import Shops from "./Shops";
 
 const ShopsPage = () => {
+
+  const [shops, setShops] = useState([]);
+
+  let filteredByCountry = [];
+  let filteredBYCategory = [];
+  let filteredBySearch = [];
+
+
+  useEffect(() => {
+    fetch('http://localhost:3000/shops')
+    .then(response => response.json())
+    .then(json => setShops(json));
+  }, [])
+
+  const onChange = (e) => {
+    if (e.target.checked) {
+      filteredBYCategory = shops.filter(shop => {
+        for (const cat of shop.category) {
+          if (cat === e.target.name) {
+            return true
+          }
+        }
+      })
+    }
+    setShops(filteredBYCategory)
+  }
+
+  const onClick = (e) => { 
+    
+    switch (e.target.innerHTML) {
+      case "ԱՄՆ": filteredByCountry = shops.filter(shop => shop.country === "USA");
+        break;
+      case "Ռուսաստան": filteredByCountry = shops.filter(shop => shop.country === "Rus")
+        break;
+      case "Մեծ Բրիտանիա": filteredByCountry = shops.filter(shop => shop.country === "UK")
+        break; 
+      case "Չինաստան": filteredByCountry = shops.filter(shop => shop.country === "China")
+        break;
+      case "ԱՄԷ": filteredByCountry = shops.filter(shop => shop.country === "UAE")
+        break;
+      case "Բոլորը": filteredByCountry = shops;
+        break;
+    }
+     setShops(filteredByCountry)
+  }
+
+  const onInputChange = (e) => {
+    filteredBySearch = shops.filter(shop => (shop.name).toLowerCase().includes((e.target.value).toLowerCase()))
+    setShops(filteredBySearch);
+    console.log(filteredBySearch);
+    console.log(shops);
+  }
+
   return (
     <div className="shops-page">
 
@@ -28,20 +81,20 @@ const ShopsPage = () => {
 
       <div className="shops-top-filter">
         <div className="shops-top-filter-search-input">
-          <input type="text" placeholder="Փնտրել" />
+          <input type="text" placeholder="Փնտրել" onChange = {onInputChange} />
         </div>
         <div className="shops-top-filter-by-country">
           <ul className="countries">
             <li className="country">
-              <a href="#">
+              <a href="#" onClick={onClick}>
                 <div className="filter-country-content">
-                  <i class="fa-solid fa-earth-americas"></i>
+                  <i className="fa-solid fa-earth-americas"></i>
                   <span>Բոլորը</span>
                 </div>
               </a>
             </li>
             <li className="country">
-              <a href="#">
+              <a href="#" onClick={onClick}>
                 <div className="filter-country-content">
                   <img src={USAImg} alt="" />
                   <span>ԱՄՆ</span>
@@ -49,7 +102,7 @@ const ShopsPage = () => {
               </a>
             </li>
             <li className="country">
-              <a href="#">
+              <a href="#" onClick={onClick}>
                 <div className="filter-country-content">
                   <img src={RusImg} alt="" />
                   <span>Ռուսաստան</span>
@@ -57,7 +110,7 @@ const ShopsPage = () => {
               </a>
             </li>
             <li className="country">
-              <a href="#">
+              <a href="#" onClick={onClick}>
                 <div className="filter-country-content">
                   <img src={UKImg} alt="" />
                   <span>Մեծ Բրիտանիա</span>
@@ -65,7 +118,7 @@ const ShopsPage = () => {
               </a>
             </li>
             <li className="country">
-              <a href="#">
+              <a href="#" onClick={onClick}>
                 <div className="filter-country-content">
                   <img src={ChinaImg} alt="" />
                   <span>Չինաստան</span>
@@ -73,7 +126,7 @@ const ShopsPage = () => {
               </a>
             </li>
             <li className="country">
-              <a href="#">
+              <a href="#" onClick={onClick}>
                 <div className="filter-country-content">
                   <img src={UAEImg} alt="" />
                   <span>ԱՄԷ</span>
@@ -85,14 +138,12 @@ const ShopsPage = () => {
       </div>
 
       <div className="content">
-        <Accordion />
-        <Shops />
+        <Accordion onChange = {onChange} />
+        <Shops shops = {shops}/>
       </div>
 
     </div>
   );
-
-
 
 }
 
