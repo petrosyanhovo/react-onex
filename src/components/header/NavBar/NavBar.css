@@ -1,0 +1,50 @@
+.nav a i {
+    font-size: 1.5rem;
+  }
+.nav a i:hover {
+    color: black;
+  }
+.nav a {
+    padding: 0.2rem;
+    margin-left: 0.2rem;
+    font-size: 13px;
+    color: black;
+    cursor: pointer;
+    font-family: 'montserratarm-light';
+  }
+  
+.nav a:hover {
+    color: #5dba2f;
+    border-top: solid #5dba2f 2px;
+    padding: 1.5rem .2rem;
+  }
+  
+
+  /* MEDIA  */
+
+  @media (max-width: 960px) {
+    .nav a {
+        margin-left: 0.1rem;
+      
+        padding: 20px 25px;
+        font-size: 16px;
+        /* font-family: 'montserratarm'; */
+        border-bottom: 1px solid rgba(153, 153, 153, 0.2);
+        text-align: left;
+        color: red;
+    }
+
+    .nav {
+        display : flex;
+    flex-direction: column;
+    position: absolute;
+    /* margin-right: 1000px; */
+    left: 0;
+    top: 208px;
+    width: 100%;
+    /* right: 1000px; */
+    background-color: white;
+    }
+    
+}
+

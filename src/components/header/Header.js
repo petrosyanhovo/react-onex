@@ -9,14 +9,14 @@ import NavBar from "./NavBar/NavBar";
 
 export const Header = () => {
     const [isCalculatorModalShow, setCalculatorModalShow] = useState(false);
-    const [isnavBarShow, setnavBarShow] = useState(false);
+    const [isnavBarShow, setnavBarShow] = useState(true);
 
     const calculatorModalShow = () => {
         setCalculatorModalShow(!isCalculatorModalShow);
     };
 
     const navBarShow = () => {
-      setnavBarShow(!isnavBarShow);
+        setnavBarShow(!isnavBarShow);
     };
 
     function openModal() {}
@@ -52,7 +52,10 @@ export const Header = () => {
                 </div>
             </div>
             <div className="third-part">
-                <div className="hamburger fa-solid fa-bars " onClick={navBarShow}></div>
+                <div
+                    className="hamburger fa-solid fa-bars "
+                    onClick={navBarShow}
+                ></div>
                 <div className="logo">
                     <Link className="first" to="/">
                         <img src={onex} alt="onex" />
@@ -62,7 +65,8 @@ export const Header = () => {
                     </Link>
                 </div>
                 <div className="right">
-                    <NavBar />
+                    {/* <NavBar /> */}
+                    {isnavBarShow && <NavBar navBarShow={navBarShow} />}
                     <div className="calc-and-search">
                         <a onClick={calculatorModalShow}>
                             <i className="fa-solid fa-calculator"></i>
@@ -73,9 +77,7 @@ export const Header = () => {
                     </div>
                 </div>
             </div>
-            {isnavBarShow && (
-              <NavBar navBarShow = {navBarShow}/>
-            )}
+
             {isCalculatorModalShow && (
                 <CalculatorModal calculatorModalShow={calculatorModalShow} />
             )}

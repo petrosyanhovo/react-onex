@@ -196,9 +196,9 @@ header .third-part .right {
 }
 
 @media (max-width: 920px) {
-  header .third-part .right .nav{
-    display : none;
-  }
+  /* header .third-part .right .nav{ */
+    /* display : none; */
+  /* } */
 
   header .third-part  {
     padding: 0 25px;
