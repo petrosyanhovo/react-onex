@@ -1,10 +1,22 @@
-.accordion {
-  width: 30%;
-  padding: 0 2rem;
+.content {
+  padding: 0 30px;
 }
+.content .accordion {
+  width: 30%;
+  /* padding: 0 2rem; */
+  /* text-align: left; */
+  /* margin-left: -30px; */
+}
+
+.content .accordion .left-filter .left-filter-option span {
+  font-size: 12px;
+  margin-left: 5px;
+  font-family: 'montserratarm-light';
+} 
+
 .accordion .accordion-header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 0.5rem 0;
 }
 
@@ -16,4 +28,10 @@
   justify-content: start;
   margin-top: 0.5rem;
   padding-left: 0.4rem;
+}
+
+button.btn {
+  cursor: pointer;
+  padding: 5px;
+  /* margin-left: 10px; */
 }

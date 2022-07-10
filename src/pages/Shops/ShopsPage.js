@@ -11,140 +11,158 @@ import Accordion from "./Accordion";
 import Shops from "./Shops";
 
 const ShopsPage = () => {
+    const [shops, setShops] = useState([]);
 
-  const [shops, setShops] = useState([]);
+    let filteredByCountry = [];
+    let filteredBYCategory = [];
+    let filteredBySearch = [];
 
-  let filteredByCountry = [];
-  let filteredBYCategory = [];
-  let filteredBySearch = [];
+    useEffect(() => {
+        fetch("http://localhost:3000/shops")
+            .then((response) => response.json())
+            .then((json) => setShops(json));
+    }, []);
 
-
-  useEffect(() => {
-    fetch('http://localhost:3000/shops')
-    .then(response => response.json())
-    .then(json => setShops(json));
-  }, [])
-
-  const onChange = (e) => {
-    if (e.target.checked) {
-      filteredBYCategory = shops.filter(shop => {
-        for (const cat of shop.category) {
-          if (cat === e.target.name) {
-            return true
-          }
+    const onChange = (e) => {
+        if (e.target.checked) {
+            filteredBYCategory = shops.filter((shop) => {
+                for (const cat of shop.category) {
+                    if (cat === e.target.name) {
+                        return true;
+                    }
+                }
+            });
         }
-      })
-    }
-    setShops(filteredBYCategory)
-  }
+        setShops(filteredBYCategory);
+    };
 
-  const onClick = (e) => { 
-    
-    switch (e.target.innerHTML) {
-      case "ԱՄՆ": filteredByCountry = shops.filter(shop => shop.country === "USA");
-        break;
-      case "Ռուսաստան": filteredByCountry = shops.filter(shop => shop.country === "Rus")
-        break;
-      case "Մեծ Բրիտանիա": filteredByCountry = shops.filter(shop => shop.country === "UK")
-        break; 
-      case "Չինաստան": filteredByCountry = shops.filter(shop => shop.country === "China")
-        break;
-      case "ԱՄԷ": filteredByCountry = shops.filter(shop => shop.country === "UAE")
-        break;
-      case "Բոլորը": filteredByCountry = shops;
-        break;
-    }
-     setShops(filteredByCountry)
-  }
+    const onClick = (e) => {
+        switch (e.target.innerHTML) {
+            case "ԱՄՆ":
+                
+            filteredByCountry = shops.filter(
+                    (shop) => shop.country === "USA"
+                );
+                break;
+            case "Ռուսաստան":
+                filteredByCountry = shops.filter(
+                    (shop) => shop.country === "Rus"
+                );
+                break;
+            case "Մեծ Բրիտանիա":
+                filteredByCountry = shops.filter(
+                    (shop) => shop.country === "UK"
+                );
+                break;
+            case "Չինաստան":
+                filteredByCountry = shops.filter(
+                    (shop) => shop.country === "China"
+                );
+                break;
+            case "ԱՄԷ":
+                filteredByCountry = shops.filter(
+                    (shop) => shop.country === "UAE"
+                );
+                break;
+            case "Բոլորը":
+                filteredByCountry = shops;
+                break;
+        }
+        setShops(filteredByCountry);
+    };
 
-  const onInputChange = (e) => {
-    filteredBySearch = shops.filter(shop => (shop.name).toLowerCase().includes((e.target.value).toLowerCase()))
-    setShops(filteredBySearch);
-    console.log(filteredBySearch);
-    console.log(shops);
-  }
+    const onInputChange = (e) => {
+        filteredBySearch = shops.filter((shop) =>
+            shop.name.toLowerCase().includes(e.target.value.toLowerCase())
+        );
+        setShops(filteredBySearch);
+        console.log(filteredBySearch);
+        console.log(shops);
+    };
 
-  return (
-    <div className="shops-page">
+    return (
+        <div className="shops-page">
+            <div className="shops-page-header">
+                <div className="shops-header-title">
+                    <Heading
+                        heading="ԼԱՎԱԳՈՒՅՆ"
+                        greenHeadingAfter="ԽԱՆՈՒԹՆԵՐ"
+                        text="Գնիր աշխարհի լավագույն օնլայն խանութներից"
+                    />
+                </div>
+                <div className="shops-header-image">
+                    <img src={ShopsImg} alt="" />
+                </div>
+            </div>
 
-      <div className="shops-page-header">
-        <div className="shops-header-title">
-          <Heading
-            heading="ԼԱՎԱԳՈՒՅՆ"
-            greenHeadingAfter="ԽԱՆՈՒԹՆԵՐ"
-            text="Գնիր աշխարհի լավագույն օնլայն խանութներից" />
+            <div className="shops-top-filter">
+                <div className="shops-top-filter-search-input">
+                    <input
+                        type="text"
+                        placeholder="Փնտրել"
+                        onChange={onInputChange}
+                    />
+                </div>
+                <div className="shops-top-filter-by-country">
+                    <ul className="countries">
+                        <li className="country">
+                            <a href="#" onClick={onClick}>
+                                <div className="filter-country-content">
+                                    <i className="fa-solid fa-earth-americas"></i>
+                                    <span>Բոլորը</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li className="country">
+                            <a href="#" onClick={onClick}>
+                                <div className="filter-country-content">
+                                    <img src={USAImg} alt="" />
+                                    <span>ԱՄՆ</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li className="country">
+                            <a href="#" onClick={onClick}>
+                                <div className="filter-country-content">
+                                    <img src={RusImg} alt="" />
+                                    <span>Ռուսաստան</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li className="country">
+                            <a href="#" onClick={onClick}>
+                                <div className="filter-country-content">
+                                    <img src={UKImg} alt="" />
+                                    <span>Մեծ Բրիտանիա</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li className="country">
+                            <a href="#" onClick={onClick}>
+                                <div className="filter-country-content">
+                                    <img src={ChinaImg} alt="" />
+                                    <span>Չինաստան</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li className="country">
+                            <a href="#" onClick={onClick}>
+                                <div className="filter-country-content">
+                                    <img src={UAEImg} alt="" />
+                                    <span>ԱՄԷ</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div className="content">
+                <Accordion onChange={onChange} />
+                <Shops shops={shops} />
+            </div>
         </div>
-        <div className="shops-header-image">
-          <img src={ShopsImg} alt="" />
-        </div>
-      </div>
-
-      <div className="shops-top-filter">
-        <div className="shops-top-filter-search-input">
-          <input type="text" placeholder="Փնտրել" onChange = {onInputChange} />
-        </div>
-        <div className="shops-top-filter-by-country">
-          <ul className="countries">
-            <li className="country">
-              <a href="#" onClick={onClick}>
-                <div className="filter-country-content">
-                  <i className="fa-solid fa-earth-americas"></i>
-                  <span>Բոլորը</span>
-                </div>
-              </a>
-            </li>
-            <li className="country">
-              <a href="#" onClick={onClick}>
-                <div className="filter-country-content">
-                  <img src={USAImg} alt="" />
-                  <span>ԱՄՆ</span>
-                </div>
-              </a>
-            </li>
-            <li className="country">
-              <a href="#" onClick={onClick}>
-                <div className="filter-country-content">
-                  <img src={RusImg} alt="" />
-                  <span>Ռուսաստան</span>
-                </div>
-              </a>
-            </li>
-            <li className="country">
-              <a href="#" onClick={onClick}>
-                <div className="filter-country-content">
-                  <img src={UKImg} alt="" />
-                  <span>Մեծ Բրիտանիա</span>
-                </div>
-              </a>
-            </li>
-            <li className="country">
-              <a href="#" onClick={onClick}>
-                <div className="filter-country-content">
-                  <img src={ChinaImg} alt="" />
-                  <span>Չինաստան</span>
-                </div>
-              </a>
-            </li>
-            <li className="country">
-              <a href="#" onClick={onClick}>
-                <div className="filter-country-content">
-                  <img src={UAEImg} alt="" />
-                  <span>ԱՄԷ</span>
-                </div>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div className="content">
-        <Accordion onChange = {onChange} />
-        <Shops shops = {shops}/>
-      </div>
-
-    </div>
-  );
-
-}
+    );
+};
 
 export default ShopsPage;
