@@ -39,7 +39,7 @@ const Accordion = ({ onChange }) => {
                 </h4>
 
                 <button className="btn" onClick={() => setExpanded(!expanded)}>
-                    {expanded ? <AiOutlineMinus /> : <AiOutlinePlus />}
+                    { expanded ? <AiOutlineMinus /> : <AiOutlinePlus /> }
                 </button>
             </div>
             {expanded && (
