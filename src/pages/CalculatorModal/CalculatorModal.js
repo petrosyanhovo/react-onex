@@ -14,13 +14,14 @@ export const CalculatorModal = ({ calculatorModalShow }) => {
     const [shippingMethod, setShippingMethod] = useState("");
     const [weight, setWeight] = useState("");
     const [shippingCost, setShippingCost] = useState("");
+    const [selectedUnit, setSelectedUnit] = useState("")
 
 
     useEffect(() => {
-        checkCountry();
+        calculateShippingCost();
     }, [weight]);
 
-    const checkCountry = () =>{
+    const calculateShippingCost = () =>{
         switch (true) {
             case (flagName === "usa" && shippingMethod === "plane"): setShippingCost(weight * 6000);
                 break;
@@ -40,8 +41,9 @@ export const CalculatorModal = ({ calculatorModalShow }) => {
         }
     }
 
+
     return (
-        <div className="calculator-background">
+        <div className="calculator">
             <div className="calculator-modal">
                 <div className="calculator-header">
                     <h2>Առաքման հաշվիչ</h2>
@@ -166,24 +168,33 @@ export const CalculatorModal = ({ calculatorModalShow }) => {
                         </label>
                     </div>
                 </div>
-                <div className="extra-weight">
-                    <label htmlFor="extra-weight-label">
-                        <input
-                            type="checkbox"
-                            name=""
-                            id="extra-weight-input"
-                        />
-                        գերծավալային քաշ
-                    </label>
-                    <div className="input-number">
+                <div className="calculate-shipping-cost">
+                    <div className="extra-weight">
+                        <label htmlFor="extra-weight-label">
+                            <input
+                                type="checkbox"
+                                name=""
+                                id="extra-weight-input"
+                            />
+                            գերծավալային քաշ
+                        </label>
+                    </div>
+                    <div className="extra-weight-dimentions">
+                        <p>* Բեռը համարվում է գերծավալային քաշով, եթե կողմերի երկարությունների գումարը գերազանցում է 150 սմ-ը և ծավալային** քաշը 2 և ավելի անգամ գերազանցում է փաստացի քաշը: Այս դեպքում հաշվարկվում է ըստ բեռի ծավալային քաշի, սակայն գործում է հատուկ զեղչված սակագին՝ 4000 դր/կգ 
+                                <br />
+                            ** Ծավալային քաշի հաշվարկի միջազգային բանաձևն է՝ (Երկարություն X Լայնություն X Բարձրություն) / 5000 (սմ/կգ)
+                        </p>
+
+                    </div>
+                    <div className="input-weight">
                         <input
                             type="number"
                             name=""
-                            id="input-number"
+                            id="input-weight"
                             placeholder="փաստացի քաշ"
                             onChange={(e) => setWeight(e.target.value)}
                         />
-                        <select name="" id="input-select">
+                        <select name="" id="input-select" onChange = {(e) => setSelectedUnit(e.target.value)}>
                             <option value="cm" defaultValue>
                                 սմ/կգ
                             </option>
@@ -192,7 +203,7 @@ export const CalculatorModal = ({ calculatorModalShow }) => {
                     </div>
                     <div className="cost">
                         <p>Առաքման արժեք</p>
-                        <p className="delivery-cost">{shippingCost} դր</p>
+                        <p className="shipping-cost">{shippingCost} դր</p>
                     </div>
                 </div>
             </div>

@@ -34,7 +34,7 @@ export const Header = () => {
                     <Link to="/contact">Հետադարձ կապ </Link>|
                     <a href="https://onex.am/pages/terms">Պայմաններ </a>|
                     <a href="">(060)750-350</a>|{/* modal  */}
-                    <a href="https://onex.am/shops">Խանութներ</a>|
+                    <Link to="/shops">Խանութներ</Link>
                     <a href="#">
                         <img src={armenia} /> Հայերեն
                     </a>
