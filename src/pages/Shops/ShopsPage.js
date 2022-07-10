@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import "./shopsPage.css";
+import axios from "axios";
 import Heading from "../../components/home/Heading/Heading";
 import ShopsImg from "./shops_img/shops.png";
 import USAImg from "./shops_img/usa.png";
@@ -17,10 +18,13 @@ const ShopsPage = () => {
     let filteredBYCategory = [];
     let filteredBySearch = [];
 
+    const loadShops = async() => {
+      const result = await axios.get('http://localhost:3000/shops')
+      setShops(result.data);
+    }
+
     useEffect(() => {
-        fetch("http://localhost:3000/shops")
-            .then((response) => response.json())
-            .then((json) => setShops(json));
+        loadShops()
     }, []);
 
     const onChange = (e) => {
@@ -39,8 +43,7 @@ const ShopsPage = () => {
     const onClick = (e) => {
         switch (e.target.innerHTML) {
             case "ԱՄՆ":
-                
-            filteredByCountry = shops.filter(
+                filteredByCountry = shops.filter(
                     (shop) => shop.country === "USA"
                 );
                 break;
@@ -68,7 +71,7 @@ const ShopsPage = () => {
                 filteredByCountry = shops;
                 break;
         }
-        setShops(filteredByCountry);
+        setShops(filteredByCountry); 
     };
 
     const onInputChange = (e) => {

@@ -9,26 +9,23 @@ export const ContactUs = () => {
                 <div className="schedule-title">
                     <h3>Սպասարկման կենտրոն</h3>
                     <p>
-                        {" "}
                         <span>Երկ - Շբթ</span> 09:00 - 19:00
                     </p>
                 </div>
                 <div className="schedule-title">
                     <h3>SMART WALL</h3>
                     <p>
-                        {" "}
                         <span>Երկ - Շբթ</span> 09:00 - 21:00 <br />
                         <span>Կիր</span> 12:00 - 18:00
                     </p>
                 </div>
                 <div className="schedule-title">
                     <a href="#">
-                        {" "}
-                        <i class="fa-solid fa-phone"></i> (+374) 60 750 350
+                        <i className="fa-solid fa-phone"></i> (+374) 60 750 350
                     </a>
                     <br />
                     <a href="#">
-                        <i class="fa-solid fa-envelope"></i>
+                        <i className="fa-solid fa-envelope"></i>
                         contact@onex.am
                     </a>
                 </div>
