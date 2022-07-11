@@ -13,6 +13,7 @@ import ExportDocuments from "./pages/ExportDocuments/ExportDocuments";
 import { ContactUs } from "./pages/ContactUs/ContactUs";
 import Orders from "./pages/Orders/Orders";
 import ShopsPage from "./pages/Shops/ShopsPage";
+import SmartWallPage from "./pages/SmartWallPage/SmartWallPage";
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
         <Route path="/exportdocuments" element={<ExportDocuments />} />
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/shops" element={<ShopsPage />} />
+        <Route path="/smartwall" element={<SmartWallPage />} />
       </Routes>
       {/* <CalculatorModal /> */}
       <Footer />

@@ -68,6 +68,7 @@
 
 :root {
   --greenColor: #5dba2f;
+  --grey: #555;
 }
 
 * {

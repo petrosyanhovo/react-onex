@@ -3,6 +3,7 @@ import "./smartWall.css";
 import Heading from "../Heading/Heading";
 import Button from "../../Button/Button.js";
 import smartWallPlayIcon from "../SmartWall/SmartWall_img/play-circle-outline-icon.png";
+import { NavLink as Link } from "react-router-dom";
 
 const SmartWall = () => {
   return (
@@ -27,7 +28,9 @@ const SmartWall = () => {
           heading="SMART WALL"
           text="ONEX SMART WALL-ը տարբերվում է աշխարհում գործող նմանատիպ այլ լուծումներից իր նորարարություններով և ֆունկցիոնալությամբ։ Տվյալների վերլուծության միջոցով «խելացի պատը» կարողանում է բառացիորեն խոսել օգտատիրոջ հետ՝ տալով անհատական խորհուրդներ, ծանոթացնելով ONEX-ի նոր ծառայություններին և այլն։ Մեր մշակած համակարգը օգտատերերից ստացած տվյալների շնորհիվ օր օրի էլ ավելի կատարելագործվում և դառնում է առավել խելացի։"
         />
-        <Button buttonName="Ավելին" />
+        <Link to='/smartwall'>
+          <Button buttonName="Ավելին" />
+        </Link>
       </div>
     </div>
   );
