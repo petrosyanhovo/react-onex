@@ -104,8 +104,27 @@
   .countries
   .country
   .filter-country-content
+  i {
+  color: var(--greenColor);
+  font-size: 1.4rem;
+}
+.shops-page
+  .shops-top-filter
+  .shops-top-filter-by-country
+  .countries
+  .country
+  .filter-country-content
   span {
   margin: 0 0.4rem;
+}
+.shops-page
+  .shops-top-filter
+  .shops-top-filter-by-country
+  .countries
+  .country
+  .filter-country-content
+  span:hover {
+  color: var(--greenColor);
 }
 .shops-page .content {
   display: flex;
