@@ -205,7 +205,7 @@ header .third-part .right {
   }
 
   /* Add className='active' to <nav>, for navbar */
-  header .third-part .right nav.active {
+  header .third-part .right nav {
     display : flex;
     flex-direction: column;
     position: absolute;
@@ -217,7 +217,7 @@ header .third-part .right {
     background-color: white;
   }
   
-  header .third-part .right nav.active a {
+  header .third-part .right nav a {
     padding: 20px 25px;
     font-size: 16px;
     /* font-family: 'montserratarm'; */
@@ -236,7 +236,7 @@ header .third-part .right {
     justify-content: center;
   }
 
-  header .third-part .right nav.active {
+  header .third-part .right nav {
     top: 185px;
   }
 }
@@ -252,7 +252,7 @@ header .third-part .right {
 }
 
 @media (max-width: 412px) {
-  header .third-part .right nav.active {
+  header .third-part .right nav {
     top: 185px;
   }
 }
