@@ -1,17 +1,32 @@
-import React from 'react'
-import "./NavBar.css"
-const NavBar = ({navBarShow}) => {
-  return (
-    <>
-        <nav className="nav">
-            <a href="#">Ներմուծում</a>
-            <a href="#">Արտահանում</a>
-            <a href="#">Կորպորատիվ</a>
-            <a href="#">Մեծածախի հարցում</a>
-            <a href="#">SMART Լուծումներ</a>
-          </nav>
-    </>
-  )
-}
+import React from "react";
+import "./NavBar.css";
+import { useState } from "react";
 
-export default NavBar
+const NavBar = ({ navBarShow }) => {
+    const [isActive, setActive] = useState(true);
+   
+
+    return (
+        <>
+            <nav className={isActive ? "nav active" : "nav"}>
+                <a className="link" href="#">
+                    Ներմուծում
+                </a>
+                <a className="link" href="#">
+                    Արտահանում
+                </a>
+                <a className="link" href="#">
+                    Կորպորատիվ
+                </a>
+                <a className="link" href="#">
+                    Մեծածախի հարցում
+                </a>
+                <a className="link" href="#">
+                    SMART Լուծումներ
+                </a>
+            </nav>
+        </>
+    );
+};
+
+export default NavBar;

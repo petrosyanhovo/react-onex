@@ -19,6 +19,10 @@ export const Header = () => {
         setnavBarShow(!isnavBarShow);
     };
 
+    const handleClick = (event) => {
+        setActive((current) => !current);
+    };
+
     function openModal() {}
 
     return (
@@ -53,7 +57,7 @@ export const Header = () => {
             <div className="third-part">
                 <div
                     className="hamburger fa-solid fa-bars "
-                    onClick={navBarShow}
+                    onClick={handleClick}
                 ></div>
                 <div className="logo">
                     <Link className="first" to="/">
@@ -65,7 +69,7 @@ export const Header = () => {
                 </div>
                 <div className="right">
                     {/* <NavBar /> */}
-                    {isnavBarShow && <NavBar navBarShow={navBarShow} />}
+                    <NavBar handleClick={handleClick}  />
                     <div className="calc-and-search">
                         <a onClick={calculatorModalShow}>
                             <i className="fa-solid fa-calculator"></i>
