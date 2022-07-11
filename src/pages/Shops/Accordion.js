@@ -4,29 +4,6 @@ import "./accordion.css";
 
 const Accordion = ({ onChange }) => {
     const [expanded, setExpanded] = useState(false);
-    // let filteredBYCategory = [];
-
-    // const [shops, setShops] = useState([]);
-
-    //   useEffect(() => {
-    //     fetch('http://localhost:3000/shops')
-    //     .then(response => response.json())
-    //     .then(json => setShops(json));
-    //   }, [])
-
-    // const onChange = (e) => {
-    //   if (e.target.checked) {
-    //     filteredBYCategory = shops.filter(shop => {
-    //       for (const cat of shop.category) {
-    //         if (cat === e.target.name) {
-    //           return true
-    //         }
-    //       }
-    //     })
-    //   }
-    //   setShops(filteredBYCategory)
-    //   console.log(filteredBYCategory);
-    // }
 
     return (
         <div className="accordion">

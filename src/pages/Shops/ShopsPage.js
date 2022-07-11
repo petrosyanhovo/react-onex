@@ -14,9 +14,6 @@ import Shops from "./Shops";
 const ShopsPage = () => {
     const [shops, setShops] = useState([]);
 
-    let filteredByCountry = [];
-    let filteredBYCategory = [];
-    let filteredBySearch = [];
 
     const loadShops = async() => {
       const result = await axios.get('http://localhost:3000/shops')
@@ -29,59 +26,35 @@ const ShopsPage = () => {
 
     const onChange = (e) => {
         if (e.target.checked) {
-            filteredBYCategory = shops.filter((shop) => {
+            let filteredBYCategory = shops.filter((shop) => {
                 for (const cat of shop.category) {
                     if (cat === e.target.name) {
                         return true;
                     }
                 }
-            });
+            })
+            setShops(filteredBYCategory);
+        } else {
+            loadShops();
         }
-        setShops(filteredBYCategory);
+    };
+
+
+    const onInputChange = (e) => {
+        setShops(shops.filter((shop) =>
+        shop.name.toLowerCase().includes(e.target.value.toLowerCase())
+    ))
+        console.log(shops);
     };
 
     const onClick = (e) => {
-        switch (e.target.innerHTML) {
-            case "ԱՄՆ":
-                filteredByCountry = shops.filter(
-                    (shop) => shop.country === "USA"
-                );
-                break;
-            case "Ռուսաստան":
-                filteredByCountry = shops.filter(
-                    (shop) => shop.country === "Rus"
-                );
-                break;
-            case "Մեծ Բրիտանիա":
-                filteredByCountry = shops.filter(
-                    (shop) => shop.country === "UK"
-                );
-                break;
-            case "Չինաստան":
-                filteredByCountry = shops.filter(
-                    (shop) => shop.country === "China"
-                );
-                break;
-            case "ԱՄԷ":
-                filteredByCountry = shops.filter(
-                    (shop) => shop.country === "UAE"
-                );
-                break;
-            case "Բոլորը":
-                filteredByCountry = shops;
-                break;
+        e.preventDefault();
+        if (e.target.innerText === "Բոլորը") {
+            loadShops()
+        } else {
+            setShops(shops.filter((shop) => shop.country === e.target.innerText)) 
         }
-        setShops(filteredByCountry); 
-    };
-
-    const onInputChange = (e) => {
-        filteredBySearch = shops.filter((shop) =>
-            shop.name.toLowerCase().includes(e.target.value.toLowerCase())
-        );
-        setShops(filteredBySearch);
-        console.log(filteredBySearch);
-        console.log(shops);
-    };
+    }
 
     return (
         <div className="shops-page">
