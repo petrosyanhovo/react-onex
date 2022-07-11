@@ -3,8 +3,14 @@ import "./exportToUSA.css";
 import Heading from "../../components/home/Heading/Heading";
 import ExportToUSAImg from "../../components/home/Export/export_img/export_usa_new.png";
 import Button from "../../components/Button/Button";
+import { useEffect } from "react";
 
 const ExportToUSA = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, []);
+
     return (
         <div className="export-to-USA">
             <div className="export-to-USA-header">

@@ -3,8 +3,14 @@ import './exportToRussia.css'
 import Heading from '../../components/home/Heading/Heading'
 import ExportToRussiaImg from '../../components/home/Export/export_img/export_rus.jpg'
 import Button from '../../components/Button/Button'
+import { useEffect } from 'react'
 
 const ExportToRussia = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+}, []);
+
   return (
     <div className='export-to-russia'>
 

@@ -16,11 +16,12 @@ const ShopsPage = () => {
 
 
     const loadShops = async() => {
-      const result = await axios.get('http://localhost:3000/shops')
+      const result = await axios.get( 'http://localhost:3000/shops' )
       setShops(result.data);
     }
 
     useEffect(() => {
+        window.scrollTo(0, 0);
         loadShops()
     }, []);
 

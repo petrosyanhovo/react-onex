@@ -21,6 +21,7 @@ const SmartServicesMore = () => {
   const [smartServicesDesc, setSmartServicesDesc] = useState([]);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     fetch('http://localhost:3000/posts')
     .then(response => response.json())
     .then(json => setSmartServicesDesc(json));

@@ -1,5 +1,6 @@
 import React from 'react'
 import './smartWallPage.css'
+import { useEffect } from 'react'
 
 function importAll(r) {
     let images = {};
@@ -14,6 +15,10 @@ function importAll(r) {
   );
 
 const SmartWallPage = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, []);
 
   return (
     <div className="smart-wall-page">

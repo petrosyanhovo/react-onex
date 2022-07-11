@@ -2,9 +2,14 @@ import React from 'react'
 import './exportDocuments.css'
 import ExportDocumentsImg from '../../components/home/Export/export_img/export-documents.png'
 import Heading from '../../components/home/Heading/Heading'
-
+import { useEffect } from 'react'
 
 const ExportDocuments = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+}, []);
+
   return (
     <div className='export-documents'>
         <div className="export-documents-header">
