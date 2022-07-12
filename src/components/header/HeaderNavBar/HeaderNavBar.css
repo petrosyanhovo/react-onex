@@ -83,6 +83,10 @@
     text-decoration: none;
     display: block;
     text-align: left;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
   }
   
   .dropdown-content a:hover {
@@ -92,3 +96,10 @@
   .dropdown:hover .dropdown-content {
     display: block;
   }
+
+  .dropdown-content img {
+    width: 24px;
+    margin-right: 10px;
+  }
+
+  
