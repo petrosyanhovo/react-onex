@@ -177,6 +177,7 @@ header .third-part .calc-and-search a i {
 
 header .third-part .right {
   display: flex;
+  align-items: center;
 }
 /* MEDIA  */
 
