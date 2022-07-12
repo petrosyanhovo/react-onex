@@ -6,7 +6,7 @@ import onex2 from "../header/header_img/favicon.png";
 import { NavLink as Link } from "react-router-dom";
 import { CalculatorModal } from "../../pages/CalculatorModal/CalculatorModal";
 import NavBar from "./NavBar/NavBar";
-
+import { HeaderNavBar } from "./HeaderNavBar/HeaderNavBar";
 export const Header = () => {
   const [isCalculatorModalShow, setCalculatorModalShow] = useState(false);
   const [isNavBarShow, setNavBarShow] = useState(true);
