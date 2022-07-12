@@ -9,7 +9,7 @@ import uae from "./calculatorModal_img/dubai.png";
 export const CalculatorModal = ({ calculatorModalShow }) => {
 
     // const [isChecked, setIsChecked] = useState(false);
-    // const [isMethodChecked, setIsMethodChecked] = useState(false);
+    const [isMethodChecked, setIsMethodChecked] = useState(false);
     const [flagName, setFlagName] = useState(""); 
     const [shippingMethod, setShippingMethod] = useState("");
     const [weight, setWeight] = useState("");
@@ -19,7 +19,7 @@ export const CalculatorModal = ({ calculatorModalShow }) => {
 
     useEffect(() => {
         calculateShippingCost();
-    }, [weight]);
+    }, [weight, flagName, shippingMethod]);
 
     const calculateShippingCost = () =>{
         switch (true) {
@@ -81,7 +81,7 @@ export const CalculatorModal = ({ calculatorModalShow }) => {
                                 value="rus"                                 
                                 onClick={(e) => {
                                     // setIsChecked(e.target.checked);
-                                    setFlagName(e.target.value)
+                                    setFlagName(e.target.value);
                                     }} />
                             <label htmlFor="rus" className="label-country">
                                 <img src={russia} alt="" />
@@ -143,7 +143,7 @@ export const CalculatorModal = ({ calculatorModalShow }) => {
                             value="plane" 
                             defaultChecked
                             onClick={(e) => {
-                                // setIsMethodChecked(e.target.checked);
+                                setIsMethodChecked(e.target.checked);
                                 setShippingMethod(e.target.value)
                                 }}
                         />
@@ -151,20 +151,22 @@ export const CalculatorModal = ({ calculatorModalShow }) => {
                             <i className="fa fa-plane"></i>
                         </label>
                     </div>
-                    <div className="shipping-method-ship">
+                    <div className="shipping-method-ship" 
+                        style={ (flagName === 'rus' || flagName === "uae" || flagName === "uk") ? { display:'none'} : {display : 'block'} } >
                         <input
                             type="radio"
                             name="shipping-type"
                             id="ship"
                             value="ship" 
                             onClick={(e) => {
-                                // setIsMethodChecked(e.target.checked);
+                                setIsMethodChecked(e.target.checked);
                                 setShippingMethod(e.target.value);
-                                console.log(e);
                                 }}
                         />
                         <label htmlFor="ship">
-                            <i className="fa fa-ship"></i>
+                            <i className="fa fa-ship" ></i>
+                                          
+
                         </label>
                     </div>
                 </div>
@@ -203,7 +205,7 @@ export const CalculatorModal = ({ calculatorModalShow }) => {
                     </div>
                     <div className="cost">
                         <p>Առաքման արժեք</p>
-                        <p className="shipping-cost">{shippingCost} դր</p>
+                        <p className="shipping-cost">{ shippingCost} դր</p>
                     </div>
                 </div>
             </div>
