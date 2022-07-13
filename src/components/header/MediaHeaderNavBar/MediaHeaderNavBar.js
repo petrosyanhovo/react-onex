@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import { a } from "react-router-dom";
-import "./HeaderNavBar.css";
-export const HeaderNavBar = () => {
+import "./MediaHeaderNavBar.css";
+export const MediaHeaderNavBar = () => {
     return (
-        <div className="navbar">
-            <div className="dropdown">
-                <button className="dropbtn">
+        <div className="media-navbar">
+            <div className="media-dropdown">
+                <button className="media-dropbtn">
                     Ներմուծում
                     {/* <i className="fa fa-caret-down"></i> */}
                 </button>
-                <div className="dropdown-content">
+                <div className="media-dropdown-content">
                     <a href="#">
                         <img src="https://onex.am/images/online-shopping.svg" />
                         Օնլայն գնումներ
@@ -33,12 +33,12 @@ export const HeaderNavBar = () => {
                 </div>
             </div>
 
-            <div className="dropdown">
-                <button className="dropbtn">
+            <div className="media-dropdown">
+                <button className="media-dropbtn">
                     Արտահանում
                     {/* <i className="fa fa-caret-down"></i> */}
                 </button>
-                <div className="dropdown-content">
+                <div className="media-dropdown-content">
                     <a href="#">
                         <img src="https://onex.am/images/flags/russia.svg" />
                         Դեպի Ռուսաստան
@@ -55,19 +55,19 @@ export const HeaderNavBar = () => {
                 </div>
             </div>
 
-            <a href="#" className="link">
+            <a href="#" className="media-link">
                 Կորպորատիվ
             </a>
-            <a href="#" className="link">
+            <a href="#" className="media-link">
                 Մեծածախի հարցում
             </a>
 
-            <div className="dropdown">
-                <button className="dropbtn">
+            <div className="media-dropdown">
+                <button className="media-dropbtn last-dropbtn">
                     SMART Լուծումներ
                     {/* <i className="fa fa-caret-down"></i> */}
                 </button>
-                <div className="dropdown-content">
+                <div className="media-dropdown-content">
                     <a href="#">ONEX Smart Wall</a>
                     <a href="#">ONEX Smart Lockers</a>
                     <a href="#">ONEX Smart Services</a>

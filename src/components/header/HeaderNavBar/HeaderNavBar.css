@@ -1,3 +1,6 @@
+* {
+  transition : all .09s linear
+}
 
 .navbar {
     overflow: hidden;
@@ -56,6 +59,7 @@
   .dropdown .dropbtn:hover {
     border-top: 2px solid var(--greenColor);
     height: 62px;
+    /* margin-top: -1px; */
   }
 
   
@@ -97,6 +101,10 @@
   .dropdown:hover .dropdown-content {
     display: block;
   }
+
+  /* .navbar .dropdown:hover .navbar .dropdown .dropbtn {
+    margin-top: -50px
+  }  */
 
   .dropdown-content img {
     width: 24px;
