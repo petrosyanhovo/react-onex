@@ -85,16 +85,30 @@
       "password": "Hovo111#",
       "confirmPassword": "Hovo111#",
       "id": 4
+    },
+    {
+      "email": "hovo@gmail.com",
+      "phone": "093333333",
+      "password": "Onex2000#",
+      "confirmPassword": "Onex2000#",
+      "id": 5
     }
   ],
-
   "shops": [
     {
       "id": 1,
       "name": "Amazon",
       "image": "amazon.png",
       "country": "ԱՄՆ",
-      "category": ["Hypermarket", "Clothes", "Electronics", "Home", "Sport", "Kids", "Cars"],
+      "category": [
+        "Hypermarket",
+        "Clothes",
+        "Electronics",
+        "Home",
+        "Sport",
+        "Kids",
+        "Cars"
+      ],
       "shopURL": "https://www.amazon.com/"
     },
     {
@@ -102,7 +116,16 @@
       "name": "AliExpress",
       "image": "aliexpress.png",
       "country": "Չինաստան",
-      "category": ["Hypermarket", "Clothes", "Beauty", "Electronics", "Home", "Sport", "Kids", "Cars"],
+      "category": [
+        "Hypermarket",
+        "Clothes",
+        "Beauty",
+        "Electronics",
+        "Home",
+        "Sport",
+        "Kids",
+        "Cars"
+      ],
       "shopURL": "http://www.aliexpress.com"
     },
     {
@@ -110,7 +133,16 @@
       "name": "Ebay",
       "image": "ebay.png",
       "country": "ԱՄՆ",
-      "category": ["Hypermarket", "Clothes", "Beauty", "Electronics", "Home", "Sport", "Kids", "Cars"],
+      "category": [
+        "Hypermarket",
+        "Clothes",
+        "Beauty",
+        "Electronics",
+        "Home",
+        "Sport",
+        "Kids",
+        "Cars"
+      ],
       "shopURL": "http://www.ebay.com"
     },
     {
@@ -118,7 +150,9 @@
       "name": "Carters",
       "image": "carters.png",
       "country": "ԱՄՆ",
-      "category": ["Kids"],
+      "category": [
+        "Kids"
+      ],
       "shopURL": "http://www.carters.com"
     },
     {
@@ -126,7 +160,11 @@
       "name": "Victorias Secret",
       "image": "vs.png",
       "country": "ԱՄՆ",
-      "category": ["Clothes", "Beauty", "Brand"],
+      "category": [
+        "Clothes",
+        "Beauty",
+        "Brand"
+      ],
       "shopURL": "http://www.victoriassecret.com"
     },
     {
@@ -134,7 +172,10 @@
       "name": "Gap",
       "image": "gap.png",
       "country": "ԱՄՆ",
-      "category": ["Clothes", "Brand"],
+      "category": [
+        "Clothes",
+        "Brand"
+      ],
       "shopURL": "http://www.gap.com"
     },
     {
@@ -142,7 +183,10 @@
       "name": "Michael Kors",
       "image": "mk.png",
       "country": "ԱՄՆ",
-      "category": ["Clothes", "Brand"],
+      "category": [
+        "Clothes",
+        "Brand"
+      ],
       "shopURL": "http://www.michaelkors.com"
     },
     {
@@ -150,7 +194,9 @@
       "name": "Forever 21",
       "image": "forever21.png",
       "country": "ԱՄՆ",
-      "category": ["Clothes"],
+      "category": [
+        "Clothes"
+      ],
       "shopURL": "http://www.forever21.com"
     },
     {
@@ -158,7 +204,10 @@
       "name": "H&M",
       "image": "hm.png",
       "country": "Մեծ Բրիտանիա",
-      "category": ["Clothes", "Brand"],
+      "category": [
+        "Clothes",
+        "Brand"
+      ],
       "shopURL": "https://www2.hm.com/en_gb/index.html"
     },
     {
@@ -166,7 +215,10 @@
       "name": "Ralph Lauren",
       "image": "rl.png",
       "country": "ԱՄՆ",
-      "category": ["Clothes", "Brand"],
+      "category": [
+        "Clothes",
+        "Brand"
+      ],
       "shopURL": "https://www.ralphlauren.com/"
     },
     {
@@ -174,7 +226,16 @@
       "name": "Ozon",
       "image": "ozon.png",
       "country": "Ռուսաստան",
-      "category": ["Hypermarket", "Clothes", "Beauty", "Electronics", "Home", "Sport", "Kids", "Cars"],
+      "category": [
+        "Hypermarket",
+        "Clothes",
+        "Beauty",
+        "Electronics",
+        "Home",
+        "Sport",
+        "Kids",
+        "Cars"
+      ],
       "shopURL": "https://www.ozon.ru/"
     },
     {
@@ -182,15 +243,33 @@
       "name": "Taobao",
       "image": "taobao.png",
       "country": "Չինաստան",
-      "category": ["Hypermarket", "Clothes", "Beauty", "Electronics", "Home", "Sport", "Kids", "Cars"],
-      "shopURL": "https://www.taobao.com/" 
+      "category": [
+        "Hypermarket",
+        "Clothes",
+        "Beauty",
+        "Electronics",
+        "Home",
+        "Sport",
+        "Kids",
+        "Cars"
+      ],
+      "shopURL": "https://www.taobao.com/"
     },
     {
       "id": 13,
       "name": "Carrefour",
       "image": "Carrefour.png",
       "country": "ԱՄԷ",
-      "category": ["Hypermarket", "Clothes", "Beauty", "Electronics", "Home", "Sport", "Kids", "Cars"],
+      "category": [
+        "Hypermarket",
+        "Clothes",
+        "Beauty",
+        "Electronics",
+        "Home",
+        "Sport",
+        "Kids",
+        "Cars"
+      ],
       "shopURL": "https://www.carrefouruae.com"
     },
     {
@@ -198,7 +277,9 @@
       "name": "Asos",
       "image": "Asos.png",
       "country": "Մեծ Բրիտանիա",
-      "category": ["Clothes"],
+      "category": [
+        "Clothes"
+      ],
       "shopURL": "https://www.asos.com"
     },
     {
@@ -206,7 +287,12 @@
       "name": "Zara",
       "image": "Zara.png",
       "country": "ԱՄՆ",
-      "category": ["Clothes", "Beauty", "Kids", "Brand"],
+      "category": [
+        "Clothes",
+        "Beauty",
+        "Kids",
+        "Brand"
+      ],
       "shopURL": "https://www.zara.com/us/"
     },
     {
@@ -214,7 +300,11 @@
       "name": "Fila",
       "image": "Fila.png",
       "country": "ԱՄՆ",
-      "category": ["Clothes", "Sport", "Brand"],
+      "category": [
+        "Clothes",
+        "Sport",
+        "Brand"
+      ],
       "shopURL": "https://www.fila.com/"
     },
     {
@@ -222,7 +312,13 @@
       "name": "Best Buy",
       "image": "Bestbuy.png",
       "country": "ԱՄՆ",
-      "category": ["Hypermarket", "Beauty", "Electronics", "Home", "Kids"],
+      "category": [
+        "Hypermarket",
+        "Beauty",
+        "Electronics",
+        "Home",
+        "Kids"
+      ],
       "shopURL": "https://www.bestbuy.com"
     },
     {
@@ -230,7 +326,16 @@
       "name": "Be Compact",
       "image": "Becompact.png",
       "country": "Ռուսաստան",
-      "category": ["Hypermarket", "Clothes", "Beauty", "Electronics", "Home", "Sport", "Kids", "Cars"],
+      "category": [
+        "Hypermarket",
+        "Clothes",
+        "Beauty",
+        "Electronics",
+        "Home",
+        "Sport",
+        "Kids",
+        "Cars"
+      ],
       "shopURL": "https://www.becompact.ru"
     },
     {
@@ -238,7 +343,10 @@
       "name": "Apple",
       "image": "Apple.png",
       "country": "ԱՄՆ",
-      "category": ["Electronics", "Brand"],
+      "category": [
+        "Electronics",
+        "Brand"
+      ],
       "shopURL": "https://www.apple.com"
     },
     {
@@ -246,7 +354,11 @@
       "name": "Disney",
       "image": "Disney.png",
       "country": "ԱՄՆ",
-      "category": ["Clothes", "Kids", "Brand"],
+      "category": [
+        "Clothes",
+        "Kids",
+        "Brand"
+      ],
       "shopURL": "https://www.shopdisney.com"
     },
     {
@@ -254,7 +366,14 @@
       "name": "Jumbo",
       "image": "Jumbo.png",
       "country": "ԱՄԷ",
-      "category": ["Hypermarket", "Beauty", "Electronics", "Home", "Sport", "Kids"],
+      "category": [
+        "Hypermarket",
+        "Beauty",
+        "Electronics",
+        "Home",
+        "Sport",
+        "Kids"
+      ],
       "shopURL": "https://www.jumbo.ae"
     }
   ]

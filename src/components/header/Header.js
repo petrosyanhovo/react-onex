@@ -7,6 +7,7 @@ import { NavLink as Link } from "react-router-dom";
 import { CalculatorModal } from "../../pages/CalculatorModal/CalculatorModal";
 import NavBar from "./NavBar/NavBar";
 import { HeaderNavBar } from "./HeaderNavBar/HeaderNavBar";
+
 export const Header = () => {
     const [isCalculatorModalShow, setCalculatorModalShow] = useState(false);
     const [isNavBarShow, setNavBarShow] = useState(true);
@@ -68,7 +69,7 @@ export const Header = () => {
                 </div>
                 <div className="right">
                     <HeaderNavBar />
-                    {/* {isNavBarShow && <NavBar />} */}
+                     {/* {isNavBarShow && <MediaHeaderNavBar />} */}
                     <div className="calc-and-search">
                         <a onClick={calculatorModalShow}>
                             <i className="fa-solid fa-calculator"></i>
