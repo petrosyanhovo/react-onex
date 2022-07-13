@@ -1,0 +1,161 @@
+.orders {
+  height: auto;
+  border-bottom: solid 1px rgba(0, 0, 0, 0.275);
+  margin-bottom: 5rem;
+}
+.orders .orders-header {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.orders .orders-header img {
+  height: 40px;
+}
+
+.orders .orders-header .orders-header-navbar {
+  display: flex;
+  align-items: center;
+}
+
+.orders .orders-header .orders-header-navbar-user {
+  padding: 0 3rem;
+}
+.orders .orders-header .orders-header-navbar-user i {
+  padding: 0 1rem;
+}
+
+.orders .orders-header .orders-header-navbar-user a {
+  padding: 0 1rem;
+  color: #000;
+}
+.orders .orders-header .orders-header-navbar-user a:hover {
+  color: var(--greenColor);
+}
+
+.orders .orders-panel {
+  background-color: #f4f7fa;
+  padding: 1.5rem;
+}
+.orders .orders-panel .orders-panel-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.orders .orders-panel .orders-panel-row .orders-panel-heading {
+  display: flex;
+  text-align: center;
+}
+.orders .orders-panel .orders-panel-row h2 {
+  font-size: 35px;
+  text-transform: uppercase;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  font-weight: bolder;
+  color: #3c4151;
+}
+.orders .orders-panel .orders-panel-row .button-heading {
+  background: linear-gradient(
+    95deg,
+    rgb(85, 67, 241) 20%,
+    rgb(38, 50, 211) 80%
+  );
+  color: #fff;
+  padding: 0px 16px;
+  margin-bottom: 15px;
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 26px;
+  border-radius: 6px !important;
+}
+
+.orders .orders-panel .orders-panel-row .barcode {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  border-radius: 6px !important;
+  border: 1px solid #abbdcf;
+  color: #abbdcf;
+}
+.orders .orders-panel .orders-panel-row .barcode img {
+  width: 30px;
+  margin: 0 9px;
+}
+
+.orders .orders-bottom-panel {
+  display: flex;
+  background-color: #f4f7fa;
+  justify-content: space-around;
+}
+
+.orders .orders-bottom-panel .control-panel {
+  display: flex;
+  align-items: center;
+}
+.orders .orders-bottom-panel .control-panel {
+  font-size: 1.7rem;
+  padding: 0 0.4rem;
+}
+.orders .orders-bottom-panel .control-panel .g-color-primary {
+  color: var(--greenColor);
+  margin: 0 0.4rem;
+}
+
+.orders .orders-bottom-panel .control-panel .fa-list {
+  margin: 0 0.9rem;
+}
+
+.orders .orders-bottom-panel .control-panel .search-input {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  border-radius: 0.4rem;
+}
+.orders .orders-bottom-panel .control-panel .search-input input {
+  padding: 1rem;
+}
+.orders .orders-bottom-panel .control-panel .search-input span {
+  font-weight: 100;
+  font-size: 1.1rem;
+}
+
+.orders .orders-bottom-panel .price-info p {
+  color: #abbdcf;
+  font-size: 1.2rem;
+}
+.orders .orders-bottom-panel .price-info span {
+  color: var(--greenColor);
+}
+.orders .orders-bottom-panel .ship-btn {
+  display: flex;
+}
+.orders .orders-bottom-panel .ship-btn button {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  border-radius: 6px !important;
+  border: 1px solid #abbdcf;
+  color: #abbdcf;
+  margin: 0 0.2rem;
+}
+.orders .orders-bottom-panel .ship-btn a span {
+  display: none;
+}
+.orders .orders-bottom-panel .ship-btn a:hover span {
+  display: block;
+  width: 9rem;
+  font-size: 11px;
+  color: white;
+  background-color: #3c4151;
+  text-align: center;
+  border-radius: 0 0 5px 5px;
+}
+
+
