@@ -183,3 +183,21 @@
     }
 
   }  
+
+  @media (max-width: 770px) {
+      .media-navbar {
+        top: 185px
+      }
+  }
+
+  @media (max-width: 530px) {
+    .media-navbar {
+      top: 207px
+    }
+}
+
+@media (max-width: 524px) {
+  .media-navbar {
+    top: 223px
+  }
+}

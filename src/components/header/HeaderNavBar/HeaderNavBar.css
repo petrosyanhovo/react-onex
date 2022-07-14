@@ -1,5 +1,9 @@
 * {
-  transition : all .09s linear
+  transition: all .09s linear;
+  -webkit-transition: all .09s linear;
+  -moz-transition: all .09s linear;
+  -ms-transition: all .09s linear;
+  -o-transition: all .09s linear;
 }
 
 .navbar {
@@ -18,10 +22,11 @@
     padding: 23px 16px;
     text-decoration: none;
     /* height: 63px; */
-    padding: 20px 16px;
+    /* padding: 20px 16px; */
     /* background-color: red; */
     box-sizing: border-box;
     outline: none;
+    white-space: nowrap;
   }
 
   .navbar .link {
@@ -54,6 +59,7 @@
     margin: 0;
     box-sizing: border-box;
     cursor: pointer;
+    white-space: nowrap;
   }
 
   .dropdown .dropbtn:hover {
@@ -117,6 +123,7 @@
     .navbar a {
       font-size: 12px;
       margin-bottom: -4px;
+      padding: 20px 16px
     }
 
     .navbar .dropbtn  {
@@ -129,3 +136,5 @@
       display: none;
     }
   }  
+
+  
