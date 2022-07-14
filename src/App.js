@@ -19,7 +19,7 @@ import SmartWallPage from "./pages/SmartWallPage/SmartWallPage";
 function App() {
   return (
     <div className="App">
-      <Header />
+      <Header  />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/login" element={<Login />} />

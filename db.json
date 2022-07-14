@@ -389,7 +389,7 @@
     {"id": 9, "category": "Բրենդային խանութ"}
 ],
 
-"countries1": [
+"countries": [
   {"countryId": 1, "country": "ԱՄՆ", "countryImg": "usa.png"},
   {"countryId": 2, "country": "Ռուսաստան", "countryImg": "russia.png"},
   {"countryId": 3, "country": "Մեծ Բրիտանիա", "countryImg": "uk.png"},

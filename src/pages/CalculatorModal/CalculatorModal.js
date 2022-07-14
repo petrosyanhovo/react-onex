@@ -4,7 +4,7 @@ import usa from "./calculatorModal_img/usa.png";
 import russia from "./calculatorModal_img/russia.png";
 import china from "./calculatorModal_img/china.png";
 import uk from "./calculatorModal_img/uk.png";
-import uae from "./calculatorModal_img/dubai.png";
+import uae from "./calculatorModal_img/uae.png";
 
 export const CalculatorModal = ({ calculatorModalShow }) => {
 

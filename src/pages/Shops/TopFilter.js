@@ -19,7 +19,7 @@ const TopFilter = ({onInputChange, onChangeCountry, onClick}) => {
     const [country, setCountry] = useState([]);
 
     const loadCountries = async() => {
-        const result = await axios.get( 'http://localhost:3000/countries1' )
+        const result = await axios.get( 'http://localhost:3000/countries' )
         setCountry(result.data);
         console.log(country);
       }

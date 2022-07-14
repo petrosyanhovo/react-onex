@@ -2,6 +2,8 @@ import React from "react";
 import HeaderImg from "../../components/header/header_img/onex.png";
 import barCodeImg from "./orders_img/bar-code-gray.png";
 import "./orders.css";
+import { OrdersMenu } from "./container-fluid/OrdersMenu";
+import { AddOrder } from "./addOrder/AddOrder";
 const orders = () => {
   return (
     <div className="orders">
@@ -49,14 +51,22 @@ const orders = () => {
         <div className="ship-btn">
           <a href="">
             <button disabled> Առաքում լոքեր</button>
-            <span>«Առաքում լոքեր» ծառայությունը պատվիրելու համար Դուք դեռևս չունեք առաքանի Հայաստանում</span>
+            <span>
+              «Առաքում լոքեր» ծառայությունը պատվիրելու համար Դուք դեռևս չունեք
+              առաքանի Հայաստանում
+            </span>
           </a>
           <a href="">
             <button disabled> Առաքում տուն</button>
-            <span>«Առաքում տուն» ծառայությունը պատվիրելու համար Դուք դեռևս չունեք առաքանի Հայաստանում</span>
+            <span>
+              «Առաքում տուն» ծառայությունը պատվիրելու համար Դուք դեռևս չունեք
+              առաքանի Հայաստանում
+            </span>
           </a>
         </div>
       </div>
+      <OrdersMenu />
+      <AddOrder />
     </div>
   );
 };
