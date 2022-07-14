@@ -1,9 +1,22 @@
 import React, { useState, useEffect } from "react";
 import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
 import "./accordion.css";
+import axios from "axios";
 
 const Accordion = ({ onChange }) => {
+
     const [expanded, setExpanded] = useState(false);
+    const [category, setCategory] = useState();
+
+    const loadCategories = async() => {
+        const result = await axios.get( 'http://localhost:3000/categories' )
+        setCategory(result.data);
+        console.log(category);
+      }
+
+    useEffect(() => {
+        loadCategories();
+    }, [])
 
     return (
         <div className="accordion">
@@ -20,107 +33,25 @@ const Accordion = ({ onChange }) => {
                 </button>
             </div>
             {expanded && (
-                <div className="left-filter">
-                    <div className="left-filter-option">
-                        <label>
-                            <input
-                                type="checkbox"
-                                name="Hypermarket"
-                                id=""
-                                onChange={(e) => onChange(e)}
-                            />
-                            <span>Հիպերմարկետ</span>
-                        </label>
+                category.map((cat) =>{
+                    return (
+                        <div className="left-filter" key={cat.id}>
+
+                        <div className="left-filter-option">
+                            <label>
+                                <input
+                                    type="checkbox"
+                                    name={cat.category}
+                                    id=""
+                                    onChange={(e) => onChange(e)}
+                                />
+                                <span>{cat.category}</span>
+                            </label>
+                        </div>
+    
                     </div>
-                    <div className="left-filter-option">
-                        <label>
-                            <input
-                                type="checkbox"
-                                name="Clothes"
-                                id=""
-                                onChange={(e) => onChange(e)}
-                            />
-                            <span>Հագուստ, կոշիկ, աքսեսուարներ</span>
-                        </label>
-                    </div>
-                    <div className="left-filter-option">
-                        <label>
-                            <input
-                                type="checkbox"
-                                name="Beauty"
-                                id=""
-                                onChange={(e) => onChange(e)}
-                            />
-                            <span>Գեղեցկություն և առողջություն</span>
-                        </label>
-                    </div>
-                    <div className="left-filter-option">
-                        <label>
-                            <input
-                                type="checkbox"
-                                name="Electronics"
-                                id=""
-                                onChange={(e) => onChange(e)}
-                            />
-                            <span>Էլեկտրոնիկա և աքսեսուարներ</span>
-                        </label>
-                    </div>
-                    <div className="left-filter-option">
-                        <label>
-                            <input
-                                type="checkbox"
-                                name="Home"
-                                id=""
-                                onChange={(e) => onChange(e)}
-                            />
-                            <span>Տուն և այգի</span>
-                        </label>
-                    </div>
-                    <div className="left-filter-option">
-                        <label>
-                            <input
-                                type="checkbox"
-                                name="Sport"
-                                id=""
-                                onChange={(e) => onChange(e)}
-                            />
-                            <span>Սպորտ և ժամանց</span>
-                        </label>
-                    </div>
-                    <div className="left-filter-option">
-                        <label>
-                            <input
-                                type="checkbox"
-                                name="Kids"
-                                id=""
-                                onChange={(e) => onChange(e)}
-                            />
-                            <span>Մանկական</span>
-                        </label>
-                    </div>
-                    <div className="left-filter-option">
-                        <label>
-                            <input
-                                type="checkbox"
-                                name="Car"
-                                id=""
-                                onChange={(e) => onChange(e)}
-                            />
-                            <span>Մեքենաների համար</span>
-                        </label>
-                    </div>
-                    <div className="left-filter-option">
-                        <label>
-                            <input
-                                type="checkbox"
-                                name="Brand"
-                                id=""
-                                onChange={(e) => onChange(e)}
-                            />
-                            <span>Բրենդային խանութ</span>
-                        </label>
-                    </div>
-                </div>
+                    )
+                })
             )}
         </div>
     );

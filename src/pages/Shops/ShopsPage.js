@@ -10,9 +10,12 @@ import ChinaImg from "./shops_img/china.png";
 import UAEImg from "./shops_img/uae.png";
 import Accordion from "./Accordion";
 import Shops from "./Shops";
+import TopFilter from "./TopFilter";
 
 const ShopsPage = () => {
     const [shops, setShops] = useState([]);
+
+
 
 
     const loadShops = async() => {
@@ -35,10 +38,42 @@ const ShopsPage = () => {
                 }
             })
             setShops(filteredBYCategory);
+            console.log(filteredBYCategory);
         } else {
             loadShops();
         }
+
+        
     };
+
+    // const [checked, setChecked] = useState([])
+
+    // const onChange = (value) => {
+    //     const currentIndex = checked.indexOf(value);
+    //     const newChecked = [...checked];
+
+    //     if (currentIndex === -1) {
+    //         newChecked.push(value)
+    //     } else {
+    //         newChecked.splice(currentIndex, 1)
+    //     }
+    //     console.log(newChecked);
+    //     setChecked(newChecked)
+    //     setShops(newChecked)
+    // }
+
+
+    const onChangeCountry = (e) => {
+        if (e.target.checked) {
+            setShops(shops.filter((shop) => shop.country === e.target.id  )) 
+            // setShops(filteredByCountry);
+            console.log(shops);
+
+        } else {
+            loadShops();
+        }
+
+    }
 
 
     const onInputChange = (e) => {
@@ -72,67 +107,11 @@ const ShopsPage = () => {
                 </div>
             </div>
 
-            <div className="shops-top-filter">
-                <div className="shops-top-filter-search-input">
-                    <input
-                        type="text"
-                        placeholder="Փնտրել"
-                        onChange={onInputChange}
-                    />
-                </div>
-                <div className="shops-top-filter-by-country">
-                    <ul className="countries">
-                        <li className="country">
-                            <a href="#" onClick={onClick}>
-                                <div className="filter-country-content">
-                                    <i className="fa-solid fa-earth-americas"></i>
-                                    <span>Բոլորը</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li className="country">
-                            <a href="#" onClick={onClick}>
-                                <div className="filter-country-content">
-                                    <img src={USAImg} alt="" />
-                                    <span>ԱՄՆ</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li className="country">
-                            <a href="#" onClick={onClick}>
-                                <div className="filter-country-content">
-                                    <img src={RusImg} alt="" />
-                                    <span>Ռուսաստան</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li className="country">
-                            <a href="#" onClick={onClick}>
-                                <div className="filter-country-content">
-                                    <img src={UKImg} alt="" />
-                                    <span>Մեծ Բրիտանիա</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li className="country">
-                            <a href="#" onClick={onClick}>
-                                <div className="filter-country-content">
-                                    <img src={ChinaImg} alt="" />
-                                    <span>Չինաստան</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li className="country">
-                            <a href="#" onClick={onClick}>
-                                <div className="filter-country-content">
-                                    <img src={UAEImg} alt="" />
-                                    <span>ԱՄԷ</span>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+            <TopFilter 
+                onInputChange={onInputChange} 
+                onChangeCountry={onChangeCountry} 
+                onClick={onClick}
+            />
 
             <div className="content">
                 <Accordion onChange={onChange} />

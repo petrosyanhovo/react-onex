@@ -101,13 +101,13 @@
       "image": "amazon.png",
       "country": "ԱՄՆ",
       "category": [
-        "Hypermarket",
-        "Clothes",
-        "Electronics",
-        "Home",
-        "Sport",
-        "Kids",
-        "Cars"
+        "Հիպերմարկետ",
+        "Հագուստ, կոշիկ, աքսեսուարներ",
+        "Էլեկտրոնիկա և աքսեսուարներ",
+        "Տուն և այգի",
+        "Սպորտ և ժամանց",
+        "Մանկական",
+        "Մեքենաների համար"
       ],
       "shopURL": "https://www.amazon.com/"
     },
@@ -117,14 +117,14 @@
       "image": "aliexpress.png",
       "country": "Չինաստան",
       "category": [
-        "Hypermarket",
-        "Clothes",
-        "Beauty",
-        "Electronics",
-        "Home",
-        "Sport",
-        "Kids",
-        "Cars"
+        "Հիպերմարկետ",
+        "Հագուստ, կոշիկ, աքսեսուարներ",
+        "Գեղեցկություն և առողջություն",
+        "Էլեկտրոնիկա և աքսեսուարներ",
+        "Տուն և այգի",
+        "Սպորտ և ժամանց",
+        "Մանկական",
+        "Մեքենաների համար"
       ],
       "shopURL": "http://www.aliexpress.com"
     },
@@ -134,14 +134,14 @@
       "image": "ebay.png",
       "country": "ԱՄՆ",
       "category": [
-        "Hypermarket",
-        "Clothes",
-        "Beauty",
-        "Electronics",
-        "Home",
-        "Sport",
-        "Kids",
-        "Cars"
+        "Հիպերմարկետ",
+        "Հագուստ, կոշիկ, աքսեսուարներ",
+        "Գեղեցկություն և առողջություն",
+        "Էլեկտրոնիկա և աքսեսուարներ",
+        "Տուն և այգի",
+        "Սպորտ և ժամանց",
+        "Մանկական",
+        "Մեքենաների համար"
       ],
       "shopURL": "http://www.ebay.com"
     },
@@ -151,7 +151,7 @@
       "image": "carters.png",
       "country": "ԱՄՆ",
       "category": [
-        "Kids"
+        "Մանկական"
       ],
       "shopURL": "http://www.carters.com"
     },
@@ -161,9 +161,9 @@
       "image": "vs.png",
       "country": "ԱՄՆ",
       "category": [
-        "Clothes",
-        "Beauty",
-        "Brand"
+        "Հագուստ, կոշիկ, աքսեսուարներ",
+        "Գեղեցկություն և առողջություն",
+        "Բրենդային խանութ"
       ],
       "shopURL": "http://www.victoriassecret.com"
     },
@@ -173,8 +173,8 @@
       "image": "gap.png",
       "country": "ԱՄՆ",
       "category": [
-        "Clothes",
-        "Brand"
+        "Հագուստ, կոշիկ, աքսեսուարներ",
+        "Բրենդային խանութ"
       ],
       "shopURL": "http://www.gap.com"
     },
@@ -184,8 +184,8 @@
       "image": "mk.png",
       "country": "ԱՄՆ",
       "category": [
-        "Clothes",
-        "Brand"
+        "Հագուստ, կոշիկ, աքսեսուարներ",
+        "Բրենդային խանութ"
       ],
       "shopURL": "http://www.michaelkors.com"
     },
@@ -195,7 +195,7 @@
       "image": "forever21.png",
       "country": "ԱՄՆ",
       "category": [
-        "Clothes"
+        "Հագուստ, կոշիկ, աքսեսուարներ"
       ],
       "shopURL": "http://www.forever21.com"
     },
@@ -205,8 +205,8 @@
       "image": "hm.png",
       "country": "Մեծ Բրիտանիա",
       "category": [
-        "Clothes",
-        "Brand"
+        "Հագուստ, կոշիկ, աքսեսուարներ",
+        "Բրենդային խանութ"
       ],
       "shopURL": "https://www2.hm.com/en_gb/index.html"
     },
@@ -216,8 +216,8 @@
       "image": "rl.png",
       "country": "ԱՄՆ",
       "category": [
-        "Clothes",
-        "Brand"
+        "Հագուստ, կոշիկ, աքսեսուարներ",
+        "Բրենդային խանութ"
       ],
       "shopURL": "https://www.ralphlauren.com/"
     },
@@ -227,14 +227,14 @@
       "image": "ozon.png",
       "country": "Ռուսաստան",
       "category": [
-        "Hypermarket",
-        "Clothes",
-        "Beauty",
-        "Electronics",
-        "Home",
-        "Sport",
-        "Kids",
-        "Cars"
+        "Հիպերմարկետ",
+        "Հագուստ, կոշիկ, աքսեսուարներ",
+        "Գեղեցկություն և առողջություն",
+        "Էլեկտրոնիկա և աքսեսուարներ",
+        "Տուն և այգի",
+        "Սպորտ և ժամանց",
+        "Մանկական",
+        "Մեքենաների համար"
       ],
       "shopURL": "https://www.ozon.ru/"
     },
@@ -244,14 +244,14 @@
       "image": "taobao.png",
       "country": "Չինաստան",
       "category": [
-        "Hypermarket",
-        "Clothes",
-        "Beauty",
-        "Electronics",
-        "Home",
-        "Sport",
-        "Kids",
-        "Cars"
+        "Հիպերմարկետ",
+        "Հագուստ, կոշիկ, աքսեսուարներ",
+        "Գեղեցկություն և առողջություն",
+        "Էլեկտրոնիկա և աքսեսուարներ",
+        "Տուն և այգի",
+        "Սպորտ և ժամանց",
+        "Մանկական",
+        "Մեքենաների համար"
       ],
       "shopURL": "https://www.taobao.com/"
     },
@@ -261,14 +261,14 @@
       "image": "Carrefour.png",
       "country": "ԱՄԷ",
       "category": [
-        "Hypermarket",
-        "Clothes",
-        "Beauty",
-        "Electronics",
-        "Home",
-        "Sport",
-        "Kids",
-        "Cars"
+        "Հիպերմարկետ",
+        "Հագուստ, կոշիկ, աքսեսուարներ",
+        "Գեղեցկություն և առողջություն",
+        "Էլեկտրոնիկա և աքսեսուարներ",
+        "Տուն և այգի",
+        "Սպորտ և ժամանց",
+        "Մանկական",
+        "Մեքենաների համար"
       ],
       "shopURL": "https://www.carrefouruae.com"
     },
@@ -278,7 +278,7 @@
       "image": "Asos.png",
       "country": "Մեծ Բրիտանիա",
       "category": [
-        "Clothes"
+        "Հագուստ, կոշիկ, աքսեսուարներ"
       ],
       "shopURL": "https://www.asos.com"
     },
@@ -288,10 +288,10 @@
       "image": "Zara.png",
       "country": "ԱՄՆ",
       "category": [
-        "Clothes",
-        "Beauty",
-        "Kids",
-        "Brand"
+        "Հագուստ, կոշիկ, աքսեսուարներ",
+        "Գեղեցկություն և առողջություն",
+        "Մանկական",
+        "Բրենդային խանութ"
       ],
       "shopURL": "https://www.zara.com/us/"
     },
@@ -301,9 +301,9 @@
       "image": "Fila.png",
       "country": "ԱՄՆ",
       "category": [
-        "Clothes",
-        "Sport",
-        "Brand"
+        "Հագուստ, կոշիկ, աքսեսուարներ",
+        "Սպորտ և ժամանց",
+        "Բրենդային խանութ"
       ],
       "shopURL": "https://www.fila.com/"
     },
@@ -313,11 +313,11 @@
       "image": "Bestbuy.png",
       "country": "ԱՄՆ",
       "category": [
-        "Hypermarket",
-        "Beauty",
-        "Electronics",
-        "Home",
-        "Kids"
+        "Հիպերմարկետ",
+        "Գեղեցկություն և առողջություն",
+        "Էլեկտրոնիկա և աքսեսուարներ",
+        "Տուն և այգի",
+        "Մանկական"
       ],
       "shopURL": "https://www.bestbuy.com"
     },
@@ -327,14 +327,14 @@
       "image": "Becompact.png",
       "country": "Ռուսաստան",
       "category": [
-        "Hypermarket",
-        "Clothes",
-        "Beauty",
-        "Electronics",
-        "Home",
-        "Sport",
-        "Kids",
-        "Cars"
+        "Հիպերմարկետ",
+        "Հագուստ, կոշիկ, աքսեսուարներ",
+        "Գեղեցկություն և առողջություն",
+        "Էլեկտրոնիկա և աքսեսուարներ",
+        "Տուն և այգի",
+        "Սպորտ և ժամանց",
+        "Մանկական",
+        "Մեքենաների համար"
       ],
       "shopURL": "https://www.becompact.ru"
     },
@@ -344,8 +344,8 @@
       "image": "Apple.png",
       "country": "ԱՄՆ",
       "category": [
-        "Electronics",
-        "Brand"
+        "Էլեկտրոնիկա և աքսեսուարներ",
+        "Բրենդային խանութ"
       ],
       "shopURL": "https://www.apple.com"
     },
@@ -355,9 +355,9 @@
       "image": "Disney.png",
       "country": "ԱՄՆ",
       "category": [
-        "Clothes",
-        "Kids",
-        "Brand"
+        "Հագուստ, կոշիկ, աքսեսուարներ",
+        "Մանկական",
+        "Բրենդային խանութ"
       ],
       "shopURL": "https://www.shopdisney.com"
     },
@@ -367,14 +367,33 @@
       "image": "Jumbo.png",
       "country": "ԱՄԷ",
       "category": [
-        "Hypermarket",
-        "Beauty",
-        "Electronics",
-        "Home",
-        "Sport",
-        "Kids"
+        "Հիպերմարկետ",
+        "Գեղեցկություն և առողջություն",
+        "Էլեկտրոնիկա և աքսեսուարներ",
+        "Տուն և այգի",
+        "Սպորտ և ժամանց",
+        "Մանկական"
       ],
       "shopURL": "https://www.jumbo.ae"
     }
-  ]
+  ],
+  "categories": [
+    {"id": 1, "category": "Հիպերմարկետ"},
+    {"id": 2, "category": "Հագուստ, կոշիկ, աքսեսուարներ"},
+    {"id": 3, "category": "Գեղեցկություն և առողջություն"},
+    {"id": 4, "category": "Էլեկտրոնիկա և աքսեսուարներ"},
+    {"id": 5, "category": "Տուն և այգի"},
+    {"id": 6, "category": "Մանկական"},
+    {"id": 7, "category": "Սպորտ և ժամանց"},
+    {"id": 8, "category": "Մեքենաների համար"},
+    {"id": 9, "category": "Բրենդային խանութ"}
+],
+
+"countries1": [
+  {"countryId": 1, "country": "ԱՄՆ", "countryImg": "usa.png"},
+  {"countryId": 2, "country": "Ռուսաստան", "countryImg": "russia.png"},
+  {"countryId": 3, "country": "Մեծ Բրիտանիա", "countryImg": "uk.png"},
+  {"countryId": 4, "country": "Չինաստան", "countryImg": "china.png"},
+  {"countryId": 5, "country": "ԱՄԷ", "countryImg": "uae.png"}
+]
 }

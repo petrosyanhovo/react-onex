@@ -15,13 +15,6 @@ function importAll(r) {
 
 const Shops = ({shops}) => {
 
-// const [shops, setShops] = useState([]);
-
-//     useEffect(() => {
-//       fetch('http://localhost:3000/shops')
-//       .then(response => response.json())
-//       .then(json => setShops(json));
-//     }, [])
 
   return (
     <div className='shops'>

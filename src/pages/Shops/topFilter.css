@@ -1,0 +1,85 @@
+.top-filter {
+    display: flex;
+  }
+  
+  .top-filter .shops-top-filter-search-input {
+    width: 22%;
+  }
+  
+  .top-filter .shops-top-filter-search-input input {
+    width: 80%;
+    height: 40px;
+    border: 1px solid rgba(184, 180, 180, 0.7);
+    border-radius: 10px;
+    padding-left: 10px;
+  }
+  
+    .top-filter .shops-top-filter-search-input input::placeholder {
+    font-size: 14px;
+    color: rgba(184, 180, 180, 0.7);
+  }
+  
+  .top-filter .shops-top-filter-by-country {
+    width: 70%;
+  }
+  
+  .top-filter .shops-top-filter-by-country .countries {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .top-filter .shops-top-filter-by-country .countries .country {
+    height: 50px;
+    list-style-type: none;
+  }
+
+  .top-filter .shops-top-filter-by-country .countries .country input[type="checkbox"] {
+    display: none;
+  }
+
+  .top-filter
+  .shops-top-filter-by-country
+  .countries
+  .country
+  .filter-country-content {
+  display: flex;
+  color: black;
+}
+
+  .top-filter
+  .shops-top-filter-by-country
+  .countries
+  .country
+  .filter-country-content
+  img {
+  height: 20px;
+  padding: 0 0.3rem;
+}
+
+.top-filter
+.shops-top-filter-by-country
+.countries
+.country
+.filter-country-content
+i {
+color: var(--greenColor);
+font-size: 1.4rem;
+}
+
+.top-filter
+.shops-top-filter-by-country
+.countries
+.country
+.filter-country-content
+span {
+margin: 0 0.4rem;
+}
+
+.top-filter
+.shops-top-filter-by-country
+.countries
+.country
+.filter-country-content
+span:hover {
+color: var(--greenColor);
+}
