@@ -3,7 +3,7 @@ import { Footer } from "./components/footer/Footer";
 import { Header } from "./components/header/Header";
 import Login from "./pages/Login/Login";
 import Register from "./pages/Register/Register";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Switch } from "react-router-dom";
 import HomePage from "./pages/HomePage/HomePage";
 import SmartServicesMore from "./pages/SmartServicesMore/SmartServicesMore";
 import ExportToUSA from "./pages/ExportToUSA/ExportToUSA";
@@ -14,6 +14,7 @@ import { ContactUs } from "./pages/ContactUs/ContactUs";
 import Orders from "./pages/Orders/Orders";
 import ShopsPage from "./pages/Shops/ShopsPage";
 import SmartWallPage from "./pages/SmartWallPage/SmartWallPage";
+import { ProtectedRoute } from "./protectedRoute";
 
 
 function App() {
@@ -21,9 +22,10 @@ function App() {
     <div className="App">
       <Header  />
       <Routes>
+        
         <Route path="/" element={<HomePage />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/login/orders" element={<Orders />} />
+        <Route path="/login/orders" element={<Orders />} auth = {false} />
         <Route path="/register" element={<Register />} />
         <Route path="/search" element={<Search />} />
         <Route path="/smartservices" element={<SmartServicesMore />} />

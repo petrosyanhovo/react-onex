@@ -3,9 +3,10 @@ import Button from '../../components/Button/Button'
 import './login.css'
 import LoginImg from '../Login/login_img/rocket.png'
 import { useNavigate } from 'react-router-dom'
+import auth from '../../auth'
 
 
-const Login = () => {
+const Login = ({isAuth, login}) => {
 
   const navigate = useNavigate();
   const [focused, setFocused] = useState(false);
@@ -34,7 +35,10 @@ const Login = () => {
       setFocused(true)
       console.log('by');
     }
+  }
 
+  if(isAuth){
+    login();
   }
 
   const onChange = (e) => {
@@ -53,7 +57,10 @@ const Login = () => {
                 <input type = 'text' placeholder='Էլ. հասցե' name = 'email' onChange={(e) => onChange(e)}></input>
                 <input type = 'password' placeholder='Գաղտնաբառ' name = 'password' onChange={(e) => onChange(e)}></input>
                 <span style={{color: 'red'}} focused = {focused.toString()}>{errorMessage}</span>
-                <Button buttonName = 'ՄՈՒՏՔ' />
+                
+                 <Button buttonName = 'ՄՈՒՏՔ' onClick = {login} />
+               
+                
             </form>
         </div>
 

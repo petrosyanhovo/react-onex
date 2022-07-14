@@ -4,7 +4,15 @@ import barCodeImg from "./orders_img/bar-code-gray.png";
 import "./orders.css";
 import { OrdersMenu } from "./container-fluid/OrdersMenu";
 import { AddOrder } from "./addOrder/AddOrder";
-const orders = () => {
+import auth from "../../auth";
+
+
+const orders = (props, { isAuth, logout }) => {
+
+if(!isAuth){
+  // logout()
+}
+
   return (
     <div className="orders">
       <div className="orders-header">
@@ -18,6 +26,17 @@ const orders = () => {
             <a href="">0 դր </a>
             <a href="">NAREK ARM226272 </a>
           </div>
+
+          <button
+        // onClick={() => {
+        //   !isAuth ? logout(() => {
+        //     ("/");
+        //   }) : console.log("kkk");
+        // }}
+      >
+        Logout
+      </button>
+
         </div>
       </div>
       <div className="orders-panel">
@@ -66,7 +85,7 @@ const orders = () => {
         </div>
       </div>
       <OrdersMenu />
-      <AddOrder />
+      {/* <AddOrder /> */}
     </div>
   );
 };

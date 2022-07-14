@@ -9,7 +9,8 @@ import NavBar from "./NavBar/NavBar";
 import { HeaderNavBar } from "./HeaderNavBar/HeaderNavBar";
 import { MediaHeaderNavBar } from "./MediaHeaderNavBar/MediaHeaderNavBar";
 
-export const Header = () => {
+export const Header = (props) => {
+
     const [isCalculatorModalShow, setCalculatorModalShow] = useState(false);
     const [isNavBarShow, setNavBarShow] = useState(false);
     //   const [isActive, setActive] = useState(true);
@@ -49,6 +50,8 @@ export const Header = () => {
                         <i className="fa fa-sign-in"></i>
                         ՄՈՒՏՔ
                     </Link>
+        
+                    
                     <Link to="/register" className="btn-2">
                         <i className="fa fa-user-plus"></i>
                         ԳՐԱՆՑՎԵԼ
