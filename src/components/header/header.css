@@ -179,6 +179,10 @@ header .third-part .right {
   display: flex;
   align-items: center;
 }
+
+.calc-and-search {
+  white-space: nowrap;
+}
 /* MEDIA  */
 
 @media (max-width: 960px) {
