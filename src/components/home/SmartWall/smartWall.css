@@ -6,9 +6,14 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: space-between;
   box-shadow: 0 1px 4px 0 rgb(46 61 73 / 10%);
   background-color: white;
   border: 1px solid #f2f4fb;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
 }
 
 .smart-wall .stars {
@@ -16,7 +21,7 @@
 }
 
 .smart-wall .smart-wall-video {
-  width: 45%;
+  width: 30%;
   margin-right: 6rem;
   position: relative;
   top: 0;
@@ -64,4 +69,115 @@
 
 .smart-wall h2 span {
   color: black;
+}
+
+@media (max-width : 1326px) {
+  .smart-wall .smart-wall-video {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .smart-wall .smart-wall-video iframe {
+    width: 100%;
+  }
+
+  .smart-wall .smart-wall-content {
+    width: 100%;
+  } 
+
+  .smart-wall .smart-wall-content a button {
+    margin: 20px 0;
+  } 
+
+  .smart-wall .smart-wall-content .heading h2 {
+    margin: 20px 0;
+  }
+
+  .smart-wall .smart-wall-content .heading p {
+    margin: 20px 0;
+  }
+
+  .smart-wall {
+    justify-content: center;
+    width: 75%;
+    padding: 50px 100px;
+  }
+}
+
+@media (max-width : 920px) {
+  .smart-wall {
+    padding: 40px;
+  }
+
+  .smart-wall .smart-wall-content .heading h2 {
+    margin: 0;
+  }
+}
+
+@media (max-width : 690px) {
+
+  .smart-wall .smart-wall-video {
+    margin-top: -30px;
+  }
+
+  .smart-wall .smart-wall-content .heading h2 {
+    font-size: 36px;
+  }
+}
+
+
+@media (max-width : 640px) {
+
+  .smart-wall .smart-wall-video {
+    margin-top: -40px;
+  }
+
+  .smart-wall .smart-wall-content .heading h2 {
+    margin-top: -40px;
+    font-size: 30px;
+  }
+}
+
+@media (max-width : 590px) {
+
+  .smart-wall .smart-wall-video {
+    margin-top: -50px;
+  }
+
+}
+
+@media (max-width : 530px) {
+
+  .smart-wall .smart-wall-video {
+    margin-top: -70px;
+  }
+
+  .smart-wall .smart-wall-content .heading h2 {
+    margin-top: -60px;
+    font-size: 28px;
+  }
+
+  .smart-wall {
+    padding: 25px;
+  }
+}
+
+@media (max-width : 400px) {
+  .smart-wall {
+    padding: 10px 25px;
+  }
+}
+
+
+@media (max-width : 360px) {
+  .smart-wall {
+    padding: 0px 25px;
+  }
+}
+
+
+@media (max-width : 333px) {
+  .smart-wall .smart-wall-content .heading h2 {
+    font-size: 24px;
+  }
 }
