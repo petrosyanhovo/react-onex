@@ -18,18 +18,18 @@
 
 .smart-locker-video {
   width: 45%;
-  height: 300px;
+  /* height: 300px; */
   margin-right: 6rem;
-  position: relative;
-  top: 0;
-  left: 0;
+  /* position: relative; */
+  /* top: 0; */
+  /* left: 0; */
 }
 .smart-locker-video iframe {
   border-radius: 1.4rem;
 }
 
 .smart-locker-video .image {
-  border: 0.3px solid;
+  border: 0.3px solid rgba(0, 0, 0, 0.1);
   width: 560px;
   height: 315px;
   border-radius: 1.4rem;
@@ -41,7 +41,7 @@
 }
 
 .smart-locker-content {
-  width: 52%;
+  width: 40%;
 }
 
 .smart-locker-content p {
@@ -68,4 +68,109 @@
 
 .smart-locker h2 span {
   color: black;
+}
+
+
+/* MEDIA  */
+
+@media (max-width : 1326px) {
+  .smart-locker-video {
+    width: 100%;
+    /* margin-right: none; */
+    margin: 0 auto;
+  }
+
+  .smart-locker-video iframe{
+    width: 100%;
+  }
+
+  .smart-locker-content {
+    width: 100%;
+  }
+
+  .smart-locker {
+    flex-wrap: wrap;
+    align-items : center;
+    padding: 50px 100px;
+  }
+
+  .smart-locker button {
+    margin: 30px 0;
+  }
+
+  .smart-locker .heading h2 {
+    margin: 0;
+  }
+
+  .smart-locker .heading p {
+    margin: 20px 0;
+  }
+
+  .smart-locker .main-button {
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  
+}
+
+@media (max-width : 920px) {
+  .smart-locker {
+    padding: 40px;
+  }
+
+  /* .smart-wall .smart-wall-content .heading h2 {
+    margin: 0;
+  } */
+}
+
+
+
+@media (max-width : 690px) {
+/* 
+  .smart-wall .smart-wall-video {
+    margin-top: -30px;
+  } */
+
+  .smart-locker .smart-locker-content .heading h2 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width : 600px) {
+/* 
+  .smart-wall .smart-wall-video {
+    margin-top: -30px;
+  } */
+
+  .smart-locker .smart-locker-content .heading h2 {
+    font-size: 36px;
+  }
+
+  .smart-locker .smart-locker-video iframe{
+    height: 200px;
+  }
+}
+
+@media (max-width : 400px) {
+  .smart-locker .smart-locker-content .heading h2 {
+    font-size: 32px;
+  }
+
+  .smart-locker .smart-locker-video iframe{
+    height: 180px;
+  }
+}
+
+@media (max-width : 360px) {
+  .smart-locker .smart-locker-content .heading h2 {
+    font-size: 28px;
+  }
+}
+
+
+@media (max-width : 333px) {
+  .smart-locker .smart-locker-content .heading h2 {
+    font-size: 24px;
+  }
 }
