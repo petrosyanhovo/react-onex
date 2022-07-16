@@ -16,16 +16,15 @@ import ShopsPage from "./pages/Shops/ShopsPage";
 import SmartWallPage from "./pages/SmartWallPage/SmartWallPage";
 import { ProtectedRoute } from "./protectedRoute";
 
-
 function App() {
   return (
     <div className="App">
-      <Header  />
+      <Header />
       <Routes>
-        
         <Route path="/" element={<HomePage />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/login/orders" element={<Orders />} auth = {false} />
+        <Route path="/login/orders" element={<Orders />} auth={false} />
+        {/* <ProtectedRoute path="/login/orders" element={<Orders />} auth = {false} /> */}
         <Route path="/register" element={<Register />} />
         <Route path="/search" element={<Search />} />
         <Route path="/smartservices" element={<SmartServicesMore />} />

@@ -52,3 +52,89 @@
 .add-order .add-order-container .ordered-country .order-country-flag img {
   width: 3rem;
 }
+
+.add-order .order-shipping-method {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  margin: 15px auto;
+}
+.add-order .order-shipping-method h3,
+.add-order .order-shipping-method i {
+  color: #555;
+  font-size: 14px;
+}
+
+.add-order .order-shipping-method h3 span {
+  color: red;
+}
+
+.add-order .order-shipping-method .fa-plane {
+  transform: rotate(-45deg);
+}
+.add-order .order-shipping-method label {
+  color: gray;
+}
+.add-order .order-shipping-method label i {
+  margin: 0 5px;
+}
+.add-order .order-receiver {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  margin: 20px auto;
+}
+.add-order .order-receiver {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.add-order .order-receiver h3 span {
+  color: red;
+}
+.add-order .order-receiver h3 {
+  color: #555;
+  font-size: 14px;
+}
+
+.add-order .order-receiver select {
+  width: 100%;
+  margin: 0.5rem 0;
+  border: 1px solid rgba(128, 128, 128, 0.3);
+  padding: 1rem;
+  border-radius: 0.4rem;
+  color: grey;
+}
+
+.add-order .order-group {
+  width: 85%;
+  margin: -15px auto;
+}
+.add-order .order-group #tracking {
+  width: 100%;
+  border: 1px solid rgba(128, 128, 128, 0.3);
+  padding: 1rem;
+  border-radius: 0.4rem;
+  color: grey;
+}
+.add-order .order-group #tracking:focus {
+  border: 2px solid black;
+}
+.add-order .order-group .order-group-total {
+  display: flex;
+  flex-wrap: wrap;
+  width: 85%;
+}
+
+.add-order .order-group select,
+.add-order .order-group input {
+  border: 1px solid rgba(128, 128, 128, 0.3);
+  padding: 1rem;
+  border-radius: 0.4rem;
+  color: grey;
+  margin: 0.5rem 0;
+  width: 23%;
+}
+.add-order .order-group input {
+  margin: 0.5rem;
+}

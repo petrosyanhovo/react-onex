@@ -6,12 +6,10 @@ import { OrdersMenu } from "./container-fluid/OrdersMenu";
 import { AddOrder } from "./addOrder/AddOrder";
 import auth from "../../auth";
 
-
 const orders = (props, { isAuth, logout }) => {
-
-if(!isAuth){
-  // logout()
-}
+  if (!isAuth) {
+    // logout()
+  }
 
   return (
     <div className="orders">
@@ -28,15 +26,14 @@ if(!isAuth){
           </div>
 
           <button
-        // onClick={() => {
-        //   !isAuth ? logout(() => {
-        //     ("/");
-        //   }) : console.log("kkk");
-        // }}
-      >
-        Logout
-      </button>
-
+          // onClick={() => {
+          //   !isAuth ? logout(() => {
+          //     ("/");
+          //   }) : console.log("kkk");
+          // }}
+          >
+            Logout
+          </button>
         </div>
       </div>
       <div className="orders-panel">
