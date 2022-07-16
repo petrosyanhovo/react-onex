@@ -10,9 +10,6 @@ import TopFilter from "./TopFilter";
 const ShopsPage = () => {
     const [shops, setShops] = useState([]);
 
-
-
-
     const loadShops = async() => {
       const result = await axios.get( 'http://localhost:3000/shops' )
       setShops(result.data);
@@ -20,7 +17,7 @@ const ShopsPage = () => {
 
     useEffect(() => {
         window.scrollTo(0, 0);
-        loadShops()
+        loadShops();
     }, []);
 
     const onChange = (e) => {
@@ -37,8 +34,7 @@ const ShopsPage = () => {
         } else {
             loadShops();
         }
-
-        
+  
     };
 
     // const [checked, setChecked] = useState([])

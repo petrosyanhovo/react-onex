@@ -56,7 +56,7 @@
   /* height: 23.5rem; */
   height: auto;
 }
-.container .address-container .map {
+.container .address-container .map-address {
   box-shadow: 0 5px 15px 0 rgb(46 61 73 / 14%);
   padding: 2rem;
   border-radius: 1rem;
@@ -65,7 +65,7 @@
   height: 50%;
 }
 
-.container .address-container .map iframe {
+.container .address-container .map-address iframe {
   width: 100%;
 }
 .container .address-container .address {

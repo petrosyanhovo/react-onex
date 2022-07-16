@@ -5,5 +5,10 @@ const getShops = async() => {
     return response.json();
   }
 
+  const getBranches = async() => {
+    const response = await fetch( 'http://localhost:3000/branches' )
+    return response.json();
+  }
 
-export {getShops}
+
+export {getShops, getBranches}

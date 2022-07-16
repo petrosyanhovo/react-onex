@@ -1,7 +1,18 @@
 import React from "react";
 import "./contactUs.css";
+import  { getBranches } from '../../api'
+import { useEffect, useState } from "react";
 
 export const ContactUs = () => {
+
+    const [branches, setBranches] = useState([]);
+
+    useEffect(() => {
+        getBranches().then(data => {
+            setBranches(data)
+        })
+    }, [])
+
     return (
         <div className="container">
             <h2>ՀԵՏԱԴԱՐՁ ԿԱՊ</h2>
@@ -31,7 +42,7 @@ export const ContactUs = () => {
                 </div>
             </div>
             <div className="address-container">
-                <div className="map">
+                <div className="map-address">
                     <iframe
                         title="Google Map"
                         width="560"
@@ -41,87 +52,20 @@ export const ContactUs = () => {
                         allowFullScreen
                     ></iframe>
                 </div>
+
                 <div className="address">
-                    <p>
-                        <i className="fas fa-home"></i>
-                        ONEX ԵՐԵՒԱՆ <br />
-                        <span>Տերյան 105/1, Ցիտադել բիզնես կենտրոն</span>
-                    </p>
-                    <p>
-                        <i className="fas fa-home"></i>
-                        ONEX ԳԱՎԱՌ <br />
-                        <span>Գրիգոր Լուսավորիչ 20/1</span>
-                    </p>
-                    <p>
-                        <i className="fas fa-home"></i>
-                        ONEX ԳՅՈՒՄՐԻ <br />
-                        <span>
-                            Գայի 1, Գյումրի Տեխնոլոգիական Կենտրոն(մուտքը
-                            D-Link-ի կողմից)
-                        </span>
-                    </p>
-                    <p>
-                        <i className="fas fa-home"></i>
-                        ONEX ՀՐԱԶԴԱՆ <br />
-                        <span>Սպանդարյան 6 շենք</span>
-                    </p>
-                    <p>
-                        <i className="fas fa-home"></i>
-                        ONEX ՍՏԵՓԱՆԱԿԵՐՏ <br />
-                        <span>
-                            Ազատամարտիկների 26, "Եվրոպա" հյ, 2-րդ հարկ, 207
-                            սենյակ
-                        </span>
-                    </p>
-                    <p>
-                        <i className="fas fa-home"></i>
-                        ONEX ՎԱՆԱՁՈՐ <br />
-                        <span>Տիգրան Մեծ 18</span>
-                    </p>
-                    <p>
-                        <i className="fas fa-home"></i>
-                        ONEX ԵՂԵԳՆԱՁՈՐ <br />
-                        <span>Նարեկացու փողոց 6/4</span>
-                    </p>
-                    <p>
-                        <i className="fas fa-home blue"></i>
-                        ONEX ԱՋԱՓՆՅԱԿ (ՌՈՍՏԵԼԵԿՈՄ)
-                        <br />
-                        <span>Մարգարյան 14/8</span>
-                    </p>
-                    <p>
-                        <i className="fas fa-home blue"></i>
-                        ONEX ՄԱԼԱԹԻԱ֊ՍԵԲԱՍՏԻԱ (ՌՈՍՏԵԼԵԿՈՄ)
-                        <br />
-                        <span>Մալաթիա 86/1</span>
-                    </p>
-                    <p>
-                        <i className="fas fa-home blue"></i>
-                        ONEX ԱՎԱՆ (ՌՈՍՏԵԼԵԿՈՄ)
-                        <br />
-                        <span>Խուդյակով 220/10</span>
-                    </p>
-                    <p>
-                        <i className="fas fa-home blue"></i>
-                        ONEX ԷՐԵԲՈՒՆԻ (ՌՈՍՏԵԼԵԿՈՄ)
-                        <br />
-                        <span>Էրեբունու 20/52</span>
-                    </p>
-                    <p>
-                        <i className="fas fa-home blue"></i>
-                        ONEX Ք․ ԱԲՈՎՅԱՆ (ՌՈՍՏԵԼԵԿՈՄ)
-                        <br />
-                        <span>Հատիսի 1/6</span>
-                    </p>
-                    <p>
-                        <i className="fas fa-home blue"></i>
-                        ONEX Ք․ ԿԱՊԱՆ (ՌՈՍՏԵԼԵԿՈՄ)
-                        <br />
-                        <span>Շահումյան 3֊4/1</span>
-                    </p>
+                {   branches.map((branch) => {
+                        return (
+                            <p key={branch.branchId}>
+                                <i className="fas fa-home"></i>
+                                {branch.title} <br />
+                                <span>{branch.address}</span>
+                            </p>
+                        )
+                    })
+                }
                 </div>
             </div>
-            
         </div>
     );
 };

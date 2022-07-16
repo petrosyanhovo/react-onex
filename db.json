@@ -388,12 +388,26 @@
     {"id": 8, "category": "Մեքենաների համար"},
     {"id": 9, "category": "Բրենդային խանութ"}
 ],
-
 "countries": [
   {"countryId": 1, "country": "ԱՄՆ", "countryImg": "usa.png"},
   {"countryId": 2, "country": "Ռուսաստան", "countryImg": "russia.png"},
   {"countryId": 3, "country": "Մեծ Բրիտանիա", "countryImg": "uk.png"},
   {"countryId": 4, "country": "Չինաստան", "countryImg": "china.png"},
   {"countryId": 5, "country": "ԱՄԷ", "countryImg": "uae.png"}
+],
+"branches": [
+  {"branchId": 1, "title": "ONEX ԵՐԵՒԱՆ", "address": "Տերյան 105/1, Ցիտադել բիզնես կենտրոն"},
+  {"branchId": 2, "title": "ONEX ԳԱՎԱՌ", "address": "Գրիգոր Լուսավորիչ 20/1"},
+  {"branchId": 3, "title": "ONEX ԳՅՈՒՄՐԻ", "address": "Գայի 1, Գյումրի Տեխնոլոգիական Կենտրոն(մուտքը D-Link-ի կողմից"},
+  {"branchId": 4, "title": "ONEX ՀՐԱԶԴԱՆ", "address": "Սպանդարյան 6"},
+  {"branchId": 5, "title": "ONEX ՍՏԵՓԱՆԱԿԵՐՏ", "address": "Ազատամարտիկների 26, 'Եվրոպա' հյ, 2-րդ հարկ, 207 սենյակ"},
+  {"branchId": 6, "title": "ONEX ՎԱՆԱՁՈՐ", "address": "Տիգրան Մեծ 18"},
+  {"branchId": 7, "title": "ONEX ԵՂԵԳՆԱՁՈՐ", "address": "Նարեկացու փողոց 6/4"},
+  {"branchId": 8, "title": "ONEX ԱՋԱՓՆՅԱԿ (ՌՈՍՏԵԼԵԿՈՄ)", "address": "Մարգարյան 14/8"},
+  {"branchId": 9, "title": "ONEX ՄԱԼԱԹԻԱ֊ՍԵԲԱՍՏԻԱ", "address": "Մալաթիա 86/1"},
+  {"branchId": 10, "title": "ONEX ԱՎԱՆ (ՌՈՍՏԵԼԵԿՈՄ)", "address": "Խուդյակով 220/10"},
+  {"branchId": 11, "title": "ONEX ԷՐԵԲՈՒՆԻ (ՌՈՍՏԵԼԵԿՈՄ)", "address": "Էրեբունու 20/52"},
+  {"branchId": 12, "title": "ONEX Ք․ ԱԲՈՎՅԱՆ (ՌՈՍՏԵԼԵԿՈՄ)", "address": "Հատիսի 1/6"},
+  {"branchId": 13, "title": "ONEX Ք․ ԿԱՊԱՆ (ՌՈՍՏԵԼԵԿՈՄ)", "address": "Շահումյան 3֊4/1"}
 ]
 }
