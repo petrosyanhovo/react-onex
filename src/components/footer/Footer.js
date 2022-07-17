@@ -103,75 +103,77 @@ export const Footer = () => {
                         </select>
                     </div>
                 </div>
-                <div className="center">
-                    <a
-                        href="https://onex.am/hy/pages/onexprime"
-                        target="_blank"
-                    >
-                        <span>PRIME</span> կարգավիճակ
-                    </a>
-                    <a
-                        href="https://onex.am/hy/pages/onexprime"
-                        target="_blank"
-                    >
-                        Ստացման վայրեր
-                    </a>
-                    <a href="https://onex.am/hy/pages/12" target="_blank">
-                        Մեր պատմությունը
-                    </a>
-                    <a href="https://onex.am/hy/shops" target="_blank">
-                        Խանութներ
-                    </a>
-                    <a
-                        href="https://onex.am/hy/account/dropify"
-                        target="_blank"
-                    >
-                        ONEX Dropify
-                    </a>
-                    <a href="https://onex.am/hy/pages/buyforme" target="_blank">
-                        Գնիր իմ փոխարեն
-                    </a>
-                    <a href="https://onex.am/hy/onextrack" target="_blank">
-                        Հետևել առաքանուն
-                    </a>
-                    <a href="https://blog.onex.am/" target="_blank">
-                        Բլոգ
-                    </a>
-                </div>
-                <div className="right">
-                    <div className="top">
-                        <h2>ՍՊԱՍԱՐԿՄԱՆ ԿԵՆՏՐՈՆ</h2>
-                        <h4>
-                            {" "}
-                            <span>Երկ - Շբթ </span>09:00 - 19:00
-                        </h4>
-                    </div>
+                <div className="right1">
                     <div className="center">
-                        <h2>ONEX SMART WALL</h2>
-                        <h4>
-                            <span>Երկ - Շբթ </span>09:00 - 21:00
-                        </h4>
-                        <h4>
-                            <span>Կիր</span> 12:00 - 18:00
-                        </h4>
-                    </div>
-                    <div className="bottom">
                         <a
-                            href="https://onex.am/hy/user/contact"
+                            href="https://onex.am/hy/pages/onexprime"
                             target="_blank"
                         >
-                            Հետադարձ կապ{" "}
-                            <i className="fa fa-long-arrow-right"></i>
+                            <span>PRIME</span> կարգավիճակ
                         </a>
-                        <a href="tel:+37460750350">
-                            {" "}
-                            <i className="fa fa-phone onex_green"> </i> (+374)
-                            60 750 350
+                        <a
+                            href="https://onex.am/hy/pages/onexprime"
+                            target="_blank"
+                        >
+                            Ստացման վայրեր
                         </a>
-                        <a href="mailto:contact@onex.am">
-                            <i className="fa fa-envelope onex_green"></i>
-                            contact@onex.am
+                        <a href="https://onex.am/hy/pages/12" target="_blank">
+                            Մեր պատմությունը
                         </a>
+                        <a href="https://onex.am/hy/shops" target="_blank">
+                            Խանութներ
+                        </a>
+                        <a
+                            href="https://onex.am/hy/account/dropify"
+                            target="_blank"
+                        >
+                            ONEX Dropify
+                        </a>
+                        <a href="https://onex.am/hy/pages/buyforme" target="_blank">
+                            Գնիր իմ փոխարեն
+                        </a>
+                        <a href="https://onex.am/hy/onextrack" target="_blank">
+                            Հետևել առաքանուն
+                        </a>
+                        <a href="https://blog.onex.am/" target="_blank">
+                            Բլոգ
+                        </a>
+                    </div>
+                    <div className="right">
+                        <div className="top">
+                            <h2>ՍՊԱՍԱՐԿՄԱՆ ԿԵՆՏՐՈՆ</h2>
+                            <h4>
+                                {" "}
+                                <span>Երկ - Շբթ </span>09:00 - 19:00
+                            </h4>
+                        </div>
+                        <div className="center">
+                            <h2>ONEX SMART WALL</h2>
+                            <h4>
+                                <span>Երկ - Շբթ </span>09:00 - 21:00
+                            </h4>
+                            <h4>
+                                <span>Կիր</span> 12:00 - 18:00
+                            </h4>
+                        </div>
+                        <div className="bottom">
+                            <a
+                                href="https://onex.am/hy/user/contact"
+                                target="_blank"
+                            >
+                                Հետադարձ կապ{" "}
+                                <i className="fa fa-long-arrow-right"></i>
+                            </a>
+                            <a href="tel:+37460750350">
+                                {" "}
+                                <i className="fa fa-phone onex_green"> </i> (+374)
+                                60 750 350
+                            </a>
+                            <a href="mailto:contact@onex.am">
+                                <i className="fa fa-envelope onex_green"></i>
+                                contact@onex.am
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>

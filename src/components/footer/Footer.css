@@ -18,6 +18,7 @@ footer .first-footer {
 /* /////////////// */
 
 
+
 footer .first-footer .left {
     display: flex;
     flex-direction: column;
@@ -59,6 +60,11 @@ footer .first-footer .right h4 {
 }
 
 /* second footer  */
+
+.second-footer .right1 {
+    display: flex;
+    align-items: flex-start;
+}
 
 .second-footer {
     display: flex;
@@ -134,7 +140,7 @@ footer .first-footer .right h4 {
     flex-direction: column;
     align-items: flex-start;
     color: #333;
-
+    margin: 0 20px;
 }
 
 .second-footer .center a {
@@ -154,7 +160,7 @@ footer .first-footer .right h4 {
 
 .second-footer .right {
     text-align: left;
-
+    margin: 0 20px;
 }
 
 .second-footer .right .top {
@@ -239,3 +245,121 @@ footer .first-footer .right h4 {
 .third-footer .links a:hover {
     text-decoration: underline;
 }
+
+
+/* MEDIA  */
+
+@media(max-width : 1024px) {
+    footer .first-footer {
+        flex-wrap: wrap;   
+        align-items: center; 
+    }
+
+    footer .first-footer .right {
+        width: 100%;
+        align-items: center;
+        margin: 10px;
+    }
+
+    footer .first-footer .left {
+        width: 100%;
+        align-items: center;
+        margin: 10px;
+    }
+
+    footer .second-footer {
+        flex-wrap: wrap;
+        padding: 50px 180px;
+    }
+
+    footer .second-footer .left {
+        width: 100%;
+        justify-content: center;
+    }
+
+    footer .second-footer .left .pay-methods {
+        align-items: center;
+    }
+
+    footer .second-footer .left .choose-lang {
+        text-align: center;
+        padding: 25px;
+    }
+
+    footer .second-footer .right1 {
+        width: 100%;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width : 768px) {
+    footer .first-footer .left .down-icons a img {
+        height: 45px;
+        margin-right: 0;
+    }    
+
+    footer .second-footer {
+        padding: 80px;
+    }
+
+}
+
+@media (max-width : 535px) {
+    footer .first-footer .left .down-icons a img {
+        height: 50px;
+        margin: 5px;
+    }    
+}
+
+@media (max-width : 580px) {
+    footer .second-footer {
+        padding: 50px;
+    }
+
+    footer .second-footer .right1 {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width : 485px) {
+    footer .second-footer {
+        padding: 40px 20px;
+    }
+
+    footer .second-footer .right1 {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    footer .second-footer .left .pay-methods .icons {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width : 424px) {
+    footer .second-footer .right1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .second-footer .right1 .right {
+        margin: 30px;
+    } 
+}
+/* footer .second-footer {
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+footer .second-footer .right {
+    width: 100%;
+    align-items: center;
+}
+
+footer .second-footer .left {
+    width: 100%;
+    align-items: center;
+} */
