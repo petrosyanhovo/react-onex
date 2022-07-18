@@ -3,10 +3,12 @@ import Button from '../../components/Button/Button'
 import './login.css'
 import LoginImg from '../Login/login_img/rocket.png'
 import { useNavigate } from 'react-router-dom'
-import auth from '../../auth'
+import auth from '../../useAuth'
+import useAuth from '../../useAuth'
 
 
-const Login = ({isAuth, login}) => {
+const Login = ({login, isAuth}) => {
+  
 
   const navigate = useNavigate();
   const [focused, setFocused] = useState(false);
@@ -30,7 +32,8 @@ const Login = ({isAuth, login}) => {
                       allUsers.some(el => el.password === user.password);
 
     if (isRegistered) {
-      navigate('/login/orders')
+      login()
+      // navigate('/orders')
     } else {
       setFocused(true)
       console.log('by');
@@ -57,8 +60,7 @@ const Login = ({isAuth, login}) => {
                 <span style={{color: 'red'}} focused = {focused.toString()}>{errorMessage}</span>
                 
                  <Button buttonName = 'ՄՈՒՏՔ' onClick = {login} />
-               
-                
+            
             </form>
         </div>
 

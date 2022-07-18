@@ -15,16 +15,18 @@ import Orders from "./pages/Orders/Orders";
 import ShopsPage from "./pages/Shops/ShopsPage";
 import SmartWallPage from "./pages/SmartWallPage/SmartWallPage";
 import { ProtectedRoute } from "./protectedRoute";
+import useAuth from "./useAuth";
 
 function App() {
+  const {isAuth, login, logout} = useAuth()
   return (
     <div className="App">
-      <Header />
+      <Header isAuth={isAuth} logout={logout} />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/login/orders" element={<Orders />} auth={false} />
-        {/* <ProtectedRoute path="/login/orders" element={<Orders />} auth = {false} /> */}
+        <Route path="/login" element={<Login isAuth={isAuth} login={login}/>} />
+        {/* <Route path="/login/orders" element={<Orders />} auth={false} /> */}
+        <Route path="/orders" element={<ProtectedRoute isAuth={isAuth}><Orders  logout={logout}/></ProtectedRoute>}  />
         <Route path="/register" element={<Register />} />
         <Route path="/search" element={<Search />} />
         <Route path="/smartservices" element={<SmartServicesMore />} />

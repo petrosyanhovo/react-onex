@@ -1,41 +1,15 @@
 import React from "react";
-import HeaderImg from "../../components/header/header_img/onex.png";
 import barCodeImg from "./orders_img/bar-code-gray.png";
 import "./orders.css";
 import { OrdersMenu } from "./container-fluid/OrdersMenu";
 import { AddOrder } from "./addOrder/AddOrder";
-import auth from "../../auth";
+import auth from "../../useAuth";
 
-const orders = (props, { isAuth, logout }) => {
-  if (!isAuth) {
-    // logout()
-  }
+const orders = ({ logout }) => {
 
   return (
     <div className="orders">
-      <div className="orders-header">
-        <div className="order-header-img">
-          <img src={HeaderImg} alt="logo" />
-        </div>
-        <div className="orders-header-navbar">
-          <a href=""> Ուղարկել առաջարկ </a>
-          <div className="orders-header-navbar-user">
-            <i className="fas fa-search"></i>
-            <a href="">0 դր </a>
-            <a href="">NAREK ARM226272 </a>
-          </div>
-
-          <button
-          // onClick={() => {
-          //   !isAuth ? logout(() => {
-          //     ("/");
-          //   }) : console.log("kkk");
-          // }}
-          >
-            Logout
-          </button>
-        </div>
-      </div>
+      
       <div className="orders-panel">
         <div className="orders-panel-row">
           <div className="orders-panel-heading">

@@ -1,20 +1,13 @@
+
+
+
+
 import React from "react";
-import { Route, Redirect } from "react-router-dom";
-import auth from "./auth";
+import { Navigate} from "react-router-dom";
 
 export const ProtectedRoute = ({
-    auth,
-  component: Component,
-  ...rest
+    children,
+    isAuth
 }) => {
-  return (
-    <Route
-      {...rest}
-      render={props => {
-        if (auth.isAuthenticated()) {
-          return <Component {...props} />;
-        } 
-      }}
-    />
-  );
+  return isAuth ? children : <Navigate to="/login" />;
 };

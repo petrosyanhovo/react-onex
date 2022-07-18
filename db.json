@@ -92,6 +92,13 @@
       "password": "Onex2000#",
       "confirmPassword": "Onex2000#",
       "id": 5
+    },
+    {
+      "email": "test",
+      "phone": "093333333",
+      "password": "test",
+      "confirmPassword": "test",
+      "id": 6
     }
   ],
   "shops": [
