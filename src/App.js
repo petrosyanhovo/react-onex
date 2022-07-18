@@ -16,17 +16,28 @@ import ShopsPage from "./pages/Shops/ShopsPage";
 import SmartWallPage from "./pages/SmartWallPage/SmartWallPage";
 import { ProtectedRoute } from "./protectedRoute";
 import useAuth from "./useAuth";
+import SimpleForm from "./components/ChatBot/ChatBot";
 
 function App() {
-  const {isAuth, login, logout} = useAuth()
+  const { isAuth, login, logout } = useAuth();
   return (
     <div className="App">
       <Header isAuth={isAuth} logout={logout} />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/login" element={<Login isAuth={isAuth} login={login}/>} />
+        <Route
+          path="/login"
+          element={<Login isAuth={isAuth} login={login} />}
+        />
         {/* <Route path="/login/orders" element={<Orders />} auth={false} /> */}
-        <Route path="/orders" element={<ProtectedRoute isAuth={isAuth}><Orders  logout={logout}/></ProtectedRoute>}  />
+        <Route
+          path="/orders"
+          element={
+            <ProtectedRoute isAuth={isAuth}>
+              <Orders logout={logout} />
+            </ProtectedRoute>
+          }
+        />
         <Route path="/register" element={<Register />} />
         <Route path="/search" element={<Search />} />
         <Route path="/smartservices" element={<SmartServicesMore />} />
@@ -39,6 +50,7 @@ function App() {
       </Routes>
       {/* <CalculatorModal /> */}
       <Footer />
+      {/* <SimpleForm /> */}
     </div>
   );
 }
