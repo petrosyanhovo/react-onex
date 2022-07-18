@@ -23,6 +23,7 @@ function App() {
   return (
     <div className="App">
       <Header isAuth={isAuth} logout={logout} />
+      <ExportDocuments />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route
@@ -51,6 +52,7 @@ function App() {
       {/* <CalculatorModal /> */}
       <Footer />
       {/* <SimpleForm /> */}
+
     </div>
   );
 }

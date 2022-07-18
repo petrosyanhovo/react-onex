@@ -17,3 +17,10 @@
 .export-documents .export-documents-header .export-documents-header-image img {
     width: 100%;
 }
+
+.export-documents .export-document-colculator {
+    width: 85%;
+    padding: 30px;
+    border-radius: 10px !important;
+    box-shadow: 5px 5px 25px 0px rgb(46 61 73 / 20%)
+}

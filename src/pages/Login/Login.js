@@ -26,6 +26,10 @@ const Login = ({login, isAuth}) => {
     .then(json => setAllUsers(json));
   }, [])
 
+  useEffect(() => {
+    localStorage.setItem("user", JSON.stringify(user.email));
+  }, [user])
+
   const onSubmit = (e) => {
     e.preventDefault();
     let isRegistered = allUsers.some(el =>  el.email === user.email) && 
@@ -33,14 +37,11 @@ const Login = ({login, isAuth}) => {
 
     if (isRegistered) {
       login()
-      // navigate('/orders')
     } else {
       setFocused(true)
       console.log('by');
     }
   }
-
-
 
   const onChange = (e) => {
     setUser({...user, [e.target.name]: e.target.value})
@@ -60,6 +61,7 @@ const Login = ({login, isAuth}) => {
                 <span style={{color: 'red'}} focused = {focused.toString()}>{errorMessage}</span>
                 
                  <Button buttonName = 'ՄՈՒՏՔ' onClick = {login} />
+                
             
             </form>
         </div>

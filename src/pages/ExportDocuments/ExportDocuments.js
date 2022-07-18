@@ -22,6 +22,34 @@ const ExportDocuments = () => {
             </div>
         </div>
 
+        <div className="export-document-colculator">
+          <h4>ԱՌԱՔՄԱՆ ՀԱՇՎԻՉ</h4>
+          <div className="export-document-details">
+            <select name="" id="country">
+              <option value="">- Արտահանման երկիր -</option>
+              <option value=""></option>
+              <option value=""></option>
+            </select>
+            <select name="" id="weight">
+              <option value="">- Փաստացի քաշ (կգ) -</option>
+              <option value=""></option>
+            </select>
+          </div>
+          <div className="export-document-conditions">
+            <div className="export-cost">
+              <p>Առաքման արժեք</p>
+              <span>-</span>
+              <p> դր</p>
+            </div>
+            <div className="export-duration">
+              <p>Առաքման ժամկետ</p>
+              <span>-</span>
+              <p> աշխ. օր</p>
+            </div>
+
+          </div>
+        </div>
+
     </div>
   )
 }
