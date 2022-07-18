@@ -20,6 +20,7 @@ export default function useAuth () {
     }
 
     function logout() {
+        console.log(888)
         setIsAuth(false)
     }
 

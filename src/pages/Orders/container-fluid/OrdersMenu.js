@@ -1,6 +1,7 @@
 import React from "react";
 import "./ordersMenu.css";
 import addImg from "./containerImg/add-parcel.png";
+import { Link } from "react-router-dom";
 export const OrdersMenu = () => {
   return (
     <div className="orders-menu-container">
@@ -8,9 +9,9 @@ export const OrdersMenu = () => {
         <a href="">
           Պատվիրված է <span>0</span>
         </a>
-        <a href="">
+        <Link to="/search">
           Հասել է պահեստ <span>0</span>
-        </a>
+        </Link>
         <a href="">
           Ճանապարհին է <span>0</span>
         </a>

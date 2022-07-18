@@ -10,11 +10,10 @@ import { HeaderNavBar } from "./HeaderNavBar/HeaderNavBar";
 import { MediaHeaderNavBar } from "./MediaHeaderNavBar/MediaHeaderNavBar";
 import HeaderImg from "../../components/header/header_img/onex.png";
 
-
 export const Header = ({ isAuth, logout }) => {
   const [isCalculatorModalShow, setCalculatorModalShow] = useState(false);
   const [isNavBarShow, setNavBarShow] = useState(false);
-  const onLogout = () => logout()
+  const onLogout = () => logout();
 
   //   const [isActive, setActive] = useState(true);
 
@@ -29,21 +28,30 @@ export const Header = ({ isAuth, logout }) => {
   return (
     <header>
       {isAuth ? (
-        <div className="orders-header">
-          <div className="order-header-img">
-            <img src={HeaderImg} alt="logo" />
+        <>
+          <div className="first-part">
+            <p>
+              Ռուսաստանից առաքումների որակը զգալի բարձրացնելու նպատակով՝ փոխվել
+              է ՌԴ պահեստի <span>հասցեն</span> ։
+            </p>
           </div>
-          <div className="orders-header-navbar">
-            <a href=""> Ուղարկել առաջարկ </a>
-            <div className="orders-header-navbar-user">
-              <i className="fas fa-search"></i>
-              <a href="">0 դր </a>
-              <a href="">NAREK ARM226272 </a>
-            </div>
 
-            <button onClick={onLogout}>Logout</button>
+          <div className="orders-header">
+            <div className="order-header-img">
+              <img src={HeaderImg} alt="logo" />
+            </div>
+            <div className="orders-header-navbar">
+              <a href=""> Ուղարկել առաջարկ </a>
+              <div className="orders-header-navbar-user">
+                <i className="fas fa-search"></i>
+                <a href="">0 դր </a>
+                <a href="">NAREK ARM226272 </a>
+              </div>
+
+              <button onClick={onLogout}>Logout</button>
+            </div>
           </div>
-        </div>
+        </>
       ) : (
         <>
           <div className="first-part">
