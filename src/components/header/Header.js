@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../header/header.css";
 import armenia from "../header/header_img/armenia.png";
 import onex from "../header/header_img/onex.png";
@@ -14,6 +14,16 @@ export const Header = ({ isAuth, logout }) => {
   const [isCalculatorModalShow, setCalculatorModalShow] = useState(false);
   const [isNavBarShow, setNavBarShow] = useState(false);
   const onLogout = () => logout();
+
+  const [userEmail, setUserEmail] = useState("");
+
+  useEffect(() => {
+    setUserEmail(JSON.parse(localStorage.getItem("user")));
+    // const initialValue = JSON.parse(getUserEmail);
+  }, [])
+
+  console.log(userEmail);
+
 
   //   const [isActive, setActive] = useState(true);
 
@@ -45,7 +55,7 @@ export const Header = ({ isAuth, logout }) => {
               <div className="orders-header-navbar-user">
                 <i className="fas fa-search"></i>
                 <a href="">0 դր </a>
-                <a href="">NAREK ARM226272 </a>
+                <a href="">{userEmail}</a>
               </div>
 
               <button onClick={onLogout}>Logout</button>

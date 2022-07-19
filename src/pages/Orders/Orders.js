@@ -1,12 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import barCodeImg from "./orders_img/bar-code-gray.png";
 import "./orders.css";
 import { OrdersMenu } from "./container-fluid/OrdersMenu";
 import { AddOrder } from "./addOrder/AddOrder";
-import auth from "../../useAuth";
+import OrdersList from "./OrdersList/OrdersList";
 
-const orders = ({ logout }) => {
-
+const Orders = () => {
 
 
   return (
@@ -58,9 +57,10 @@ const orders = ({ logout }) => {
         </div>
       </div>
       <OrdersMenu />
+      <OrdersList />
       {/* <AddOrder /> */}
     </div>
   );
 };
 
-export default orders;
+export default Orders;
