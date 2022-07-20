@@ -416,5 +416,55 @@
   {"branchId": 11, "title": "ONEX ԷՐԵԲՈՒՆԻ (ՌՈՍՏԵԼԵԿՈՄ)", "address": "Էրեբունու 20/52"},
   {"branchId": 12, "title": "ONEX Ք․ ԱԲՈՎՅԱՆ (ՌՈՍՏԵԼԵԿՈՄ)", "address": "Հատիսի 1/6"},
   {"branchId": 13, "title": "ONEX Ք․ ԿԱՊԱՆ (ՌՈՍՏԵԼԵԿՈՄ)", "address": "Շահումյան 3֊4/1"}
+],
+"orders": [
+  {
+    "orderID": 1,
+    "receiver": "Lilit",
+    "country": "usa",
+    "tracking": "420198049361289681090560465134",
+    "weight": "1.7",
+    "stock": "2018-12-10",
+    "localStock": "2018-12-24",
+    "declaredValue": "17.00 USD",
+    "value": "5100.00",
+    "status": "received"
+  },
+  {
+    "orderID": 2,
+    "receiver": "Lilit",
+    "country": "usa",
+    "tracking": "1ZY76W900318236242",
+    "weight": "1.1",
+    "stock": "2017-04-26",
+    "localStock": "2017-05-04",
+    "declaredValue": "35.98 US",
+    "value": "4400.00",
+    "status": "received"
+  },
+  {
+    "orderID": 3,
+    "receiver": "Lilit",
+    "country": "usa",
+    "tracking": "420198049400110200830378381455",
+    "weight": "0.1",
+    "stock": "2016-12-08",
+    "localStock": "2016-12-19",
+    "declaredValue": "",
+    "value": "2000.00",
+    "status": "received"
+  },
+  {
+    "orderID": 4,
+    "receiver": "Lilit",
+    "country": "usa",
+    "tracking": "1Z869V6RYW35041881",
+    "weight": "1",
+    "stock": "2016-11-03",
+    "localStock": "2016-11-10",
+    "declaredValue": "",
+    "value": "5400.00",
+    "status": "received"
+  }
 ]
 }
