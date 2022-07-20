@@ -57,6 +57,7 @@
   display: flex;
   text-align: center;
 }
+
 .orders .orders-panel .orders-panel-row h2 {
   font-size: 35px;
   text-transform: uppercase;
@@ -65,7 +66,7 @@
   font-weight: bolder;
   color: #3c4151;
 }
-.orders .orders-panel .orders-panel-row .button-heading {
+.orders .orders-panel .orders-panel-row .orders-panel-heading .button-heading {
   background: linear-gradient(
     95deg,
     rgb(85, 67, 241) 20%,
@@ -79,6 +80,7 @@
   font-weight: bold;
   font-size: 26px;
   border-radius: 6px !important;
+  cursor: pointer;
 }
 
 .orders .orders-panel .orders-panel-row .barcode {

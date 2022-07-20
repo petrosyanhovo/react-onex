@@ -2,6 +2,8 @@ import React from "react";
 import "./addOrder.css";
 import axios from "axios";
 import { useEffect, useState } from "react";
+import Orders from "../Orders";
+
 function importAll(r) {
   let images = {};
   r.keys().map((item, index) => {
@@ -17,8 +19,9 @@ const images = importAll(
     /\.(png|jpe?g|svg)$/
   )
 );
-export const AddOrder = () => {
+export const AddOrder = ({ addOrderShow }) => {
   const [country, setCountry] = useState([]);
+  const [user, setUser] = useState("");
 
   const loadCountries = async () => {
     const result = await axios.get("http://localhost:3000/countries");
@@ -28,6 +31,7 @@ export const AddOrder = () => {
 
   useEffect(() => {
     loadCountries();
+    setUser(JSON.parse(localStorage.getItem("user")));
   }, []);
 
   // console.log(images);
@@ -36,7 +40,7 @@ export const AddOrder = () => {
       <div className="add-order-container">
         <div className="modal-header">
           <h2>Ավելացնել պատվեր</h2>
-          <i className=" fa fa-times"></i>
+          <i className=" fa fa-times" onClick={addOrderShow}></i>
         </div>
         <div className="ordered-country">
           {country.map((val) => {
@@ -75,9 +79,7 @@ export const AddOrder = () => {
             <span>*</span>
           </h3>
           <select className="form-select">
-            <option selected>Narek Hovhannisyan ARM8989</option>
-            <option>Lilit Hovhannisyan ARM8929</option>
-            <option>Hovhannes Petrosyan ARM929</option>
+            <option selected>{user}</option>
           </select>
         </div>
         <div className="order-group">
@@ -86,6 +88,7 @@ export const AddOrder = () => {
             placeholder="Tracking համար(մուտքագրել առանց հավելյալ նշանների)"
             id="tracking"
           />
+
           <div className="order-group-total">
             <select>
               <option value="">- Արժույթ -</option>
@@ -99,14 +102,29 @@ export const AddOrder = () => {
             <input type="text" name="" id="" placeholder="Արժեք" />
             <i className="fa fa-info-circle"></i>
             <input type="text" name="" id="" placeholder="Խանութ" />
-            <textarea
-              name=""
-              id=""
-              cols="30"
-              rows="10"
-              placeholder="Նկարագրություն"
-            ></textarea>
           </div>
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Պատվերի նկարագրություն"
+          ></textarea>
+        </div>
+        <div className="order-add-file">
+          <label htmlFor="file">
+            <input type="file" name="" id="file" />
+            Ինվոյս
+            <i class="fa fa-file"></i>
+          </label>
+        </div>
+        <div className="order-footer-buttons">
+          <button type="submit" className="first-btn">
+            + Ավելացնել
+          </button>
+          <button type="submit" onClick={addOrderShow}>
+            Չեղարկել
+          </button>
         </div>
       </div>
     </div>

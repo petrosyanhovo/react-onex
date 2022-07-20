@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useState } from "react";
 import barCodeImg from "./orders_img/bar-code-gray.png";
 import "./orders.css";
 import { OrdersMenu } from "./container-fluid/OrdersMenu";
@@ -6,16 +6,19 @@ import { AddOrder } from "./addOrder/AddOrder";
 import OrdersList from "./OrdersList/OrdersList";
 
 const Orders = () => {
+  const [addOrderModalShow, setAddOrderModalShow] = useState(false);
 
+  const addOrderShow = () => {
+    setAddOrderModalShow(!addOrderModalShow);
+  };
 
   return (
     <div className="orders">
-      
       <div className="orders-panel">
         <div className="orders-panel-row">
           <div className="orders-panel-heading">
             <h2>ՊԱՏՎԵՐՆԵՐ</h2>
-            <button className="button-heading">+</button>
+            <button className="button-heading" onClick={addOrderShow}>+</button>
           </div>
           <button className="barcode" disabled>
             <img src={barCodeImg} alt="" />
@@ -58,6 +61,7 @@ const Orders = () => {
       </div>
       <OrdersMenu />
       <OrdersList />
+      {addOrderModalShow && <AddOrder addOrderShow={addOrderShow} />}
       {/* <AddOrder /> */}
     </div>
   );
