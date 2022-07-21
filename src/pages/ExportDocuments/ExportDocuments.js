@@ -11,6 +11,8 @@ const ExportDocuments = () => {
   const exportWeights = [0.25, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5];
   const [exportCountry, setExportCountry] = useState("");
   const [exportCost, setExportCost] = useState("");
+  const [exportWeight, setExportWeight] = useState("");
+  const [exportDate, setExportDate] = useState("");
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -23,7 +25,8 @@ const ExportDocuments = () => {
   const getExportCountry = (e) => {
     for (let val of exportDocValue){
       if (val.country === e.target.value) {
-        setExportCost(val.exportCost)
+        setExportCost(val.exportCost);
+        setExportDate(val.exportDate)
       }
     }
   }
@@ -57,7 +60,7 @@ const ExportDocuments = () => {
               })
             }
           </select>
-          <select name="" id="weight" onChange={(e) => getExportWeight(e)}>
+          <select name="" id="weight" onChange={(e) => setExportWeight(e.target.value)}>
             <option value="">- Փաստացի քաշ (կգ) -</option>
             {
               exportWeights.map((weight) => {
@@ -71,12 +74,12 @@ const ExportDocuments = () => {
         <div className="export-document-conditions">
           <div className="export-cost">
             <p className="text-content">Առաքման արժեք</p>
-            <span>{exportCost}</span>
+            <span>{exportCost * exportWeight}</span>
             <label> դր</label>
           </div>
           <div className="export-duration">
             <p className="text-content">Առաքման ժամկետ</p>
-            <span>-</span>
+            <span>{exportDate}</span>
             <label> աշխ. օր</label>
           </div>
         </div>
