@@ -5,7 +5,6 @@ import onex from "../header/header_img/onex.png";
 import onex2 from "../header/header_img/favicon.png";
 import { NavLink as Link } from "react-router-dom";
 import { CalculatorModal } from "../../pages/CalculatorModal/CalculatorModal";
-import NavBar from "./NavBar/NavBar";
 import { HeaderNavBar } from "./HeaderNavBar/HeaderNavBar";
 import { MediaHeaderNavBar } from "./MediaHeaderNavBar/MediaHeaderNavBar";
 import HeaderImg from "../../components/header/header_img/onex.png";
@@ -23,7 +22,6 @@ export const Header = ({ isAuth, logout }) => {
   }, [])
 
   console.log(userEmail);
-
 
   //   const [isActive, setActive] = useState(true);
 

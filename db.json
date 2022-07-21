@@ -466,5 +466,17 @@
     "value": "5400.00",
     "status": "received"
   }
+],
+"export": [
+  {"exportId": "1", "country": "ԱՄՆ / United States", "exportCost": "24500", "exportDate": "4-8"},
+  {"exportId": "2", "country": "Ավստրալիա / Australia", "exportCost": "27500", "exportDate": "4-9"},
+  {"exportId": "3", "country": "Բելգիա / Belgium", "exportCost": "22000", "exportDate": "5-6"},
+  {"exportId": "4", "country": "Գերմանիա / Germany", "exportCost": "22000", "exportDate": "4-8"},
+  {"exportId": "5", "country": "Դանիա / Denmark", "exportCost": "22000", "exportDate": "5-6"},
+  {"exportId": "6", "country": "Ինդոնեզիա / Indonesia", "exportCost": "27500", "exportDate": "4-9"},
+  {"exportId": "7", "country": "Կանադա / Canada", "exportCost": "24500", "exportDate": "4-8"},
+  {"exportId": "8", "country": "Մեծ Բրիտանիա / Great Britain", "exportCost": "22000", "exportDate": "4-8"},
+  {"exportId": "9", "country": "Մեկսիկա / Mexico", "exportCost": "28500", "exportDate": "4-9"},
+  {"exportId": "10", "country": "Մոնտենեգրո / Montenegro", "exportCost": "27500", "exportDate": "7-10"}
 ]
 }

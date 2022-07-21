@@ -10,5 +10,10 @@ const getShops = async() => {
     return response.json();
   }
 
+  const getExport = async() => {
+    const response = await fetch( 'http://localhost:3000/export' )
+    return response.json();
+  }
 
-export {getShops, getBranches}
+
+export {getShops, getBranches, getExport}

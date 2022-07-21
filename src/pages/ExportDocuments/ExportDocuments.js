@@ -1,13 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 import "./exportDocuments.css";
 import ExportDocumentsImg from "../../components/home/Export/export_img/export-documents.png";
 import Heading from "../../components/home/Heading/Heading";
 import { useEffect } from "react";
+import { getExport } from '../../api';
 
 const ExportDocuments = () => {
+
+  const [exportDocValue, setExportDocValue] = useState([]);
+  const exportWeights = [0.25, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5];
+  const [exportCountry, setExportCountry] = useState("");
+  const [exportCost, setExportCost] = useState("");
+
   useEffect(() => {
     window.scrollTo(0, 0);
+    getExport().then(data => {
+      setExportDocValue(data)
+    })
   }, []);
+
+
+  const getExportCountry = (e) => {
+    for (let val of exportDocValue){
+      if (val.country === e.target.value) {
+        setExportCost(val.exportCost)
+      }
+    }
+  }
+
+  const getExportWeight = (e) => {
+    
+  }
 
   return (
     <div className="export-documents">
@@ -24,20 +47,31 @@ const ExportDocuments = () => {
       <div className="export-document-calculator">
         <h4>ԱՌԱՔՄԱՆ ՀԱՇՎԻՉ</h4>
         <div className="export-document-details">
-          <select name="" id="country">
+          <select name="" id="country" onChange={(e) => getExportCountry(e)}>
             <option value="">- Արտահանման երկիր -</option>
-            <option value=""></option>
-            <option value=""></option>
+            {
+              exportDocValue.map(country => {
+                return (
+                  <option value={country.country} key={country.exportId}>{country.country}</option>
+                )
+              })
+            }
           </select>
-          <select name="" id="weight">
+          <select name="" id="weight" onChange={(e) => getExportWeight(e)}>
             <option value="">- Փաստացի քաշ (կգ) -</option>
-            <option value=""></option>
+            {
+              exportWeights.map((weight) => {
+                return (
+                  <option value={weight} key={weight} >{weight}</option>
+                )
+              })
+            }
           </select>
         </div>
         <div className="export-document-conditions">
           <div className="export-cost">
             <p className="text-content">Առաքման արժեք</p>
-            <span>-</span>
+            <span>{exportCost}</span>
             <label> դր</label>
           </div>
           <div className="export-duration">
