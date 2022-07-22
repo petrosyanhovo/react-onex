@@ -1,13 +1,81 @@
+.export-to-russia {
+    width: 85%;
+    padding: 80px 0;
+    margin: 0 auto;
+}
+
 .export-to-russia .export-to-russia-header {
     margin: 50px auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     /* flex-wrap: wrap; */
     align-items: center;
 }
 
-.export-to-russia .export-to-russia-conditions {
-    width: 85%;
+.export-to-russia h2.price {
+    font-size: 24px;
+    /* line-height: 33px; */
+    font-family: 'montserratarm-light';
+}
+
+.export-to-russia .export-to-russia-conditions-table table  {
+    /* height: 250px; */
+    background-color: white;
+    border: 1px solid #fcfcfc;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin: 50px auto 20px auto;
+    padding: 20px 50px;
+}
+
+.export-to-russia .export-to-russia-conditions-table table tr {
+    text-align: center;
+    height: 0;
+}
+.export-to-russia .export-to-russia-conditions-table table tr td{
+    text-align: center;
+    height: 0;
+    padding: 0;
+}
+
+.export-to-russia .export-to-russia-conditions-table table tr th {
+    /* height: 20px; */
+    border: none;
+    font-size: 14px;
+    font-family: 'montserratarm-bold';
+    color: #333;
+}
+
+.export-to-russia .export-to-russia-conditions-table table tr td {
+    font-size: 12px;
+    color: #888;
+    font-family: 'montserratarm-light';
+}
+
+.export-to-russia .export-to-russia-conditions-table table tr td:first-child {
+    font-size: 12px;
+    color: #888;
+    font-family: 'montserratarm-bold';
+}
+
+.export-to-russia .export-to-russia-header .export-to-russia-header-title {
+    width: 45%;
+}
+
+.export-to-russia .export-to-russia-header .export-to-russia-header-image img {
+    width: 100%;
+}
+
+.export-to-russia .export-to-russia-header .export-to-russia-header-image {
+    width: 55%;
+}
+
+.export-to-russia .export-to-russia-header .export-to-russia-header-title .heading h2 {
+    text-align: left;
+}
+
+.export-to-russia .export-to-russia-conditions-div .export-to-russia-conditions {
+    /* width: 85%; */
     height: 250px;
     background-color: white;
     border: 1px solid #fcfcfc;
@@ -16,7 +84,33 @@
     margin: 50px auto 20px auto;
 }
 
-.export-to-russia .export-to-russia-conditions .export-to-russia-conditions-row {
+.export-to-russia .export-to-russia-conditions-div .export-to-russia-conditions .export-to-russia-conditions-row h5{
+    font-size: 14px;
+    font-family: 'montserratarm-bold';
+}
+
+.export-to-russia .export-to-russia-conditions-div .export-to-russia-conditions .export-to-russia-conditions-row h6{
+    font-size: 12px;
+    color: #888;
+    font-family: 'montserratarm-bold';
+    margin-left: 30px;
+}
+
+
+.export-to-russia .export-to-russia-conditions-div .export-to-russia-conditions .export-to-russia-conditions-row p{
+    font-size: 12px;
+    color: #888;
+    font-family: 'montserratarm-light';
+}
+
+
+.export-to-russia .export-to-russia-conditions-div h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-family: 'montserratarm-light';
+}
+
+.export-to-russia .export-to-russia-conditions-div .export-to-russia-conditions .export-to-russia-conditions-row {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -24,23 +118,63 @@
 }
 
 .export-to-russia .export-to-russia-calculation {
-    width: 70%;
-    margin: auto;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.export-to-russia .export-to-russia-calculation .calculation-text {
+    font-size: 14px;
+    color: #888;
+    font-family: 'montserratarm-light';
+}
+
+.export-to-russia .export-to-russia-calculation .heading h2 {
+    font-size: 24px;
+}
+
+
+.export-to-russia .export-to-russia-calculation .heading p {
+    display: none;
 }
 
 .export-to-russia .export-to-russia-calculation .export-to-russia-calculation-example {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     text-align: center;
-    margin: 50px;
+    margin: 10px 50px;
 }
 
 .export-to-russia .export-to-russia-calculation .export-to-russia-calculation-example .export-to-russia-calculation-example-price {
     /* width: 85%; */
-    height: 80px;
+    /* height: 80px; */
     background-color: white;
     border: 1px solid #fcfcfc;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
-    padding: 20px;
+    padding: 10px 20px;
+    margin: 5px;
+
+    box-sizing: border-box;
 }
+
+.export-to-russia .export-to-russia-calculation>p {
+    font-size: 14px;
+    color: #888;
+}
+
+.export-to-russia .export-to-russia-calculation .export-to-russia-calculation-example .export-to-russia-calculation-example-price p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.export-to-russia .export-to-russia-calculation .export-to-russia-calculation-example .export-to-russia-calculation-example-price p.example-text1 {
+    font-size: 14px;
+    font-family: 'montserratarm-bold';
+}
+
+.export-to-russia .export-to-russia-calculation .export-to-russia-calculation-example .export-to-russia-calculation-example-price p.example-text2 {
+    font-size: 14px;
+    font-family: 'montserratarm-bold';
+    color: #888;
+}
+
