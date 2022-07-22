@@ -25,7 +25,7 @@ class Review extends Component {
   render() {
     const { name, gender, age } = this.state;
     return (
-      <div style={{ width: "100%" }}>
+      <div className="chat-bot" >
         <h3>Summary</h3>
         <table>
           <tbody>

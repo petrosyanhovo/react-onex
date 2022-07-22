@@ -3,3 +3,15 @@
     text-align: center;
   }
   
+  .rsc {
+    width: 300%;
+    /* position: absolute; */
+  }
+
+  .rsc .rsc-container {
+    background: red;
+    position: fixed;
+    /* top: 90%; */
+    left: 24%;
+    
+  }

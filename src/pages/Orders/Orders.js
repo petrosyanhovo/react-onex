@@ -62,7 +62,6 @@ const Orders = () => {
       <OrdersMenu />
       <OrdersList />
       {addOrderModalShow && <AddOrder addOrderShow={addOrderShow} />}
-      {/* <AddOrder /> */}
     </div>
   );
 };

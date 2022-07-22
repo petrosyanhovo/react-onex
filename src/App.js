@@ -49,8 +49,9 @@ function App() {
         <Route path="/smartwall" element={<SmartWallPage />} />
       </Routes>
       {/* <CalculatorModal /> */}
+      <SimpleForm /> 
+
       <Footer />
-      {/* <SimpleForm /> */}
 
     </div>
   );

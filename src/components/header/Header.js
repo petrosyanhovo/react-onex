@@ -12,16 +12,15 @@ import HeaderImg from "../../components/header/header_img/onex.png";
 export const Header = ({ isAuth, logout }) => {
   const [isCalculatorModalShow, setCalculatorModalShow] = useState(false);
   const [isNavBarShow, setNavBarShow] = useState(false);
-  const onLogout = () => logout();
+  const onLogout = () =>{
+    logout();
+    };
 
   const [userEmail, setUserEmail] = useState("");
 
   useEffect(() => {
     setUserEmail(JSON.parse(localStorage.getItem("user")));
-    // const initialValue = JSON.parse(getUserEmail);
   }, [])
-
-  console.log(userEmail);
 
   //   const [isActive, setActive] = useState(true);
 
