@@ -1,17 +1,16 @@
 .App {
-    font-family: sans-serif;
-    text-align: center;
-  }
-  
-  .rsc {
-    width: 300%;
-    /* position: absolute; */
-  }
+  font-family: sans-serif;
+  text-align: center;
+}
 
-  .rsc .rsc-container {
-    background: red;
-    position: fixed;
-    /* top: 90%; */
-    left: 24%;
-    
-  }
+.rsc {
+  width: 300%;
+  /* position: absolute; */
+}
+
+.rsc .rsc-container {
+  background: red;
+  position: fixed;
+  top: 12%;
+  left: 74%;
+}
